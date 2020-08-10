@@ -1,0 +1,452 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BD4BE607-F605-42B2-813D-961D3B24365B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Nemesis</RootNamespace>
+    <AssemblyName>Nemesis</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>none</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <GenerateSerializationAssemblies>On</GenerateSerializationAssemblies>
+    <FileAlignment>8192</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>256x256.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="PresentationFramework.Aero2" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Data\DataGeters\KayficentGeter.cs" />
+    <Compile Include="Data\Initializer.cs" />
+    <Compile Include="Windows\DialogWindows\SobDialog.xaml.cs">
+      <DependentUpon>SobDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Initializers.cs" />
+    <Compile Include="Layouts\SmallFooter.xaml.cs">
+      <DependentUpon>SmallFooter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenSaver.cs" />
+    <Compile Include="Windows\DialogWindows\InitializeTargets.xaml.cs">
+      <DependentUpon>InitializeTargets.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SertificateValidation.xaml.cs">
+      <DependentUpon>SertificateValidation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Themes\SkinResourceDictionary.cs" />
+    <Compile Include="Windows\DialogWindows\Cameras.xaml.cs">
+      <DependentUpon>Cameras.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\DialogWindows\Ditarkum.xaml.cs">
+      <DependentUpon>Ditarkum.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Tools.xaml.cs">
+      <DependentUpon>Tools.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Martakarg.xaml.cs">
+      <DependentUpon>Martakarg.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\DialogWindows\Alphas.xaml.cs">
+      <DependentUpon>Alphas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Partials\Task.cs" />
+    <Compile Include="Windows\PrintWindows\Hranot.xaml.cs">
+      <DependentUpon>Hranot.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\PrintWindows\Sob.xaml.cs">
+      <DependentUpon>Sob.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Targets.xaml.cs">
+      <DependentUpon>Targets.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Task.xaml.cs">
+      <DependentUpon>Task.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Windows\DialogWindows\SobDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Layouts\Footer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Layouts\SmallFooter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\DataGeters\MartakargGeter.cs" />
+    <Compile Include="Data\DataGeters\TaskGetters.cs" />
+    <Compile Include="Data\DataSeters\MartakargSeter.cs" />
+    <Compile Include="Data\DataSeters\TaskSetters.cs" />
+    <Compile Include="Layouts\Footer.xaml.cs">
+      <DependentUpon>Footer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="SertificateValidation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\LightSkin.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\DarkSkin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\DialogWindows\InitializeTargets.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\DialogWindows\Cameras.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\DialogWindows\Ditarkum.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Tools.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Martakarg.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\DialogWindows\Alphas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\PrintWindows\Hranot.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\PrintWindows\Sob.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Targets.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\Task.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Files\1.txt" />
+    <Resource Include="Files\1M.txt" />
+    <Resource Include="Files\2.txt" />
+    <Resource Include="Files\2M.txt" />
+    <Resource Include="Files\3.txt" />
+    <Resource Include="Files\3M.txt" />
+    <Resource Include="Files\4.txt" />
+    <Resource Include="Files\4M.txt" />
+    <Resource Include="Files\Cores\D-20.txt" />
+    <Resource Include="Files\Cores\RGM.txt" />
+    <Resource Include="Files\Cores\T-7.txt" />
+    <Resource Include="Files\D20\1.txt" />
+    <Resource Include="Files\D20\1M.txt" />
+    <Resource Include="Files\D20\2.txt" />
+    <Resource Include="Files\D20\2M.txt" />
+    <Resource Include="Files\D20\3.txt" />
+    <Resource Include="Files\D20\3M.txt" />
+    <Resource Include="Files\D20\4.txt" />
+    <Resource Include="Files\D20\4M.txt" />
+    <Resource Include="Files\D20\5.txt" />
+    <Resource Include="Files\D20\5M.txt" />
+    <Resource Include="Files\D20\6.txt" />
+    <Resource Include="Files\D20\6M.txt" />
+    <Resource Include="Files\D20\L.txt" />
+    <Resource Include="Files\D20\LM.txt" />
+    <Resource Include="Files\L.txt" />
+    <Resource Include="Files\Levels\1B.txt" />
+    <Resource Include="Files\Levels\1C.txt" />
+    <Resource Include="Files\Levels\1MB.txt" />
+    <Resource Include="Files\Levels\1MC.txt" />
+    <Resource Include="Files\Levels\2B.txt" />
+    <Resource Include="Files\Levels\2C.txt" />
+    <Resource Include="Files\Levels\2MB.txt" />
+    <Resource Include="Files\Levels\2MC.txt" />
+    <Resource Include="Files\Levels\3B.txt" />
+    <Resource Include="Files\Levels\3C.txt" />
+    <Resource Include="Files\Levels\3MB.txt" />
+    <Resource Include="Files\Levels\3MC.txt" />
+    <Resource Include="Files\Levels\4B.txt" />
+    <Resource Include="Files\Levels\4C.txt" />
+    <Resource Include="Files\Levels\4MB.txt" />
+    <Resource Include="Files\Levels\4MC.txt" />
+    <Resource Include="Files\Levels\D20\1B.txt" />
+    <Resource Include="Files\Levels\D20\1C.txt" />
+    <Resource Include="Files\Levels\D20\2B.txt" />
+    <Resource Include="Files\Levels\D20\2C.txt" />
+    <Resource Include="Files\Levels\D20\3B.txt" />
+    <Resource Include="Files\Levels\D20\3C.txt" />
+    <Resource Include="Files\Levels\D20\4B.txt" />
+    <Resource Include="Files\Levels\D20\4C.txt" />
+    <Resource Include="Files\Levels\D20\5B.txt" />
+    <Resource Include="Files\Levels\D20\5C.txt" />
+    <Resource Include="Files\Levels\D20\6B.txt" />
+    <Resource Include="Files\Levels\D20\6C.txt" />
+    <Resource Include="Files\Levels\D20\LB.txt" />
+    <Resource Include="Files\Levels\D20\LC.txt" />
+    <Resource Include="Files\Levels\LB.txt" />
+    <Resource Include="Files\Levels\LC.txt" />
+    <Resource Include="Files\Levels\LMB.txt" />
+    <Resource Include="Files\Levels\LMC.txt" />
+    <Resource Include="Files\Levels\QB.txt" />
+    <Resource Include="Files\Levels\QC.txt" />
+    <Resource Include="Files\Levels\QMB.txt" />
+    <Resource Include="Files\Levels\QMC.txt" />
+    <Resource Include="Files\Licq.txt" />
+    <Resource Include="Files\LM.txt" />
+    <Resource Include="Files\Q.txt" />
+    <Resource Include="Files\QM.txt" />
+    <Resource Include="Files\T-7\1.txt" />
+    <Resource Include="Files\T-7\1M.txt" />
+    <Resource Include="Files\T-7\2.txt" />
+    <Resource Include="Files\T-7\2M.txt" />
+    <Resource Include="Files\T-7\3.txt" />
+    <Resource Include="Files\T-7\3M.txt" />
+    <Resource Include="Files\T-7\4.txt" />
+    <Resource Include="Files\T-7\4M.txt" />
+    <Resource Include="Files\T-7\L.txt" />
+    <Resource Include="Files\T-7\LM.txt" />
+    <Resource Include="Files\T-7\Q.txt" />
+    <Resource Include="Files\T-7\QM.txt" />
+    <Resource Include="Files\V-90\1.txt" />
+    <Resource Include="Files\V-90\1M.txt" />
+    <Resource Include="Files\V-90\2.txt" />
+    <Resource Include="Files\V-90\2M.txt" />
+    <Resource Include="Files\V-90\3.txt" />
+    <Resource Include="Files\V-90\3M.txt" />
+    <Resource Include="Files\V-90\4.txt" />
+    <Resource Include="Files\V-90\4M.txt" />
+    <Resource Include="Files\V-90\L.txt" />
+    <Resource Include="Files\V-90\LM.txt" />
+    <Resource Include="Files\V-90\Q.txt" />
+    <Resource Include="Files\V-90\QM.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Scope.ico" />
+    <Resource Include="Images\disco_a.png" />
+    <Resource Include="Images\Error.ico" />
+    <Resource Include="Images\Excelle.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Fade.ico" />
+    <Resource Include="Images\Clear.ico" />
+    <Resource Include="Images\Insert.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Minus.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Plus.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Print.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Save.ico" />
+    <Resource Include="Images\Screenshot.ico" />
+    <Resource Include="Images\Shutdown.ico" />
+    <Resource Include="Images\Time.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Files\Cores\T-90.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Files\T-90\1.txt" />
+    <Resource Include="Files\T-90\1M.txt" />
+    <Resource Include="Files\T-90\2.txt" />
+    <Resource Include="Files\T-90\2M.txt" />
+    <Resource Include="Files\T-90\3.txt" />
+    <Resource Include="Files\T-90\3M.txt" />
+    <Resource Include="Files\T-90\4.txt" />
+    <Resource Include="Files\T-90\4M.txt" />
+    <Resource Include="Files\T-90\L.txt" />
+    <Resource Include="Files\T-90\LM.txt" />
+    <Resource Include="Files\T-90\Q.txt" />
+    <Resource Include="Files\T-90\QM.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Sob.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Hranot.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaseEntities\BaseEntities.csproj">
+      <Project>{ce1dc6eb-bf9c-44ad-87c2-9286cbc62ad8}</Project>
+      <Name>BaseEntities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BaseService\BaseService.csproj">
+      <Project>{56974f31-21b7-4d1c-a98e-2a79e9523725}</Project>
+      <Name>BaseService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
+      <Project>{5cf9ead0-6d5c-4606-93ae-3cb7f5e3b91a}</Project>
+      <Name>DataAccessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Camera.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="256x256.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="512x512.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Ditarkum.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Alpha.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Refresh.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Files\Cores\D-1.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Files\D1\1.txt" />
+    <Resource Include="Files\D1\1M.txt" />
+    <Resource Include="Files\D1\2.txt" />
+    <Resource Include="Files\D1\2M.txt" />
+    <Resource Include="Files\D1\3.txt" />
+    <Resource Include="Files\D1\3M.txt" />
+    <Resource Include="Files\D1\4.txt" />
+    <Resource Include="Files\D1\4M.txt" />
+    <Resource Include="Files\D1\5.txt" />
+    <Resource Include="Files\D1\5M.txt" />
+    <Resource Include="Files\D1\6.txt" />
+    <Resource Include="Files\D1\6M.txt" />
+    <Resource Include="Files\D1\L.txt" />
+    <Resource Include="Files\D1\LM.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\logored.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="AfterCompile">
+    <Exec Command="echo &quot;&quot;" />
+  </Target>
+</Project>

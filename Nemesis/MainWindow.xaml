@@ -1,0 +1,161 @@
+﻿<Window x:Class="Nemesis.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Nemesis"
+        mc:Ignorable="d"
+        x:Name="Main"
+        Title="NEMESIS" Height="405" Width="470" MaxHeight="405" MinHeight="405" MaxWidth="470" MinWidth="470">
+    <Grid Style="{DynamicResource Main_Window-main-grid }" Mouse.MouseUp="ExitExpanders">
+        <Image x:Name="MainBackground" Opacity="0.63">
+        </Image>
+        <Expander Style="{DynamicResource ExpanderStyle}"
+                  Panel.ZIndex="10"
+                  UseLayoutRounding="True"
+                  x:Name="Settings"
+                  VerticalAlignment="Bottom"
+                  VerticalContentAlignment="Bottom"
+                  HorizontalAlignment="Left"
+                  Margin="-1,0,0,0"
+                  Collapsed="SaveSettings"
+                  ExpandDirection="Up">
+            <Border Style="{DynamicResource Border-Main}" >
+                <StackPanel Width="320" Style="{DynamicResource StackPanel}"  Height="70">
+                    <Border Style="{DynamicResource Border}" Margin="3,5,3,0">
+                        <StackPanel Orientation="Horizontal" >
+                            <Label Style="{DynamicResource Label_Style}" Width="170">Թեման</Label>
+                            <DockPanel>
+
+                                <RadioButton Style="{DynamicResource RadioButton_Style}" IsChecked="True" x:Name="Setting_IsLight" VerticalAlignment="Center" Margin="0,0,4,0">Լուսավոր</RadioButton>
+                                <RadioButton Style="{DynamicResource RadioButton_Style}" x:Name="Setting_IsDark" VerticalAlignment="Center">Մութ</RadioButton>
+                            </DockPanel>
+                        </StackPanel>
+                    </Border>
+                    <Border Style="{DynamicResource Border}" Margin="3,5,3,0">
+                        <StackPanel Orientation="Horizontal" >
+                            <Label Style="{DynamicResource Label_Style}" Width="170">Նշանակետերի էջի չափսը</Label>
+                            <TextBox Style="{DynamicResource TextBox_Style}" x:Name="Setting_TargetPageSize" Width="100" Height="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="14" Margin="10,0,0,0">24</TextBox>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+            </Border>
+        </Expander>
+        <StackPanel VerticalAlignment="Top">
+            <StackPanel>
+                <TextBlock Style="{DynamicResource Main_Window_Title_Style}">NEMESIS</TextBlock>
+                <WrapPanel HorizontalAlignment="Center" Margin="5">
+                    <Button Width="380" Style="{DynamicResource Main_Navigation_Menue_Style}" Template="{DynamicResource MainMenueControlTemplate}" Cursor="Hand" Click="OpenMartakarg" HorizontalAlignment="Center" Padding="6"  Margin="5,0,5,0">
+                        <Button.RenderTransform>
+                            <ScaleTransform x:Name="ScaleTransform1" ScaleX="1" ScaleY="1" CenterX="150" CenterY="15"/>
+                        </Button.RenderTransform>
+                        <Button.Triggers>
+                            <EventTrigger RoutedEvent="MouseEnter">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetName="ScaleTransform1" Storyboard.TargetProperty="ScaleX"
+                                                         From="1" To="1.22" Duration="0:0:0.2" AutoReverse="False"/>
+                                        <DoubleAnimation Storyboard.TargetName="ScaleTransform1" Storyboard.TargetProperty="ScaleY"
+                                                         From="1" To="1.22" Duration="0:0:0.2" AutoReverse="False"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                            <EventTrigger RoutedEvent="MouseLeave">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetName="ScaleTransform1" Storyboard.TargetProperty="ScaleX"
+                                                         From="1.22" To="1" Duration="0:0:0.3" AutoReverse="False"/>
+                                        <DoubleAnimation Storyboard.TargetName="ScaleTransform1" Storyboard.TargetProperty="ScaleY"
+                                                         From="1.22" To="1" Duration="0:0:0.3" AutoReverse="False"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </Button.Triggers> ՄԱՐՏԱԿԱՐԳ</Button>
+                    <Button Width="380" Style="{DynamicResource Main_Navigation_Menue_Style}" Template="{DynamicResource MainMenueControlTemplate}" Cursor="Hand"  Click="OpenFireTask" HorizontalAlignment="Center" Padding="6"  Margin="5">
+                        <Button.RenderTransform>
+                            <ScaleTransform x:Name="ScaleTransform2" ScaleX="1" ScaleY="1" CenterX="150" CenterY="15"/>
+                        </Button.RenderTransform>
+                        <Button.Triggers>
+                            <EventTrigger RoutedEvent="MouseEnter">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetName="ScaleTransform2" Storyboard.TargetProperty="ScaleX"
+                                                         From="1" To="1.22" Duration="0:0:0.2" AutoReverse="False"/>
+                                        <DoubleAnimation Storyboard.TargetName="ScaleTransform2" Storyboard.TargetProperty="ScaleY"
+                                                         From="1" To="1.22" Duration="0:0:0.2" AutoReverse="False"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                            <EventTrigger RoutedEvent="MouseLeave">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetName="ScaleTransform2" Storyboard.TargetProperty="ScaleX"
+                                                         From="1.22" To="1" Duration="0:0:0.3" AutoReverse="False"/>
+                                        <DoubleAnimation Storyboard.TargetName="ScaleTransform2" Storyboard.TargetProperty="ScaleY"
+                                                         From="1.22" To="1" Duration="0:0:0.3" AutoReverse="False"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </Button.Triggers> ԿՐԱԿԱՅԻՆ ԽՆԴԻՐ</Button>
+                    <Button Width="380" Style="{DynamicResource Main_Navigation_Menue_Style}" Template="{DynamicResource MainMenueControlTemplate}" Cursor="Hand"  Click="OpenTargets" HorizontalAlignment="Center" Padding="6" Margin="5">
+                        <Button.RenderTransform>
+                            <ScaleTransform x:Name="ScaleTransform3"  ScaleX="1" ScaleY="1" CenterX="150" CenterY="15"/>
+                        </Button.RenderTransform>
+                        <Button.Triggers>
+                            <EventTrigger RoutedEvent="MouseEnter">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetName="ScaleTransform3" Storyboard.TargetProperty="ScaleX"
+                                                         From="1" To="1.22" Duration="0:0:0.2" AutoReverse="False"/>
+                                        <DoubleAnimation Storyboard.TargetName="ScaleTransform3" Storyboard.TargetProperty="ScaleY"
+                                                         From="1" To="1.22" Duration="0:0:0.2" AutoReverse="False"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                            <EventTrigger RoutedEvent="MouseLeave">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetName="ScaleTransform3" Storyboard.TargetProperty="ScaleX"
+                                                         From="1.22" To="1" Duration="0:0:0.3" AutoReverse="False"/>
+                                        <DoubleAnimation Storyboard.TargetName="ScaleTransform3" Storyboard.TargetProperty="ScaleY"
+                                                         From="1.22" To="1" Duration="0:0:0.3" AutoReverse="False"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </Button.Triggers> ՆՇԱՆԱԿԵՏԵՐ</Button>
+                    <Button Width="380" Style="{DynamicResource Main_Navigation_Menue_Style}" Template="{DynamicResource MainMenueControlTemplate}" Cursor="Hand" Click="OpenTools" HorizontalAlignment="Center" Padding="6" Margin="5">
+                        <Button.RenderTransform>
+                            <ScaleTransform x:Name="ScaleTransform4"  ScaleX="1" ScaleY="1" CenterX="150" CenterY="15"/>
+                        </Button.RenderTransform>
+                        <Button.Triggers>
+                            <EventTrigger RoutedEvent="MouseEnter">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetName="ScaleTransform4" Storyboard.TargetProperty="ScaleX"
+                                                         From="1" To="1.22" Duration="0:0:0.2" AutoReverse="False"/>
+                                        <DoubleAnimation Storyboard.TargetName="ScaleTransform4" Storyboard.TargetProperty="ScaleY"
+                                                         From="1" To="1.22" Duration="0:0:0.2" AutoReverse="False"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                            <EventTrigger RoutedEvent="MouseLeave">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetName="ScaleTransform4" Storyboard.TargetProperty="ScaleX"
+                                                         From="1.22" To="1" Duration="0:0:0.3" AutoReverse="False"/>
+                                        <DoubleAnimation Storyboard.TargetName="ScaleTransform4" Storyboard.TargetProperty="ScaleY"
+                                                         From="1.22" To="1" Duration="0:0:0.3" AutoReverse="False"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </Button.Triggers> ԱՅԼ ԳՈՐԾԻՔՆԵՐ</Button>
+                </WrapPanel>
+            </StackPanel>
+        </StackPanel>
+        <local:Footer Panel.ZIndex="-1"></local:Footer>
+    </Grid>
+
+
+
+
+</Window>

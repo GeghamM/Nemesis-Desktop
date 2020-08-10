@@ -1,0 +1,32 @@
+﻿<Window x:Class="Nemesis.SertificateValidation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Nemesis"
+        mc:Ignorable="d"
+        Title="SertificateValidation" MinHeight="235" MinWidth="350" MaxHeight="235" MaxWidth="350" Width="350" Height="235">
+    <StackPanel>
+        <StackPanel Margin="5">
+            <Label HorizontalContentAlignment="Center">Ուղարկեք հետևյալ կոդը մեզ</Label>
+            <TextBox x:Name="UserCode" Margin="10,2" IsReadOnly="True" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+            <Label HorizontalContentAlignment="Center">Մուտքագրեք մեր պատասխանը այստեղ</Label>
+            <TextBox x:Name="UserHash" Margin="10,2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+            <Button Margin="10,15,10,0" Click="TryMakeSertificate" Background="#FF62F91B" Cursor="Hand">Ակտիվացնել</Button>
+        </StackPanel>
+        <StackPanel Margin="0,5,0,0">
+            <DockPanel Margin="10,0,0,0">
+                <Label Padding="0" Margin="0,0,0,0" Width="60">Telegram :</Label>
+                <TextBox IsReadOnly="True" BorderThickness="0" VerticalContentAlignment="Center" Padding="0"> t.me/nemesisapp</TextBox>
+            </DockPanel>
+            <DockPanel Margin="10,0,0,0">
+                <Label Padding="0" Margin="0,0,0,0" Width="60">Email:</Label>
+                <TextBox IsReadOnly="True" BorderThickness="0" VerticalContentAlignment="Center" Padding="0">nemesisapp@outlook.com</TextBox>
+            </DockPanel>
+            <DockPanel Margin="10,0,0,0">
+                <Label Padding="0" Margin="0,0,0,0" Width="60">Phone:</Label>
+                <TextBox IsReadOnly="True" BorderThickness="0" VerticalContentAlignment="Center" Padding="0">097 - 79-96-67</TextBox>
+            </DockPanel>
+        </StackPanel>
+    </StackPanel>
+</Window>

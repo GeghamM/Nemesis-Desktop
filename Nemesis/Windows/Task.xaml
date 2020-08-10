@@ -1,0 +1,702 @@
+﻿<Window x:Class="Nemesis.Task"
+        x:Name="TaskScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Nemesis"
+        WindowState="Maximized"
+        SizeChanged="WindowSozeChanged"
+        StateChanged="WindwStateChanged"
+        KeyDown="TaskKeyDown"
+        Title="ԽՆԴԻՐ" Height="730" MinHeight="400" Width="1005" MinWidth="1005">
+    <Grid x:Name="MainGrid" Style="{DynamicResource Window-main-grid}" MouseUp="ExitExpanders">
+        <Expander Style="{DynamicResource ExpanderStyle}" x:Name="ToolBoxExpander" Panel.ZIndex="50" LostFocus="ExitExpander" ExpandDirection="Left" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,8,7,0" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+            <Border Style="{DynamicResource Border-Main}">
+                <StackPanel Style="{DynamicResource StackPanel}" x:Name="ToolBoxPanel" HorizontalAlignment="Center"  VerticalAlignment="Center" >
+                    <StackPanel HorizontalAlignment="Center" Margin="0,2" MouseUp="ResetClick" Cursor="Hand">
+                        <StackPanel.RenderTransform>
+                            <ScaleTransform x:Name="ScaleTransform1" ScaleX="1" ScaleY="1" CenterX="15" CenterY="15"/>
+                        </StackPanel.RenderTransform>
+                        <StackPanel.Triggers>
+                            <EventTrigger RoutedEvent="MouseEnter">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetName="ScaleTransform1" Storyboard.TargetProperty="ScaleX"
+                                                         From="1" To="1.22" Duration="0:0:0.2" AutoReverse="False"/>
+                                        <DoubleAnimation Storyboard.TargetName="ScaleTransform1" Storyboard.TargetProperty="ScaleY"
+                                                         From="1" To="1.22" Duration="0:0:0.2" AutoReverse="False"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                            <EventTrigger RoutedEvent="MouseLeave">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetName="ScaleTransform1" Storyboard.TargetProperty="ScaleX"
+                                                         From="1.22" To="1" Duration="0:0:0.3" AutoReverse="False"/>
+                                        <DoubleAnimation Storyboard.TargetName="ScaleTransform1" Storyboard.TargetProperty="ScaleY"
+                                                         From="1.22" To="1" Duration="0:0:0.3" AutoReverse="False"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </StackPanel.Triggers>
+                        <Image x:Name="Clear" Margin="10,2" Height="20"/>
+                        <Label Style="{DynamicResource Label_Style}" FontSize="9" Content="Մաքրել"/>
+                    </StackPanel>
+                    <StackPanel HorizontalAlignment="Center" Margin="0,2" MouseUp="SaveTarget" Cursor="Hand">
+                        <StackPanel.RenderTransform>
+                            <ScaleTransform x:Name="ScaleTransform2" ScaleX="1" ScaleY="1" CenterX="25" CenterY="25"/>
+                        </StackPanel.RenderTransform>
+                        <StackPanel.Triggers>
+                            <EventTrigger RoutedEvent="MouseEnter">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetName="ScaleTransform2" Storyboard.TargetProperty="ScaleX"
+                                                         From="1" To="1.22" Duration="0:0:0.2" AutoReverse="False"/>
+                                        <DoubleAnimation Storyboard.TargetName="ScaleTransform2" Storyboard.TargetProperty="ScaleY"
+                                                         From="1" To="1.22" Duration="0:0:0.2" AutoReverse="False"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                            <EventTrigger RoutedEvent="MouseLeave">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetName="ScaleTransform2" Storyboard.TargetProperty="ScaleX"
+                                                         From="1.22" To="1" Duration="0:0:0.3" AutoReverse="False"/>
+                                        <DoubleAnimation Storyboard.TargetName="ScaleTransform2" Storyboard.TargetProperty="ScaleY"
+                                                         From="1.22" To="1" Duration="0:0:0.3" AutoReverse="False"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </StackPanel.Triggers>
+                        <Image x:Name="Plus" Margin="10,2" Height="20"/>
+                        <Label Style="{DynamicResource Label_Style}" FontSize="9" Content="Ավելացնել"/>
+                    </StackPanel>
+                    <StackPanel HorizontalAlignment="Center" Margin="0,2" MouseUp="SaveScreen" Cursor="Hand">
+                        <StackPanel.RenderTransform>
+                            <ScaleTransform x:Name="ScaleTransform3" ScaleX="1" ScaleY="1" CenterX="25" CenterY="25"/>
+                        </StackPanel.RenderTransform>
+                        <StackPanel.Triggers>
+                            <EventTrigger RoutedEvent="MouseEnter">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetName="ScaleTransform3" Storyboard.TargetProperty="ScaleX"
+                                                         From="1" To="1.22" Duration="0:0:0.2" AutoReverse="False"/>
+                                        <DoubleAnimation Storyboard.TargetName="ScaleTransform3" Storyboard.TargetProperty="ScaleY"
+                                                         From="1" To="1.22" Duration="0:0:0.2" AutoReverse="False"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                            <EventTrigger RoutedEvent="MouseLeave">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetName="ScaleTransform3" Storyboard.TargetProperty="ScaleX"
+                                                         From="1.22" To="1" Duration="0:0:0.3" AutoReverse="False"/>
+                                        <DoubleAnimation Storyboard.TargetName="ScaleTransform3" Storyboard.TargetProperty="ScaleY"
+                                                         From="1.22" To="1" Duration="0:0:0.3" AutoReverse="False"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </StackPanel.Triggers>
+                        <Image x:Name="ScreenShot" Height="30" VerticalAlignment="Center" Margin="10,-2.5"/>
+                        <Label Style="{DynamicResource Label_Style}" Margin="0,0,0,0" FontSize="9" Content="Պահպանել"/>
+                    </StackPanel>
+                    <StackPanel HorizontalAlignment="Center" Margin="0,2" MouseUp="ShowSob" Cursor="Hand">
+                        <StackPanel.RenderTransform>
+                            <ScaleTransform x:Name="ScaleTransform4" ScaleX="1" ScaleY="1" CenterX="25" CenterY="25"/>
+                        </StackPanel.RenderTransform>
+                        <StackPanel.Triggers>
+                            <EventTrigger RoutedEvent="MouseEnter">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetName="ScaleTransform4" Storyboard.TargetProperty="ScaleX"
+                                                         From="1" To="1.22" Duration="0:0:0.2" AutoReverse="False"/>
+                                        <DoubleAnimation Storyboard.TargetName="ScaleTransform4" Storyboard.TargetProperty="ScaleY"
+                                                         From="1" To="1.22" Duration="0:0:0.2" AutoReverse="False"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                            <EventTrigger RoutedEvent="MouseLeave">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetName="ScaleTransform4" Storyboard.TargetProperty="ScaleX"
+                                                         From="1.22" To="1" Duration="0:0:0.3" AutoReverse="False"/>
+                                        <DoubleAnimation Storyboard.TargetName="ScaleTransform4" Storyboard.TargetProperty="ScaleY"
+                                                         From="1.22" To="1" Duration="0:0:0.3" AutoReverse="False"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </StackPanel.Triggers>
+                        <Image x:Name="SobNote" Height="30" VerticalAlignment="Center" Margin="10,-2.5"/>
+                        <Label Style="{DynamicResource Label_Style}" Margin="0,0,0,0" FontSize="9" Content="ՄԱՍ-ի բլոկնոտ"/>
+                    </StackPanel>
+                    <StackPanel HorizontalAlignment="Center" Margin="0,2" MouseUp="ShowHranot" Cursor="Hand">
+                        <StackPanel.RenderTransform>
+                            <ScaleTransform x:Name="ScaleTransform5" ScaleX="1" ScaleY="1" CenterX="25" CenterY="25"/>
+                        </StackPanel.RenderTransform>
+                        <StackPanel.Triggers>
+                            <EventTrigger RoutedEvent="MouseEnter">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetName="ScaleTransform5" Storyboard.TargetProperty="ScaleX"
+                                                         From="1" To="1.22" Duration="0:0:0.2" AutoReverse="False"/>
+                                        <DoubleAnimation Storyboard.TargetName="ScaleTransform5" Storyboard.TargetProperty="ScaleY"
+                                                         From="1" To="1.22" Duration="0:0:0.2" AutoReverse="False"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                            <EventTrigger RoutedEvent="MouseLeave">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetName="ScaleTransform5" Storyboard.TargetProperty="ScaleX"
+                                                         From="1.22" To="1" Duration="0:0:0.3" AutoReverse="False"/>
+                                        <DoubleAnimation Storyboard.TargetName="ScaleTransform5" Storyboard.TargetProperty="ScaleY"
+                                                         From="1.22" To="1" Duration="0:0:0.3" AutoReverse="False"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </StackPanel.Triggers>
+                        <Image x:Name="HranotNote" Height="30" VerticalAlignment="Center" Margin="10,-2.5"/>
+                        <Label Style="{DynamicResource Label_Style}" Margin="0,0,0,0" FontSize="9" Content="ՀՀ-ի բլոկնոտ"/>
+                    </StackPanel>
+                    <StackPanel HorizontalAlignment="Center" Margin="0,2" MouseUp="ShowDitarkum" Cursor="Hand">
+                        <StackPanel.RenderTransform>
+                            <ScaleTransform x:Name="ScaleTransform6" ScaleX="1" ScaleY="1" CenterX="25" CenterY="25"/>
+                        </StackPanel.RenderTransform>
+                        <StackPanel.Triggers>
+                            <EventTrigger RoutedEvent="MouseEnter">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetName="ScaleTransform6" Storyboard.TargetProperty="ScaleX"
+                                                         From="1" To="1.22" Duration="0:0:0.2" AutoReverse="False"/>
+                                        <DoubleAnimation Storyboard.TargetName="ScaleTransform6" Storyboard.TargetProperty="ScaleY"
+                                                         From="1" To="1.22" Duration="0:0:0.2" AutoReverse="False"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                            <EventTrigger RoutedEvent="MouseLeave">
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <DoubleAnimation Storyboard.TargetName="ScaleTransform6" Storyboard.TargetProperty="ScaleX"
+                                                         From="1.22" To="1" Duration="0:0:0.3" AutoReverse="False"/>
+                                        <DoubleAnimation Storyboard.TargetName="ScaleTransform6" Storyboard.TargetProperty="ScaleY"
+                                                         From="1.22" To="1" Duration="0:0:0.3" AutoReverse="False"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger>
+                        </StackPanel.Triggers>
+                        <Image x:Name="DitarkumImage" Height="30" VerticalAlignment="Center" Margin="10,-2.5"/>
+                        <Label Style="{DynamicResource Label_Style}" Margin="0,0,0,0" FontSize="9" Content="Դիտարկում"/>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </Expander>
+        <Expander Style="{DynamicResource ExpanderStyle}" x:Name="KayficentPanel" Visibility="Visible" Panel.ZIndex="50" ExpandDirection="Left" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,40,7,0" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+            <Border Style="{DynamicResource Border-Main}">
+                <StackPanel Style="{DynamicResource StackPanel}">
+                    <DockPanel>
+                        <Label Visibility="Hidden" Style="{DynamicResource Label_Style}" Margin="15,10,5,0"  Width="50" Height="22">Д հենք</Label>
+                        <Grid Margin="0,10,15,0">
+                            <TextBox Style="{DynamicResource TextBox_Style}" TextChanged="KayficentChanged" FontSize="13" Padding="2,6,2,1" x:Name="K_Distance" Width="70"></TextBox>
+                            <Label Style="{DynamicResource LabelBack_Style}" FontSize="13" Padding="5,0,5,0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,-10" >K</Label>
+                        </Grid>
+                        <Grid Margin="0,10,5,0">
+                            <TextBox Style="{DynamicResource TextBox_Style}" TextChanged="KayficentChanged" FontSize="13" Padding="2,6,2,1" x:Name="K_Davarot" Width="70"></TextBox>
+                            <Label Style="{DynamicResource LabelBack_Style}" FontSize="13" Padding="5,0,3,0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,-10" >Δ∂Rնփ</Label>
+                        </Grid>
+                        <Grid Margin="0,10,5,0">
+                            <TextBox Style="{DynamicResource TextBox_Style}" TextChanged="KayficentChanged" FontSize="13" Padding="2,6,2,1" x:Name="Z_Reper" Width="70"></TextBox>
+                            <Label Style="{DynamicResource LabelBack_Style}" FontSize="13" Padding="5,0,5,0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="15,-10" >ZR</Label>
+                        </Grid>
+                    </DockPanel>
+                    <StackPanel Margin="0,5,0,10" HorizontalAlignment="Center">
+                        <DockPanel>
+                            <Label Style="{DynamicResource Label_Style}" FontWeight="ExtraBold" Margin="15,10,5,0" HorizontalContentAlignment="Right" Width="50" Padding="0" Height="22" VerticalContentAlignment="Center">Д հենք</Label>
+                            <TextBox x:Name="K_Dist1" Style="{DynamicResource TextBox_Style}" TextChanged="KayficentChanged" Width="70" Margin="0,10,15,0" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                            <TextBox x:Name="K_Dist2" Style="{DynamicResource TextBox_Style}" TextChanged="KayficentChanged" Width="70" Margin="0,10,15,0" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                            <TextBox x:Name="K_Dist3" Style="{DynamicResource TextBox_Style}" TextChanged="KayficentChanged" Width="70" Margin="0,10,15,0" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                        </DockPanel>
+                        <DockPanel>
+                            <Label Style="{DynamicResource Label_Style}" FontWeight="ExtraBold" Margin="15,10,5,0" HorizontalContentAlignment="Right" Padding="0" Height="22" VerticalContentAlignment="Center" Width="50">ΔД գում․</Label>
+                            <TextBox x:Name="K_DeltaDistance1" Style="{DynamicResource TextBox_Style}" TextChanged="KayficentChanged" Width="70" Margin="0,10,15,0" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                            <TextBox x:Name="K_DeltaDistance2" Style="{DynamicResource TextBox_Style}" TextChanged="KayficentChanged" Width="70" Margin="0,10,15,0" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                            <TextBox x:Name="K_DeltaDistance3" Style="{DynamicResource TextBox_Style}" TextChanged="KayficentChanged" Width="70" Margin="0,10,15,0" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                        </DockPanel>
+                        <DockPanel>
+                            <Label Style="{DynamicResource Label_Style}" FontWeight="ExtraBold" Margin="15,10,5,0" HorizontalContentAlignment="Right" Padding="0" Height="22" VerticalContentAlignment="Center"  Width="50">Δ∂ գում</Label>
+                            <TextBox x:Name="K_DeltaDavarot1" Style="{DynamicResource TextBox_Style}" TextChanged="KayficentChanged" Width="70" Margin="0,10,15,0" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                            <TextBox x:Name="K_DeltaDavarot2" Style="{DynamicResource TextBox_Style}" TextChanged="KayficentChanged" Width="70" Margin="0,10,15,0" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                            <TextBox x:Name="K_DeltaDavarot3" Style="{DynamicResource TextBox_Style}" TextChanged="KayficentChanged" Width="70" Margin="0,10,15,0" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                        </DockPanel>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </Expander>
+        <StackPanel>
+            <StackPanel HorizontalAlignment="Center" >
+                <StackPanel>
+                    <WrapPanel Orientation="Horizontal" x:Name="MainToolbarStackPanel" Margin="5,5,30,5"  HorizontalAlignment="Center">
+                        <ComboBox Template="{DynamicResource ComboBox}" Style="{DynamicResource ComboBox_Style}" HorizontalAlignment="Center" x:Name="Systems"  Margin="3" DropDownClosed="SystemChanged" FontSize="11.5" FontWeight="ExtraBold" Width="100"/>
+                        <ComboBox Template="{DynamicResource ComboBox}" Style="{DynamicResource ComboBox_Style}" HorizontalAlignment="Center" x:Name="Positions"  Margin="3" DropDownClosed="Count" SelectionChanged="HandleView" FontSize="11.5" FontWeight="ExtraBold" Width="140"/>
+                        <ComboBox Template="{DynamicResource ComboBox}" Style="{DynamicResource ComboBox_Style}" HorizontalAlignment="Center" x:Name="TaskType"  Margin="3" DropDownClosed="TaskTypechanged" FontSize="11.5" FontWeight="ExtraBold" Width="210"/>
+                        <ComboBox Template="{DynamicResource ComboBox}" Style="{DynamicResource ComboBox_Style}" HorizontalAlignment="Center" x:Name="ShootingCore" Margin="3" DropDownClosed="Count" FontSize="11.5" FontWeight="ExtraBold" Width="120"/>
+                        <ComboBox Template="{DynamicResource ComboBox}" Style="{DynamicResource ComboBox_Style}" HorizontalAlignment="Center" x:Name="Paytucich"  Margin="3" DropDownClosed="PaytucichClosed" FontSize="11.5" FontWeight="ExtraBold" Width="120"/>
+                        <ComboBox Template="{DynamicResource ComboBox}" Style="{DynamicResource ComboBox_Style}" HorizontalAlignment="Center" x:Name="ShootingMethod" DropDownClosed="Count"  Margin="3" FontSize="11.5" FontWeight="ExtraBold" Width="105"/>
+                        <ComboBox Template="{DynamicResource ComboBox}" Style="{DynamicResource ComboBox_Style}" HorizontalAlignment="Center" x:Name="IsKayficent" SelectedIndex="0" Margin="3" DropDownClosed="KayficentDropdownClosed" FontSize="11.5" FontWeight="ExtraBold" Width="110" >
+                            <ComboBoxItem>Տեղագրական</ComboBoxItem>
+                            <ComboBoxItem>Հաշվարկային</ComboBoxItem>
+                        </ComboBox>
+                    </WrapPanel>
+                    <StackPanel x:Name="AXK_xyh" Visibility="Collapsed" Orientation="Horizontal" HorizontalAlignment="Center">
+                        <StackPanel x:Name="AXKNamePanel" VerticalAlignment="Center"  HorizontalAlignment="Center">
+                            <Label Style="{DynamicResource Label_Style}" Margin="2,0" FontSize="14" FontWeight="ExtraBold" HorizontalAlignment="Center">ԱՆՈՒՆԸ</Label>
+                            <ComboBox Template="{DynamicResource ComboBox}" Style="{DynamicResource ComboBox_Style}" x:Name="AXKName"  Margin="2,0" SelectionChanged="AXKName_SelectionChanged" DropDownClosed="AXKNameSelected" FontSize="12"  FontWeight="ExtraBold" Width="140"></ComboBox>
+                        </StackPanel>
+                        <StackPanel x:Name="TexamasPanel" VerticalAlignment="Center"  HorizontalAlignment="Center">
+                            <Label Style="{DynamicResource Label_Style}" Margin="2,0" FontSize="14" FontWeight="ExtraBold" HorizontalAlignment="Center">ԿՈՈՐԴԻՆԱՏՆԵՐԸ</Label>
+                            <ComboBox Template="{DynamicResource ComboBox}" Style="{DynamicResource ComboBox_Style}" x:Name="AXKType"  Margin="2,0" DropDownClosed="TaskTypechanged" FontSize="12"  FontWeight="ExtraBold" Width="140"></ComboBox>
+                        </StackPanel>
+                        <StackPanel x:Name="AXKTypePanel" VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <Label Style="{DynamicResource Label_Style}" Margin="2,0" FontSize="14" FontWeight="ExtraBold" HorizontalAlignment="Center">ՏԵՂԱՄԱՍ</Label>
+                            <ComboBox Template="{DynamicResource ComboBox}" Style="{DynamicResource ComboBox_Style}" x:Name="Texamas"  Margin="2,0" DropDownClosed="Texamas_DropDownClosed"  FontSize="12"  FontWeight="ExtraBold" Width="140"></ComboBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="10,0,10,0">
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="5,0">
+                                <Label Style="{DynamicResource Label_Style}" Margin="2,0" FontSize="14"  FontWeight="ExtraBold" HorizontalAlignment="Center">X ձախ.</Label>
+                                <TextBox Style="{DynamicResource TextBox_Style}"  MaxLength="7" x:Name="AXK_dzax_X" Margin="2,0" FontSize="14" Keyboard.KeyUp="AXKFokusLost"  Width="75" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                            </StackPanel>
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="5,0">
+                                <Label Style="{DynamicResource Label_Style}" Margin="2,0" FontSize="14"  FontWeight="ExtraBold" HorizontalAlignment="Center">Y ձախ.</Label>
+                                <TextBox Style="{DynamicResource TextBox_Style}" MaxLength="7" x:Name="AXK_dzax_Y" Margin="2,0" FontSize="14" Keyboard.KeyUp="AXKFokusLost"  Width="75" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                            </StackPanel>
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="5,0">
+                                <Label Style="{DynamicResource Label_Style}" Margin="2,0" FontSize="14"  FontWeight="ExtraBold" HorizontalAlignment="Center">H ձախ.</Label>
+                                <TextBox Style="{DynamicResource TextBox_Style}" MaxLength="4" x:Name="AXK_dzax_H" FontSize="14" Keyboard.KeyUp="AXKFokusLost"  Width="55" FontWeight="ExtraBold" HorizontalContentAlignment="Center"/>
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="10,0,10,0">
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="5,0">
+                                <Label Style="{DynamicResource Label_Style}" Margin="2,0" FontSize="14" FontWeight="ExtraBold" HorizontalAlignment="Center">X աջ.</Label>
+                                <TextBox  Style="{DynamicResource TextBox_Style}" MaxLength="7" x:Name="AXK_aj_X" Margin="2,0" FontSize="14" Keyboard.KeyUp="AXKFokusLost" Width="75" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                            </StackPanel>
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="5,0">
+                                <Label Style="{DynamicResource Label_Style}" Margin="2,0" FontSize="14" FontWeight="ExtraBold" HorizontalAlignment="Center">Y աջ.</Label>
+                                <TextBox  Style="{DynamicResource TextBox_Style}" MaxLength="7" x:Name="AXK_aj_Y" Margin="2,0" FontSize="14" Keyboard.KeyUp="AXKFokusLost" Width="75" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                            </StackPanel>
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="5,0">
+                                <Label Style="{DynamicResource Label_Style}" Margin="2,0" FontSize="14"  FontWeight="ExtraBold" HorizontalAlignment="Center">H աջ.</Label>
+                                <TextBox Style="{DynamicResource TextBox_Style}" MaxLength="4" x:Name="AXK_aj_H" FontSize="14" Keyboard.KeyUp="AXKFokusLost"  Width="55" FontWeight="ExtraBold" HorizontalContentAlignment="Center"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+                    <WrapPanel Orientation="Horizontal" x:Name="Planayin" HorizontalAlignment="Center">
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5,0">
+                                <Label Style="{DynamicResource Label_Style}" Margin="2,0" FontSize="14"  FontWeight="ExtraBold" HorizontalAlignment="Center">ՆՇ․ N</Label>
+                                <TextBox Style="{DynamicResource TextBox_Style}" MaxLength="7" x:Name="TargetNumber" TextChanged="OnTargetNumberChanged" Margin="2,0" FontSize="14"  Width="90" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                            </StackPanel>
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="5,0">
+                                <Label Style="{DynamicResource Label_Style}" Margin="2,0" FontSize="14"  FontWeight="ExtraBold" HorizontalAlignment="Center">ԱՆՈՒՆԸ / ԲՆՈՒՅԹԸ</Label>
+                                <TextBox Style="{DynamicResource TextBox_Style}" MaxLength="50" x:Name="TargetName" Margin="2,0" FontSize="14"  Width="302" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="5,0">
+                                <Label Style="{DynamicResource Label_Style}" Margin="2,0" FontSize="14"  FontWeight="ExtraBold" HorizontalAlignment="Center">X</Label>
+                                <TextBox Style="{DynamicResource TextBox_Style}"  MaxLength="7" x:Name="Target_X" Margin="2,0" FontSize="14" LostFocus="TargetLostFocus"  Width="75" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                            </StackPanel>
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="5,0">
+                                <Label Style="{DynamicResource Label_Style}" Margin="2,0" FontSize="14"  FontWeight="ExtraBold" HorizontalAlignment="Center">Y</Label>
+                                <TextBox Style="{DynamicResource TextBox_Style}" MaxLength="7" x:Name="Target_Y" Margin="2,0" FontSize="14" LostFocus="TargetLostFocus"  Width="75" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                            </StackPanel>
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="5,0">
+                                <Label Style="{DynamicResource Label_Style}" Margin="2,0" FontSize="14"  FontWeight="ExtraBold" HorizontalAlignment="Center">H</Label>
+                                <TextBox Style="{DynamicResource TextBox_Style}" MaxLength="4" x:Name="Target_H" FontSize="14" LostFocus="TargetLostFocus"  Width="55" FontWeight="ExtraBold" HorizontalContentAlignment="Center"/>
+                            </StackPanel>
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="5,0">
+                                <Label Style="{DynamicResource Label_Style}" Margin="2,0" FontSize="14"  FontWeight="ExtraBold" HorizontalAlignment="Center">Ճ (Մ)</Label>
+                                <TextBox Style="{DynamicResource TextBox_Style}" MaxLength="3" x:Name="Target_FrontMeter" KeyUp="FrontConvertKeyup" Margin="2,0" LostFocus="TargetLostFocus" FontSize="14"  Width="50" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                            </StackPanel>
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="5,0">
+                                <Label Style="{DynamicResource Label_Style}" Margin="2,0" FontSize="14"  FontWeight="ExtraBold" HorizontalAlignment="Center">ԽՈՐ</Label>
+                                <TextBox Style="{DynamicResource TextBox_Style}" MaxLength="3" x:Name="Target_Deepness" Margin="2,0" FontSize="14" LostFocus="TargetLostFocus"  Width="50" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                            </StackPanel>
+                            <StackPanel  VerticalAlignment="Center" HorizontalAlignment="Center"  Margin="5,0">
+                                <Label Style="{DynamicResource Label_Style}" Margin="2,0" FontSize="14"  FontWeight="ExtraBold" HorizontalAlignment="Center">Ճ(ա․բ․)</Label>
+                                <TextBox Style="{DynamicResource TextBox_Style}" MaxLength="5" x:Name="TargetFront_AB" KeyUp="FrontConvertKeyup"  Margin="2,0" LostFocus="TargetLostFocus" FontSize="14"  Width="60" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                            </StackPanel>
+                        </StackPanel>
+                    </WrapPanel>
+                    <StackPanel>
+                        <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center">
+
+                            <StackPanel x:Name="DitaketDzax" >
+                                <StackPanel Margin="10,0" Orientation="Horizontal">
+                                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                                        <Label Style="{DynamicResource Label_Style}" Margin="2,0" FontSize="14"  FontWeight="ExtraBold" HorizontalAlignment="Center">ԴԻՏԱԿԵՏ</Label>
+                                        <ComboBox Template="{DynamicResource ComboBox}" Style="{DynamicResource ComboBox_Style}" x:Name="Ditaket2"  Margin="2,0" SelectionChanged="HandleCameraSelection" DropDownClosed="DitaketClosed" FontSize="12"  FontWeight="ExtraBold" Width="140"></ComboBox>
+                                    </StackPanel>
+                                    <StackPanel VerticalAlignment="Center" x:Name="AzimutPanel2" Visibility="Collapsed" HorizontalAlignment="Center">
+                                        <Label Style="{DynamicResource Label_Style}" Margin="2,0" x:Name="Alpha_Azimut2_Label" FontSize="14"  FontWeight="ExtraBold" HorizontalAlignment="Center">α Ազիմ.</Label>
+                                        <TextBox Style="{DynamicResource TextBox_Style}" MaxLength="5" x:Name="Alpha_Azimut2" Keyboard.KeyUp="AzimutToAlpha" Margin="2,0" FontSize="14"  Width="80" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                    </StackPanel>
+                                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                                        <Label Style="{DynamicResource Label_Style}" Margin="2,0" x:Name="Alpha_Hram2_Label" FontSize="14"  FontWeight="ExtraBold" HorizontalAlignment="Center">α հրամ.</Label>
+                                        <TextBox Style="{DynamicResource TextBox_Style}" MaxLength="5" x:Name="Alpha_Hram2" Keyboard.KeyUp="DKFokusLost" Margin="2,0" FontSize="14"  Width="80" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                    </StackPanel>
+                                    <StackPanel x:Name="Ddzax"  VerticalAlignment="Center" HorizontalAlignment="Center">
+                                        <Label Style="{DynamicResource Label_Style}" Margin="2,0" x:Name="D_Hram2_Label" FontSize="14"  FontWeight="ExtraBold" HorizontalAlignment="Center">Д հրամ.</Label>
+                                        <TextBox Style="{DynamicResource TextBox_Style}" MaxLength="5" x:Name="D_Hram2" Keyboard.KeyUp="DKFokusLost" Margin="2,0" FontSize="14"  Width="70" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                    </StackPanel>
+                                    <StackPanel  VerticalAlignment="Center" HorizontalAlignment="Center">
+                                        <Label Style="{DynamicResource Label_Style}" Margin="2,0" FontSize="14" x:Name="M_NSH2_Label"  FontWeight="ExtraBold" HorizontalAlignment="Center">M հրամ.</Label>
+                                        <TextBox Style="{DynamicResource TextBox_Style}" MaxLength="5" x:Name="M_NSH2" Keyboard.KeyUp="DKFokusLost" Margin="2,0" FontSize="14"  Width="67" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                    </StackPanel>
+                                </StackPanel>
+                            </StackPanel>
+
+                            <StackPanel x:Name="DitaketAj" Visibility="Visible">
+                                <StackPanel Margin="10,0" Orientation="Horizontal">
+                                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                                        <Label Style="{DynamicResource Label_Style}" Margin="2,0" FontSize="14"  FontWeight="ExtraBold" HorizontalAlignment="Center">ԴԻՏԱԿԵՏ</Label>
+                                        <ComboBox Template="{DynamicResource ComboBox}" Style="{DynamicResource ComboBox_Style}" x:Name="Ditaket1"  Margin="2,0" DropDownClosed="DitaketClosed" SelectionChanged="HandleCameraSelection" FontSize="12" FontWeight="ExtraBold" Width="140"></ComboBox>
+                                    </StackPanel>
+                                    <StackPanel VerticalAlignment="Center" x:Name="AzimutPanel1" Visibility="Collapsed" HorizontalAlignment="Center">
+                                        <Label Style="{DynamicResource Label_Style}" Margin="2,0" x:Name="Alpha_Azimut1_Label" FontSize="14"  FontWeight="ExtraBold" HorizontalAlignment="Center">α Ազիմ.</Label>
+                                        <TextBox Style="{DynamicResource TextBox_Style}" MaxLength="5" x:Name="Alpha_Azimut1" Keyboard.KeyUp="AzimutToAlpha" Margin="2,0" FontSize="14"  Width="80" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                    </StackPanel>
+                                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                                        <Label Style="{DynamicResource Label_Style}" Margin="2,0" FontSize="14" FontWeight="ExtraBold" HorizontalAlignment="Center">α աջ</Label>
+                                        <TextBox Style="{DynamicResource TextBox_Style}" MaxLength="5" x:Name="Alpha_Hram1" Keyboard.KeyUp="AzimutToAlpha" Margin="2,0" FontSize="14"  Width="80" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                    </StackPanel>
+                                    <StackPanel x:Name="Daj"  VerticalAlignment="Center" HorizontalAlignment="Center">
+                                        <Label Style="{DynamicResource Label_Style}" Margin="2,0" FontSize="14" FontWeight="ExtraBold" HorizontalAlignment="Center">Д աջ</Label>
+                                        <TextBox Style="{DynamicResource TextBox_Style}" MaxLength="5" x:Name="D_Hram1" Keyboard.KeyUp="DKFokusLost" Margin="2,0" FontSize="14"  Width="70" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                    </StackPanel>
+                                    <StackPanel  VerticalAlignment="Center" HorizontalAlignment="Center">
+                                        <Label Style="{DynamicResource Label_Style}" Margin="2,0" FontSize="14" FontWeight="ExtraBold" HorizontalAlignment="Center">M աջ</Label>
+                                        <TextBox Style="{DynamicResource TextBox_Style}" MaxLength="5" x:Name="M_NSH1" Keyboard.KeyUp="DKFokusLost" Margin="2,0" FontSize="14"  Width="60" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                    </StackPanel>
+                                </StackPanel>
+                            </StackPanel>
+                            <StackPanel x:Name="AXKFront"  VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10,0" Visibility="Collapsed">
+                                <Label Style="{DynamicResource Label_Style}" Margin="2,0" FontSize="14" FontWeight="ExtraBold" HorizontalAlignment="Center">Ճակատ</Label>
+                                <TextBox Style="{DynamicResource TextBox_Style}" MaxLength="5" IsReadOnly="True" x:Name="AXKF_Frot" Keyboard.KeyUp="DKFokusLost" Margin="2,0" FontSize="14"  Width="60" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                            </StackPanel>
+                        </WrapPanel>
+                    </StackPanel>
+                    <StackPanel>
+                    </StackPanel>
+                </StackPanel>
+
+
+                <!--Martkocner-->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Label Style="{DynamicResource Label_Style}" Margin="100,5,0,1" FontSize="17"  FontWeight="ExtraBold" HorizontalAlignment="Center">1-ԻՆ ՄԱՐՏԿՈՑ</Label>
+                    <Label Style="{DynamicResource Label_Style}" Margin="160,5,0,1" FontSize="17"  FontWeight="ExtraBold" HorizontalAlignment="Center">2-ՐԴ ՄԱՐՏԿՈՑ</Label>
+                    <Label Style="{DynamicResource Label_Style}" Margin="160,5,0,1" FontSize="17"  FontWeight="ExtraBold" HorizontalAlignment="Center">3-ՐԴ ՄԱՐՏԿՈՑ</Label>
+                </StackPanel>
+                <ScrollViewer x:Name="Scroller" VerticalScrollBarVisibility="Auto" Height="300" Margin="5" HorizontalAlignment="Center">
+                    <StackPanel Orientation="Horizontal">
+                        <!--1-in Martkoc-->
+                        <StackPanel Margin="22,0" HorizontalAlignment="Center">
+
+                            <StackPanel HorizontalAlignment="Center">
+                                <StackPanel Orientation="Horizontal">
+                                    <StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right"  FontWeight="ExtraBold" Content="ԼԻՑՔ"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M1_Core" Margin="2" FontSize="12"  Width="130" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right"  FontWeight="ExtraBold" Content="ՆՇԱՆԱԹԻՎ"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M1_D1_Pricel" Margin="2,2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M1_D2_Pricel" Margin="2,2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal" x:Name="Poxrak1" >
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" x:Name="PoxrakLabel1" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right"  FontWeight="ExtraBold" Content="ՓՈՂՐԱԿ"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M1_D1_Poxrak" Margin="2,2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M1_D2_Poxrak" Margin="2,2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right"  FontWeight="ExtraBold" Content="ՄԱԿԱՐԴԱԿ"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M1_D1_LVL" Margin="2,2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M1_D2_LVL" Margin="2,2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right"  FontWeight="ExtraBold" Content="ՇՐՋԱԲԵՐ ՀՈՒ-ԻՑ"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M1_D1_DHU" Margin="2,2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M1_D2_DHU" Margin="2,2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" x:Name="KMH_Label1" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="ԿՄՀ"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M1_KMH" Margin="2" FontSize="12"  Width="130" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="Ky"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M1_KU" Margin="2" FontSize="12"  Width="130" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="Шy"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M1_SHU" Margin="2" FontSize="12"  Width="130" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="ПС"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M1_PS" Margin="2" FontSize="12"  Width="130" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="ΔX ՀԱԶ"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M1_xHAZ" Margin="2" FontSize="12"  Width="130" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal" x:Name="Nhaz1">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="ΔN ՀԱԶ"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M1_nHAZ" Margin="2" FontSize="12"  Width="130" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="ԿԴ-Ն"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M1_KDN" Margin="2" FontSize="12"  Width="130" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="tթ"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M1_Ttrichq" Margin="2" FontSize="12"  Width="130" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="Д ՏԵՂ"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M1_D1_Dtex" Margin="2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M1_D2_Dtex" Margin="2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="ՇՐՋԱԲԵՐ ՏԵՂ"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M1_D1_shrjaberTex" Margin="2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M1_D2_shrjaberTex" Margin="2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal" x:Name="Hashvarkayin_Panel_M1_1" Visibility="Collapsed">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" Foreground="Red" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="Д ՀԱՇՎ․"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M1_D1_D_Hashv" Foreground="Red" Margin="2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M1_D2_D_Hashv" Foreground="Red" Margin="2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal" x:Name="Hashvarkayin_Panel_M1_2" Visibility="Collapsed">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" Foreground="Red" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="ՇՐՋԱԲԵՐ ՀԱՇՎ․"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M1_D1_shrjaber_Hashv" Foreground="Red" Margin="2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M1_D2_shrjaber_Hashv" Foreground="Red" Margin="2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal" x:Name="catk1">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="ՑԱՏԿ"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M1_Catk" Margin="2" FontSize="12"  Width="130" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="ՀՈՎՀԱՐ (ՓՈՒՆՋ)"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M1_Hovhar" Margin="2" FontSize="12"  Width="130" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="Z"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M1_Z" Margin="2" FontSize="12"  Width="130" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                    </StackPanel>
+                                </StackPanel>
+                            </StackPanel>
+                        </StackPanel>
+
+                        <!--2-rd Martkoc-->
+                        <StackPanel Margin="22,0" HorizontalAlignment="Center">
+                            <StackPanel HorizontalAlignment="Center">
+                                <StackPanel Orientation="Horizontal">
+                                    <StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right"  FontWeight="ExtraBold" Content="ԼԻՑՔ"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M2_Core" Margin="2" FontSize="12"  Width="130" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right"  FontWeight="ExtraBold" Content="ՆՇԱՆԱԹԻՎ"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M2_D1_Pricel" Margin="2,2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M2_D2_Pricel" Margin="2,2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal" x:Name="Poxrak2">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" x:Name="PoxrakLabel2" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right"  FontWeight="ExtraBold" Content="ՓՈՂՐԱԿ"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M2_D1_Poxrak" Margin="2,2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M2_D2_Poxrak" Margin="2,2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right"  FontWeight="ExtraBold" Content="ՄԱԿԱՐԴԱԿ"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M2_D1_LVL" Margin="2,2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M2_D2_LVL" Margin="2,2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right"  FontWeight="ExtraBold" Content="ՇՐՋԱԲԵՐ ՀՈՒ-ԻՑ"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M2_D1_DHU" Margin="2,2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M2_D2_DHU" Margin="2,2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" x:Name="KMH_Label2" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="ԿՄՀ"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M2_KMH" Margin="2" FontSize="12"  Width="130" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="Ky"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M2_KU" Margin="2" FontSize="12"  Width="130" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="Шy"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M2_SHU" Margin="2" FontSize="12"  Width="130" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="ПС"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M2_PS" Margin="2" FontSize="12"  Width="130" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="ΔX ՀԱԶ"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M2_xHAZ" Margin="2" FontSize="12"  Width="130" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal" x:Name="Nhaz2">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="ΔN ՀԱԶ"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M2_nHAZ" Margin="2" FontSize="12"  Width="130" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="ԿԴ-Ն"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M2_KDN" Margin="2" FontSize="12"  Width="130" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="tթ"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M2_Ttrichq" Margin="2" FontSize="12"  Width="130" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="Д ՏԵՂ"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M2_D1_Dtex" Margin="2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M2_D2_Dtex" Margin="2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="ՇՐՋԱԲԵՐ ՏԵՂ"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M2_D1_shrjaberTex" Margin="2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M2_D2_shrjaberTex" Margin="2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal" x:Name="Hashvarkayin_Panel_M2_1" Visibility="Collapsed">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" Foreground="Red" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="Д ՀԱՇՎ․"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M2_D1_D_Hashv" Foreground="Red" Margin="2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M2_D2_D_Hashv" Foreground="Red" Margin="2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal" x:Name="Hashvarkayin_Panel_M2_2" Visibility="Collapsed">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" Foreground="Red" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="ՇՐՋԱԲԵՐ ՀԱՇՎ․"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M2_D1_shrjaber_Hashv" Foreground="Red" Margin="2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M2_D2_shrjaber_Hashv" Foreground="Red" Margin="2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal" x:Name="catk2">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="ՑԱՏԿ"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M2_Catk" Margin="2" FontSize="12"  Width="130" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="ՀՈՎՀԱՐ (ՓՈՒՆՋ)"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M2_Hovhar" Margin="2" FontSize="12"  Width="130" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="Z"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M2_Z" Margin="2" FontSize="12"  Width="130" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                    </StackPanel>
+                                </StackPanel>
+                            </StackPanel>
+                        </StackPanel>
+
+                        <!--3-rd Martkoc-->
+                        <StackPanel Margin="22,0" HorizontalAlignment="Center">
+                            <StackPanel HorizontalAlignment="Center">
+                                <StackPanel Orientation="Horizontal">
+                                    <StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right"  FontWeight="ExtraBold" Content="ԼԻՑՔ"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M3_Core" Margin="2" FontSize="12"  Width="130" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right"  FontWeight="ExtraBold" Content="ՆՇԱՆԱԹԻՎ"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M3_D1_Pricel" Margin="2,2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M3_D2_Pricel" Margin="2,2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal" x:Name="Poxrak3">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" x:Name="PoxrakLabel3" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right"  FontWeight="ExtraBold" Content="ՓՈՂՐԱԿ"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M3_D1_Poxrak" Margin="2,2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M3_D2_Poxrak" Margin="2,2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right"  FontWeight="ExtraBold" Content="ՄԱԿԱՐԴԱԿ"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M3_D1_LVL" Margin="2,2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M3_D2_LVL" Margin="2,2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right"  FontWeight="ExtraBold" Content="ՇՐՋԱԲԵՐ ՀՈՒ-ԻՑ"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M3_D1_DHU" Margin="2,2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M3_D2_DHU" Margin="2,2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" x:Name="KMH_Label3" VerticalContentAlignment="Center" Width="120"  HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="ԿՄՀ"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M3_KMH" Margin="2" FontSize="12"  Width="130" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="Ky"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M3_KU" Margin="2" FontSize="12"  Width="130" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="Шy"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M3_SHU" Margin="2" FontSize="12"  Width="130" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="ПС"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M3_PS" Margin="2" FontSize="12"  Width="130" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="ΔX ՀԱԶ"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M3_xHAZ" Margin="2" FontSize="12"  Width="130" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal" x:Name="Nhaz3">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="ΔN ՀԱԶ"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M3_nHAZ" Margin="2" FontSize="12"  Width="130" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="ԿԴ-Ն"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M3_KDN" Margin="2" FontSize="12"  Width="130" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="tթ"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M3_Ttrichq" Margin="2" FontSize="12"  Width="130" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="Д ՏԵՂ"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M3_D1_Dtex" Margin="2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M3_D2_Dtex" Margin="2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="ՇՐՋԱԲԵՐ ՏԵՂ"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M3_D1_shrjaberTex" Margin="2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M3_D2_shrjaberTex" Margin="2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal" x:Name="Hashvarkayin_Panel_M3_1" Visibility="Collapsed">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" Foreground="Red" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="Д ՀԱՇՎ․"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M3_D1_D_Hashv" Foreground="Red" Margin="2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M3_D2_D_Hashv" Foreground="Red" Margin="2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal" x:Name="Hashvarkayin_Panel_M3_2" Visibility="Collapsed">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" Foreground="Red" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="ՇՐՋԱԲԵՐ ՀԱՇՎ․"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M3_D1_shrjaber_Hashv" Foreground="Red" Margin="2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M3_D2_shrjaber_Hashv" Foreground="Red" Margin="2" FontSize="12"  Width="63" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal" x:Name="catk3">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="ՑԱՏԿ"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M3_Catk" Margin="2" FontSize="12"  Width="130" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="ՀՈՎՀԱՐ (ՓՈՒՆՋ)"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M3_Hovhar" Margin="2" FontSize="12"  Width="130" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" Width="120" HorizontalAlignment="Right"  FontSize="12" HorizontalContentAlignment="Right" FontWeight="ExtraBold" Content="Z"/>
+                                            <TextBox Style="{DynamicResource TextBox_Style}" IsReadOnly="True" x:Name="M3_Z" Margin="2" FontSize="12"  Width="130" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></TextBox>
+                                        </StackPanel>
+                                    </StackPanel>
+                                </StackPanel>
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+                </ScrollViewer>
+            </StackPanel>
+        </StackPanel>
+        <local:Footer Height="38" VerticalAlignment="Bottom" Panel.ZIndex="-1"></local:Footer>
+    </Grid>
+</Window>
+    

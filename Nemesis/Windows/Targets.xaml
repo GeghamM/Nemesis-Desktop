@@ -1,0 +1,195 @@
+﻿<Window x:Class="Nemesis.Targets"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Nemesis"
+        SizeChanged="WindowSozeChanged"
+        StateChanged="WindwStateChanged"
+        mc:Ignorable="d"
+        Title="ՆՇԱՆԱԿԵՏԵՐ" Height="520" MinHeight="300" MinWidth="1000" Width="1000">
+    <Grid Style="{DynamicResource Window-main-grid}">
+        <StackPanel HorizontalAlignment="Left" Margin="5,0,0,0">
+            <StackPanel Orientation="Horizontal" Visibility="Collapsed">
+                <Image x:Name="Minus" Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="2,0,2,0"  Width="30" ></Image>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                <StackPanel Orientation="Horizontal">
+                    <RadioButton Style="{DynamicResource RadioButton_Style}" x:Name="IsNormal" BorderThickness="2" Checked="IsNormal_checked" VerticalAlignment="Center" Margin="0,0,10,0">Նշանակետեր</RadioButton>
+                    <RadioButton Style="{DynamicResource RadioButton_Style}" x:Name="IsAAk" BorderThickness="2" Checked="IsAAk_Checked" VerticalAlignment="Center">ԱԱԿ/ՇԱԿ</RadioButton>
+                </StackPanel>
+                <Grid>
+                    <TextBox Style="{DynamicResource TextBox_Style}" BorderBrush="Gray" Margin="10" x:Name="SearchBox" GotKeyboardFocus="SearchFocused" LostKeyboardFocus="SearchUnFocused" BorderThickness="2" KeyUp="SearchBox_KeyUp" Width="280"  Padding="20,2,2,2"></TextBox>
+                    <Image x:Name="SearchIcon" HorizontalAlignment="Left" Margin="15,10,10,10" Height="15" Width="15"></Image>
+                    <Label Style="{DynamicResource Label_Style}" Foreground="Gray" Content="Որոնել" HorizontalAlignment="Left" x:Name="SearchHint" Padding="0" Margin="35,13"/>
+                </Grid>
+                <Button x:Name="Previous" Style="{DynamicResource Button_Style}" Click="Previous_Click" Content="Նախորդը" Margin="10" Padding="12,4" Background="LightSalmon"/>
+                <Label x:Name="CurrentPageLabel" Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center">1</Label>
+                <Button x:Name="Next" Style="{DynamicResource Button_Style}" Click="Next_Click" Content="Հաջորդը" Margin="10" Padding="12,4" Background="LightGreen"/>
+                <StackPanel Cursor="Hand" Height="30" Width="30" MouseUp="RefreshList">
+                    <StackPanel.RenderTransform>
+                        <ScaleTransform x:Name="ScaleTransform3" ScaleX="1" ScaleY="1" CenterX="15" CenterY="15"/>
+                    </StackPanel.RenderTransform>
+                    <StackPanel.Triggers>
+                        <EventTrigger RoutedEvent="MouseEnter">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Storyboard.TargetName="ScaleTransform3" Storyboard.TargetProperty="ScaleX"
+                                                         From="1" To="1.22" Duration="0:0:0.2" AutoReverse="False"/>
+                                    <DoubleAnimation Storyboard.TargetName="ScaleTransform3" Storyboard.TargetProperty="ScaleY"
+                                                         From="1" To="1.22" Duration="0:0:0.2" AutoReverse="False"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                        <EventTrigger RoutedEvent="MouseLeave">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Storyboard.TargetName="ScaleTransform3" Storyboard.TargetProperty="ScaleX"
+                                                         From="1.22" To="1" Duration="0:0:0.3" AutoReverse="False"/>
+                                    <DoubleAnimation Storyboard.TargetName="ScaleTransform3" Storyboard.TargetProperty="ScaleY"
+                                                         From="1.22" To="1" Duration="0:0:0.3" AutoReverse="False"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </StackPanel.Triggers>
+                    <Image x:Name="RefreshView"></Image>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel x:Name="TargetPanel" Margin="10,0,0,0" Orientation="Horizontal" HorizontalAlignment="Left">
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Label x:Name="LabelStyle" Style="{DynamicResource Label_Style}" Margin="2,0" FontSize="14" FontFamily="Adver Unicode" FontWeight="ExtraBold" HorizontalAlignment="Center">ՆՇ․ N</Label>
+                    <TextBox Style="{DynamicResource TextBox_Style}"  MaxLength="7" x:Name="TargetNumber" Margin="0, 0, 0, 0" FontSize="14" FontFamily="Adver Unicode" Width="90" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center"/>
+                </StackPanel>
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Label Style="{DynamicResource Label_Style}" Margin="2,0" FontSize="14" FontFamily="Adver Unicode" FontWeight="ExtraBold" HorizontalAlignment="Center">ԱՆՎԱՆՈՒՄԸ / ԲՆՈՒՅԹԸ</Label>
+                    <TextBox Style="{DynamicResource TextBox_Style}"  MaxLength="50" x:Name="TargetName" Margin="2, 0, 2, 0" FontSize="14" FontFamily="Adver Unicode" Width="302" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center"></TextBox>
+                </StackPanel>
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Label Style="{DynamicResource Label_Style}" Margin="2,0" FontSize="14" FontFamily="Adver Unicode" FontWeight="ExtraBold" HorizontalAlignment="Center">X</Label>
+                    <TextBox Style="{DynamicResource TextBox_Style}"   MaxLength="7" x:Name="Target_X" Margin="2,0" FontSize="14" FontFamily="Adver Unicode" Width="75" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center"></TextBox>
+                </StackPanel>
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Label Style="{DynamicResource Label_Style}" Margin="2,0" FontSize="14" FontFamily="Adver Unicode" FontWeight="ExtraBold" HorizontalAlignment="Center">Y</Label>
+                    <TextBox Style="{DynamicResource TextBox_Style}"  MaxLength="7" x:Name="Target_Y" Margin="2,0" FontSize="14" FontFamily="Adver Unicode" Width="75" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center"></TextBox>
+                </StackPanel>
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Label Style="{DynamicResource Label_Style}" Margin="2,0" FontSize="14" FontFamily="Adver Unicode" FontWeight="ExtraBold" HorizontalAlignment="Center">H</Label>
+                    <TextBox Style="{DynamicResource TextBox_Style}"  MaxLength="4" x:Name="Target_H" Margin="2" FontSize="14" FontFamily="Adver Unicode" Width="55" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center"></TextBox>
+                </StackPanel>
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Label Style="{DynamicResource Label_Style}" Margin="2,0" FontSize="14" FontFamily="Adver Unicode" FontWeight="ExtraBold" HorizontalAlignment="Center">Ճ (Մ)</Label>
+                    <TextBox Style="{DynamicResource TextBox_Style}"  MaxLength="3" x:Name="Target_Chakat" Margin="2,0" FontSize="14" FontFamily="Adver Unicode" Width="50" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center"></TextBox>
+                </StackPanel>
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Label Style="{DynamicResource Label_Style}" Margin="2,0" FontSize="14" FontFamily="Adver Unicode" FontWeight="ExtraBold" HorizontalAlignment="Center">ԽՈՐ</Label>
+                    <TextBox Style="{DynamicResource TextBox_Style}"  MaxLength="3" x:Name="Target_Xorutyun" Margin="2,0" FontSize="14" FontFamily="Adver Unicode" Width="50" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" ></TextBox>
+                </StackPanel>
+                <StackPanel>
+                    <Image x:Name="Plus" Margin="0,30,0,0" Cursor="Hand" MouseUp="Add_Click" Height="20" Width="20" ></Image>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel x:Name="AAKPanel" Visibility="Visible" Margin="10,0,0,0" Orientation="Horizontal" HorizontalAlignment="Right">
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Label Style="{DynamicResource Label_Style}" Margin="0,0,2,0"  FontSize="14" FontFamily="Adver Unicode" FontWeight="ExtraBold" HorizontalAlignment="Center">ՆՇ․ N</Label>
+                    <TextBox Style="{DynamicResource TextBox_Style}" Margin="0,0,2,0" MaxLength="12" x:Name="AAKNumber" FontSize="14" FontFamily="Adver Unicode" Width="130" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center"></TextBox>
+                </StackPanel>
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Label Style="{DynamicResource Label_Style}" Margin="2,0" FontSize="14" FontFamily="Adver Unicode" FontWeight="ExtraBold" HorizontalAlignment="Center">ԱՆՎԱՆՈՒՄԸ / ԲՆՈՒՅԹԸ</Label>
+                    <TextBox Style="{DynamicResource TextBox_Style}"  MaxLength="50" x:Name="AAKtName" Margin="2,0" FontSize="14" FontFamily="Adver Unicode" Width="302" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center"></TextBox>
+                </StackPanel>
+                <StackPanel>
+                    <Label Style="{DynamicResource Label_Style}" Margin="2,0" FontSize="14" FontFamily="Adver Unicode" FontWeight="ExtraBold" HorizontalAlignment="Center">X աջ</Label>
+                    <TextBox Style="{DynamicResource TextBox_Style}"   MaxLength="7" x:Name="AAK_Aj_X" Margin="2,0" FontSize="14" FontFamily="Adver Unicode" Width="75" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center"></TextBox>
+                </StackPanel>
+                <StackPanel>
+                    <Label Style="{DynamicResource Label_Style}" Margin="2,0" FontSize="14" FontFamily="Adver Unicode" FontWeight="ExtraBold" HorizontalAlignment="Center">Y աջ</Label>
+                    <TextBox Style="{DynamicResource TextBox_Style}"   MaxLength="7" x:Name="AAK_Aj_Y" Margin="2,0" FontSize="14" FontFamily="Adver Unicode" Width="75" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center"></TextBox>
+                </StackPanel>
+                <StackPanel>
+                    <Label Style="{DynamicResource Label_Style}" Margin="2,0" FontSize="14" FontFamily="Adver Unicode" FontWeight="ExtraBold" HorizontalAlignment="Center">H աջ</Label>
+                    <TextBox Style="{DynamicResource TextBox_Style}"   MaxLength="7" x:Name="AAK_Aj_H" Margin="2,0" FontSize="14" FontFamily="Adver Unicode" Width="55" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center"></TextBox>
+                </StackPanel>
+                <StackPanel>
+                    <Label Style="{DynamicResource Label_Style}" Margin="2,0" FontSize="14" FontFamily="Adver Unicode" FontWeight="ExtraBold" HorizontalAlignment="Center">X ձախ</Label>
+                    <TextBox Style="{DynamicResource TextBox_Style}"   MaxLength="7" x:Name="AAK_DZAX_X" Margin="2,0" FontSize="14" FontFamily="Adver Unicode" Width="75" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center"></TextBox>
+                </StackPanel>
+                <StackPanel>
+                    <Label Style="{DynamicResource Label_Style}" Margin="2,0" FontSize="14" FontFamily="Adver Unicode" FontWeight="ExtraBold" HorizontalAlignment="Center">Y ձախ</Label>
+                    <TextBox Style="{DynamicResource TextBox_Style}"   MaxLength="7" x:Name="AAK_DZAX_Y" Margin="2,0" FontSize="14" FontFamily="Adver Unicode" Width="75" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center"></TextBox>
+                </StackPanel>
+                <StackPanel>
+                    <Label Style="{DynamicResource Label_Style}" Margin="2,0" FontSize="14" FontFamily="Adver Unicode" FontWeight="ExtraBold" HorizontalAlignment="Center">H ձախ</Label>
+                    <TextBox Style="{DynamicResource TextBox_Style}"   MaxLength="7" x:Name="AAK_DZAX_H" Margin="2,0" FontSize="14" FontFamily="Adver Unicode" Width="55" FontWeight="ExtraBold" HorizontalAlignment="Center" HorizontalContentAlignment="Center"></TextBox>
+                </StackPanel>
+                <StackPanel>
+                    <Image x:Name="AXKPlus" Margin="0,30,0,0" Cursor="Hand" MouseUp="AddAXK_Click" Height="20" Width="20" ></Image>
+                </StackPanel>
+            </StackPanel>
+            <ScrollViewer x:Name="Scroller" VerticalScrollBarVisibility="Auto" Margin="0,7,0,0" >
+                <StackPanel Margin="10,0,0,0" >
+                    <StackPanel Visibility="Visible" x:Name="TargetList"/>
+                    <StackPanel Visibility="Collapsed" x:Name="AAKTargetList"/>
+                </StackPanel>
+            </ScrollViewer>
+            <StackPanel Height="35"></StackPanel>
+        </StackPanel>
+        <StackPanel Cursor="Hand" Panel.ZIndex="50" HorizontalAlignment="Left" VerticalAlignment="Bottom" MouseUp="Clear_List" Height="25" Width="25" Margin="5,0,0,2">
+            <StackPanel.RenderTransform>
+                <ScaleTransform x:Name="ScaleTransform1" ScaleX="1" ScaleY="1" CenterX="15" CenterY="15"/>
+            </StackPanel.RenderTransform>
+            <StackPanel.Triggers>
+                <EventTrigger RoutedEvent="MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetName="ScaleTransform1" Storyboard.TargetProperty="ScaleX"
+                                                         From="1" To="1.22" Duration="0:0:0.2" AutoReverse="False"/>
+                            <DoubleAnimation Storyboard.TargetName="ScaleTransform1" Storyboard.TargetProperty="ScaleY"
+                                                         From="1" To="1.22" Duration="0:0:0.2" AutoReverse="False"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetName="ScaleTransform1" Storyboard.TargetProperty="ScaleX"
+                                                         From="1.22" To="1" Duration="0:0:0.3" AutoReverse="False"/>
+                            <DoubleAnimation Storyboard.TargetName="ScaleTransform1" Storyboard.TargetProperty="ScaleY"
+                                                         From="1.22" To="1" Duration="0:0:0.3" AutoReverse="False"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </StackPanel.Triggers>
+            <Image x:Name="ClearIcon"></Image>
+        </StackPanel>
+        <StackPanel Cursor="Hand"  Panel.ZIndex="50" HorizontalAlignment="Left" VerticalAlignment="Bottom" MouseUp="Add_List" Height="25" Width="25" Margin="35,0,0,2">
+            <StackPanel.RenderTransform>
+                <ScaleTransform x:Name="ScaleTransform2" ScaleX="1" ScaleY="1" CenterX="15" CenterY="15"/>
+            </StackPanel.RenderTransform>
+            <StackPanel.Triggers>
+                <EventTrigger RoutedEvent="MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetName="ScaleTransform2" Storyboard.TargetProperty="ScaleX"
+                                                         From="1" To="1.22" Duration="0:0:0.2" AutoReverse="False"/>
+                            <DoubleAnimation Storyboard.TargetName="ScaleTransform2" Storyboard.TargetProperty="ScaleY"
+                                                         From="1" To="1.22" Duration="0:0:0.2" AutoReverse="False"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetName="ScaleTransform2" Storyboard.TargetProperty="ScaleX"
+                                                         From="1.22" To="1" Duration="0:0:0.3" AutoReverse="False"/>
+                            <DoubleAnimation Storyboard.TargetName="ScaleTransform2" Storyboard.TargetProperty="ScaleY"
+                                                         From="1.22" To="1" Duration="0:0:0.3" AutoReverse="False"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </StackPanel.Triggers>
+            <Image x:Name="InsertIcon"></Image>
+        </StackPanel>
+        <Label x:Name="TargetCount" Style="{DynamicResource Label_Style}" Panel.ZIndex="50" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="65,0,0,2"></Label>
+        <local:Footer Panel.ZIndex="-1"></local:Footer>
+    </Grid>
+</Window>

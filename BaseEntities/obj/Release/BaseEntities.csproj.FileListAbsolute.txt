@@ -1,0 +1,10 @@
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\BaseEntities\bin\Release\BaseEntities.dll
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\BaseEntities\bin\Release\BaseEntities.pdb
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\BaseEntities\obj\Release\BaseEntities.dll
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\BaseEntities\obj\Release\BaseEntities.pdb
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\BaseEntities\obj\Release\BaseEntities.csprojAssemblyReference.cache
+D:\Programs\Gegham\Nemesis Desktop\BaseEntities\bin\Release\BaseEntities.dll
+D:\Programs\Gegham\Nemesis Desktop\BaseEntities\bin\Release\BaseEntities.pdb
+D:\Programs\Gegham\Nemesis Desktop\BaseEntities\obj\Release\BaseEntities.csprojAssemblyReference.cache
+D:\Programs\Gegham\Nemesis Desktop\BaseEntities\obj\Release\BaseEntities.dll
+D:\Programs\Gegham\Nemesis Desktop\BaseEntities\obj\Release\BaseEntities.pdb

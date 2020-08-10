@@ -1,0 +1,25 @@
+﻿<Window x:Class="Nemesis.InitializeTargets"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Nemesis"
+        mc:Ignorable="d"
+        Title="Ավելացնել ցուցակից" MinHeight="450" Height="450" MaxHeight="450" MinWidth="530" Width="530" MaxWidth="530">
+    <Grid Style="{DynamicResource Window-main-grid}">
+        <StackPanel HorizontalAlignment="Center">
+            <TextBlock Style="{DynamicResource TextBlock_Style}" x:Name="textBlock" HorizontalAlignment="Left" VerticalAlignment="Top" >
+                <Run Text="Ավելացնել նշանակետերը հետևյալ ֆորմատով՝"/><LineBreak/>
+                <Run  FontSize="12.6666666666667" FontFamily="Consolas" Text="ՆշN - "/><Run Text="tab - "/><Run Text="անվանում "/><Run  FontSize="12.6666666666667" FontFamily="Consolas" Text="- "/><Run Text="tab - X "/><Run  FontSize="12.6666666666667" FontFamily="Consolas" Text="- "/><Run Text="tab - Y "/><Run FontSize="12.6666666666667" FontFamily="Consolas" Text="- "/><Run Text="tab - H "/><Run FontSize="12.6666666666667" FontFamily="Consolas" Text="- "/><Run Text="tab - Ճակատ "/><Run FontSize="12.6666666666667" FontFamily="Consolas" Text="- "/><Run Text="tab - Խորություն"/><LineBreak/>
+                <Run  FontSize="12.6666666666667" FontFamily="Consolas" Text="ՆշN - "/><Run Text="tab - "/><Run Text="անվանում "/><Run  FontSize="12.6666666666667" FontFamily="Consolas" Text="- "/><Run Text="tab - X "/><Run  FontSize="12.6666666666667" FontFamily="Consolas" Text="- "/><Run Text="tab - Y "/><Run FontSize="12.6666666666667" FontFamily="Consolas" Text="- "/><Run Text="tab - H "/><Run FontSize="12.6666666666667" FontFamily="Consolas" Text="- "/><Run Text="tab - Ճակատ "/><Run FontSize="12.6666666666667" FontFamily="Consolas" Text="- "/><Run Text="tab - Խորություն"/><LineBreak/>
+                <Run Text="-------------------------------------------------------------------------------------------------------"/><LineBreak/><Run/>
+            </TextBlock>
+            <TextBox Style="{DynamicResource TextBox_Style}" x:Name="InsertTextBlock" Height="250" ScrollViewer.CanContentScroll="True" UseLayoutRounding="True" Grid.IsSharedSizeScope="True" AcceptsTab="True" AcceptsReturn="True"/>
+            <StackPanel  Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Style="{DynamicResource Button_Style}" Margin="5,10,5,0" Padding="7,3" BorderThickness="0" Background="#FFFF8787" Click="Close">Փակել</Button>
+                <Button Style="{DynamicResource Button_Style}" Margin="5,10,5,0" Padding="7,3" BorderThickness="0" Background="#FF95FF7E" Click="Add">Ավելացնել</Button>
+            </StackPanel>
+        </StackPanel>
+        <local:Footer Panel.ZIndex="-1"></local:Footer>
+    </Grid>
+</Window>

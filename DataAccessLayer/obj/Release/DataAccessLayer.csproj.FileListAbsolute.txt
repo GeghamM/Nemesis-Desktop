@@ -1,0 +1,16 @@
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\DataAccessLayer\bin\Release\DataAccessLayer.dll
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\DataAccessLayer\bin\Release\DataAccessLayer.pdb
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\DataAccessLayer\bin\Release\BaseEntities.dll
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\DataAccessLayer\bin\Release\BaseEntities.pdb
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\DataAccessLayer\obj\Release\DataAccessLayer.csprojAssemblyReference.cache
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\DataAccessLayer\obj\Release\DataAccessLayer.csproj.CopyComplete
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\DataAccessLayer\obj\Release\DataAccessLayer.dll
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\DataAccessLayer\obj\Release\DataAccessLayer.pdb
+D:\Programs\Gegham\Nemesis Desktop\DataAccessLayer\bin\Release\DataAccessLayer.dll
+D:\Programs\Gegham\Nemesis Desktop\DataAccessLayer\bin\Release\DataAccessLayer.pdb
+D:\Programs\Gegham\Nemesis Desktop\DataAccessLayer\bin\Release\BaseEntities.dll
+D:\Programs\Gegham\Nemesis Desktop\DataAccessLayer\bin\Release\BaseEntities.pdb
+D:\Programs\Gegham\Nemesis Desktop\DataAccessLayer\obj\Release\DataAccessLayer.csprojAssemblyReference.cache
+D:\Programs\Gegham\Nemesis Desktop\DataAccessLayer\obj\Release\DataAccessLayer.csproj.CopyComplete
+D:\Programs\Gegham\Nemesis Desktop\DataAccessLayer\obj\Release\DataAccessLayer.dll
+D:\Programs\Gegham\Nemesis Desktop\DataAccessLayer\obj\Release\DataAccessLayer.pdb

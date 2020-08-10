@@ -1,0 +1,290 @@
+﻿<Window x:Class="Nemesis.Windows.Partials.Alphas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Nemesis.Windows.Partials"
+        mc:Ignorable="d"
+        SizeChanged="WindowSozeChanged"
+        StateChanged="WindwStateChanged"
+        Title="Alphas" Height="500" MinHeight="500" Width="1040">
+    <Grid Style="{DynamicResource Window-main-grid}" Margin="0,0,2,0">
+        <StackPanel HorizontalAlignment="Center">
+            <Label Style="{DynamicResource Label_Style}"  FontSize="25" HorizontalAlignment="Center" FontWeight="ExtraBold">Ա Ն Կ Յ ՈՒ Ն Ա Չ Ա Փ Ե Ր</Label>
+            <DockPanel>
+                <Label Style="{DynamicResource Label_Style}" FontSize="25" HorizontalAlignment="Center" FontWeight="ExtraBold" Margin="150,0,0,0">ԸՍՏ ԴԱՍԱԿՆԵՐԻ</Label>
+                <Label Style="{DynamicResource Label_Style}" FontSize="25" HorizontalAlignment="Center" FontWeight="ExtraBold" Margin="190,0,0,0">ՄԱՐՏԿՈՑԻ ԿԱԶՄՈՎ</Label>
+            </DockPanel>
+            <ScrollViewer Height="380" x:Name="Scroller">
+                <DockPanel HorizontalAlignment="Center">
+                    <StackPanel HorizontalAlignment="Center">
+                        <StackPanel>
+                            <StackPanel Margin="0,0,0,20">
+                                <DockPanel VerticalAlignment="Center">
+                                    <Label Style="{DynamicResource Label_Style}" FontWeight="ExtraBold" Width="70" Margin="2,0,32,0" VerticalAlignment="Center" FontSize="20">1 ՀրՄ</Label>
+                                    <StackPanel HorizontalAlignment="Center" Margin="0,10,40,0">
+                                        <Image Loaded="InitializeImage" Height="60" Width="60"/>
+                                        <Label Style="{DynamicResource Label_Style}" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center">1</Label>
+                                    </StackPanel>
+                                    <StackPanel HorizontalAlignment="Center" Margin="0,10,40,0">
+                                        <Image Loaded="InitializeImage" Height="60" Width="60"/>
+                                        <Label Style="{DynamicResource Label_Style}" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center">2</Label>
+                                    </StackPanel>
+                                    <StackPanel HorizontalAlignment="Center" Margin="0,10,40,0">
+                                        <Image Loaded="InitializeImage" Height="60" Width="60"/>
+                                        <Label Style="{DynamicResource Label_Style}" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center">3</Label>
+                                    </StackPanel>
+                                    <StackPanel HorizontalAlignment="Center" Margin="0,10,20,0">
+                                        <Image Loaded="InitializeImage" Height="60" Width="60"/>
+                                        <Label Style="{DynamicResource Label_Style}" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center">4</Label>
+                                    </StackPanel>
+                                </DockPanel>
+                                <DockPanel>
+                                    <Label Style="{DynamicResource Label_Style}" FontWeight="Bold" Width="70" Margin="2,0,32,0" VerticalAlignment="Center" FontSize="17">ՀՆԿ</Label>
+                                    <TextBox x:Name="H1_HNK1" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="H1_HNK2" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="H1_HNK3" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="H1_HNK4" Style="{DynamicResource TextBox_Style}" Margin="0,10,20,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                </DockPanel>
+                                <DockPanel>
+                                    <Label Style="{DynamicResource Label_Style}" FontWeight="Bold" Width="70" Margin="2,0,32,0" VerticalAlignment="Center" FontSize="17">ՊՆԿ</Label>
+                                    <TextBox x:Name="H1_PNK1" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="H1_PNK2" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="H1_PNK3" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="H1_PNK4" Style="{DynamicResource TextBox_Style}" Margin="0,10,20,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                </DockPanel>
+                                <DockPanel>
+                                    <Label Style="{DynamicResource Label_Style}" FontWeight="Bold" Width="70" Margin="2,0,32,0" VerticalAlignment="Center" FontSize="17">ԳՆԿ</Label>
+                                    <TextBox x:Name="H1_GNK1" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="H1_GNK2" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="H1_GNK3" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="H1_GNK4" Style="{DynamicResource TextBox_Style}" Margin="0,10,20,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                </DockPanel>
+                            </StackPanel>
+
+                            <StackPanel>
+                                <DockPanel VerticalAlignment="Center">
+                                    <Label Style="{DynamicResource Label_Style}" FontWeight="ExtraBold" Width="70" Margin="2,0,32,0" VerticalAlignment="Center" FontSize="20">2 ՀրՄ</Label>
+                                    <StackPanel HorizontalAlignment="Center" Margin="0,10,40,0">
+                                        <Image Loaded="InitializeImage" Height="60" Width="60"/>
+                                        <Label Style="{DynamicResource Label_Style}" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center">1</Label>
+                                    </StackPanel>
+                                    <StackPanel HorizontalAlignment="Center" Margin="0,10,40,0">
+                                        <Image Loaded="InitializeImage" Height="60" Width="60"/>
+                                        <Label Style="{DynamicResource Label_Style}" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center">2</Label>
+                                    </StackPanel>
+                                    <StackPanel HorizontalAlignment="Center" Margin="0,10,40,0">
+                                        <Image Loaded="InitializeImage" Height="60" Width="60"/>
+                                        <Label Style="{DynamicResource Label_Style}" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center">3</Label>
+                                    </StackPanel>
+                                    <StackPanel HorizontalAlignment="Center" Margin="0,10,20,0">
+                                        <Image Loaded="InitializeImage" Height="60" Width="60"/>
+                                        <Label Style="{DynamicResource Label_Style}" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center">4</Label>
+                                    </StackPanel>
+                                </DockPanel>
+                                <DockPanel>
+                                    <Label Style="{DynamicResource Label_Style}" FontWeight="Bold" Width="70" Margin="2,0,32,0" VerticalAlignment="Center" FontSize="17">ՀՆԿ</Label>
+                                    <TextBox x:Name="H2_HNK1" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="H2_HNK2" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="H2_HNK3" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="H2_HNK4" Style="{DynamicResource TextBox_Style}" Margin="0,10,20,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                </DockPanel>
+                                <DockPanel>
+                                    <Label Style="{DynamicResource Label_Style}" FontWeight="Bold" Width="70" Margin="2,0,32,0" VerticalAlignment="Center" FontSize="17">ՊՆԿ</Label>
+                                    <TextBox x:Name="H2_PNK1" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="H2_PNK2" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="H2_PNK3" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="H2_PNK4" Style="{DynamicResource TextBox_Style}" Margin="0,10,20,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                </DockPanel>
+                                <DockPanel>
+                                    <Label Style="{DynamicResource Label_Style}" FontWeight="Bold" Width="70" Margin="2,0,32,0" VerticalAlignment="Center" FontSize="17">ԳՆԿ</Label>
+                                    <TextBox x:Name="H2_GNK1" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="H2_GNK2" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="H2_GNK3" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="H2_GNK4" Style="{DynamicResource TextBox_Style}" Margin="0,10,20,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                </DockPanel>
+                            </StackPanel>
+
+                            <StackPanel Margin="0,0,0,20">
+                                <DockPanel VerticalAlignment="Center">
+                                    <Label Style="{DynamicResource Label_Style}" FontWeight="ExtraBold" Width="70" Margin="2,0,32,0" VerticalAlignment="Center" FontSize="20">3 ՀրՄ</Label>
+                                    <StackPanel HorizontalAlignment="Center" Margin="0,10,40,0">
+                                        <Image Loaded="InitializeImage" Height="60" Width="60"/>
+                                        <Label Style="{DynamicResource Label_Style}" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center">1</Label>
+                                    </StackPanel>
+                                    <StackPanel HorizontalAlignment="Center" Margin="0,10,40,0">
+                                        <Image Loaded="InitializeImage" Height="60" Width="60"/>
+                                        <Label Style="{DynamicResource Label_Style}" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center">2</Label>
+                                    </StackPanel>
+                                    <StackPanel HorizontalAlignment="Center" Margin="0,10,40,0">
+                                        <Image Loaded="InitializeImage" Height="60" Width="60"/>
+                                        <Label Style="{DynamicResource Label_Style}" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center">3</Label>
+                                    </StackPanel>
+                                    <StackPanel HorizontalAlignment="Center" Margin="0,10,20,0">
+                                        <Image Loaded="InitializeImage" Height="60" Width="60"/>
+                                        <Label Style="{DynamicResource Label_Style}" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center">4</Label>
+                                    </StackPanel>
+                                </DockPanel>
+                                <DockPanel>
+                                    <Label Style="{DynamicResource Label_Style}" FontWeight="Bold" Width="70" Margin="2,0,32,0" VerticalAlignment="Center" FontSize="17">ՀՆԿ</Label>
+                                    <TextBox x:Name="H3_HNK1" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="H3_HNK2" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="H3_HNK3" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="H3_HNK4" Style="{DynamicResource TextBox_Style}" Margin="0,10,20,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                </DockPanel>
+                                <DockPanel>
+                                    <Label Style="{DynamicResource Label_Style}" FontWeight="Bold" Width="70" Margin="2,0,32,0" VerticalAlignment="Center" FontSize="17">ՊՆԿ</Label>
+                                    <TextBox x:Name="H3_PNK1" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="H3_PNK2" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="H3_PNK3" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="H3_PNK4" Style="{DynamicResource TextBox_Style}" Margin="0,10,20,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                </DockPanel>
+                                <DockPanel>
+                                    <Label Style="{DynamicResource Label_Style}" FontWeight="Bold" Width="70" Margin="2,0,32,0" VerticalAlignment="Center" FontSize="17">ԳՆԿ</Label>
+                                    <TextBox x:Name="H3_GNK1" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="H3_GNK2" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="H3_GNK3" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="H3_GNK4" Style="{DynamicResource TextBox_Style}" Margin="0,10,20,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                </DockPanel>
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+                    <Rectangle Width="2" Fill="Black" Margin="15"></Rectangle>
+                    <StackPanel HorizontalAlignment="Center">
+
+                        <StackPanel>
+                            <StackPanel Margin="0,0,0,20">
+                                <DockPanel VerticalAlignment="Center">
+                                    <Label Style="{DynamicResource Label_Style}" FontWeight="ExtraBold" Width="70" Margin="2,0,32,0" VerticalAlignment="Center" FontSize="20">1 ՀրՄ</Label>
+                                    <StackPanel HorizontalAlignment="Center" Margin="0,10,40,0">
+                                        <Image Loaded="InitializeImage" Height="60" Width="60"/>
+                                        <Label Style="{DynamicResource Label_Style}" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center">1</Label>
+                                    </StackPanel>
+                                    <StackPanel HorizontalAlignment="Center" Margin="0,10,40,0">
+                                        <Image Loaded="InitializeImage" Height="60" Width="60"/>
+                                        <Label Style="{DynamicResource Label_Style}" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center">2</Label>
+                                    </StackPanel>
+                                    <StackPanel HorizontalAlignment="Center" Margin="0,10,40,0">
+                                        <Image Loaded="InitializeImage" Height="60" Width="60"/>
+                                        <Label Style="{DynamicResource Label_Style}" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center">3</Label>
+                                    </StackPanel>
+                                    <StackPanel HorizontalAlignment="Center" Margin="0,10,20,0">
+                                        <Image Loaded="InitializeImage" Height="60" Width="60"/>
+                                        <Label Style="{DynamicResource Label_Style}" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center">4</Label>
+                                    </StackPanel>
+                                </DockPanel>
+                                <DockPanel>
+                                    <Label Style="{DynamicResource Label_Style}" FontWeight="Bold" Width="70" Margin="2,0,32,0" VerticalAlignment="Center" FontSize="17">ՀՆԿ</Label>
+                                    <TextBox x:Name="P1_HNK1" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="P1_HNK2" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="P1_HNK3" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="P1_HNK4" Style="{DynamicResource TextBox_Style}" Margin="0,10,20,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                </DockPanel>
+                                <DockPanel>
+                                    <Label Style="{DynamicResource Label_Style}" FontWeight="Bold" Width="70" Margin="2,0,32,0" VerticalAlignment="Center" FontSize="17">ՊՆԿ</Label>
+                                    <TextBox x:Name="P1_PNK1" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="P1_PNK2" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="P1_PNK3" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="P1_PNK4" Style="{DynamicResource TextBox_Style}" Margin="0,10,20,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                </DockPanel>
+                                <DockPanel>
+                                    <Label Style="{DynamicResource Label_Style}" FontWeight="Bold" Width="70" Margin="2,0,32,0" VerticalAlignment="Center" FontSize="17">ԳՆԿ</Label>
+                                    <TextBox x:Name="P1_GNK1" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="P1_GNK2" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="P1_GNK3" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="P1_GNK4" Style="{DynamicResource TextBox_Style}" Margin="0,10,20,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                </DockPanel>
+                            </StackPanel>
+
+                            <StackPanel>
+                                <DockPanel VerticalAlignment="Center">
+                                    <Label Style="{DynamicResource Label_Style}" FontWeight="ExtraBold" Width="70" Margin="2,0,32,0" VerticalAlignment="Center" FontSize="20">2 ՀրՄ</Label>
+                                    <StackPanel HorizontalAlignment="Center" Margin="0,10,40,0">
+                                        <Image Loaded="InitializeImage" Height="60" Width="60"/>
+                                        <Label Style="{DynamicResource Label_Style}" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center">1</Label>
+                                    </StackPanel>
+                                    <StackPanel HorizontalAlignment="Center" Margin="0,10,40,0">
+                                        <Image Loaded="InitializeImage" Height="60" Width="60"/>
+                                        <Label Style="{DynamicResource Label_Style}" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center">2</Label>
+                                    </StackPanel>
+                                    <StackPanel HorizontalAlignment="Center" Margin="0,10,40,0">
+                                        <Image Loaded="InitializeImage" Height="60" Width="60"/>
+                                        <Label Style="{DynamicResource Label_Style}" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center">3</Label>
+                                    </StackPanel>
+                                    <StackPanel HorizontalAlignment="Center" Margin="0,10,20,0">
+                                        <Image Loaded="InitializeImage" Height="60" Width="60"/>
+                                        <Label Style="{DynamicResource Label_Style}" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center">4</Label>
+                                    </StackPanel>
+                                </DockPanel>
+                                <DockPanel>
+                                    <Label Style="{DynamicResource Label_Style}" FontWeight="Bold" Width="70" Margin="2,0,32,0" VerticalAlignment="Center" FontSize="17">ՀՆԿ</Label>
+                                    <TextBox x:Name="P2_HNK1" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="P2_HNK2" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="P2_HNK3" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="P2_HNK4" Style="{DynamicResource TextBox_Style}" Margin="0,10,20,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                </DockPanel>
+                                <DockPanel>
+                                    <Label Style="{DynamicResource Label_Style}" FontWeight="Bold" Width="70" Margin="2,0,32,0" VerticalAlignment="Center" FontSize="17">ՊՆԿ</Label>
+                                    <TextBox x:Name="P2_PNK1" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="P2_PNK2" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="P2_PNK3" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="P2_PNK4" Style="{DynamicResource TextBox_Style}" Margin="0,10,20,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                </DockPanel>
+                                <DockPanel>
+                                    <Label Style="{DynamicResource Label_Style}" FontWeight="Bold" Width="70" Margin="2,0,32,0" VerticalAlignment="Center" FontSize="17">ԳՆԿ</Label>
+                                    <TextBox x:Name="P2_GNK1" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="P2_GNK2" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="P2_GNK3" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="P2_GNK4" Style="{DynamicResource TextBox_Style}" Margin="0,10,20,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                </DockPanel>
+                            </StackPanel>
+
+                            <StackPanel Margin="0,0,0,20">
+                                <DockPanel VerticalAlignment="Center">
+                                    <Label Style="{DynamicResource Label_Style}" FontWeight="ExtraBold" Width="70" Margin="2,0,32,0" VerticalAlignment="Center" FontSize="20">3 ՀրՄ</Label>
+                                    <StackPanel HorizontalAlignment="Center" Margin="0,10,40,0">
+                                        <Image Loaded="InitializeImage" Height="60" Width="60"/>
+                                        <Label Style="{DynamicResource Label_Style}" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center">1</Label>
+                                    </StackPanel>
+                                    <StackPanel HorizontalAlignment="Center" Margin="0,10,40,0">
+                                        <Image Loaded="InitializeImage" Height="60" Width="60"/>
+                                        <Label Style="{DynamicResource Label_Style}" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center">2</Label>
+                                    </StackPanel>
+                                    <StackPanel HorizontalAlignment="Center" Margin="0,10,40,0">
+                                        <Image Loaded="InitializeImage" Height="60" Width="60"/>
+                                        <Label Style="{DynamicResource Label_Style}" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center">3</Label>
+                                    </StackPanel>
+                                    <StackPanel HorizontalAlignment="Center" Margin="0,10,20,0">
+                                        <Image Loaded="InitializeImage" Height="60" Width="60"/>
+                                        <Label Style="{DynamicResource Label_Style}" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center">4</Label>
+                                    </StackPanel>
+                                </DockPanel>
+                                <DockPanel>
+                                    <Label Style="{DynamicResource Label_Style}" FontWeight="Bold" Width="70" Margin="2,0,32,0" VerticalAlignment="Center" FontSize="17">ՀՆԿ</Label>
+                                    <TextBox x:Name="P3_HNK1" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="P3_HNK2" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="P3_HNK3" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="P3_HNK4" Style="{DynamicResource TextBox_Style}" Margin="0,10,20,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                </DockPanel>
+                                <DockPanel>
+                                    <Label Style="{DynamicResource Label_Style}" FontWeight="Bold" Width="70" Margin="2,0,32,0" VerticalAlignment="Center" FontSize="17">ՊՆԿ</Label>
+                                    <TextBox x:Name="P3_PNK1" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="P3_PNK2" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="P3_PNK3" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="P3_PNK4" Style="{DynamicResource TextBox_Style}" Margin="0,10,20,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                </DockPanel>
+                                <DockPanel>
+                                    <Label Style="{DynamicResource Label_Style}" FontWeight="Bold" Width="70" Margin="2,0,32,0" VerticalAlignment="Center" FontSize="17">ԳՆԿ</Label>
+                                    <TextBox x:Name="P3_GNK1" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="P3_GNK2" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="P3_GNK3" Style="{DynamicResource TextBox_Style}" Margin="0,10,40,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                    <TextBox x:Name="P3_GNK4" Style="{DynamicResource TextBox_Style}" Margin="0,10,20,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="60"></TextBox>
+                                </DockPanel>
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+                </DockPanel>
+            </ScrollViewer>
+        </StackPanel>
+    </Grid>
+</Window>

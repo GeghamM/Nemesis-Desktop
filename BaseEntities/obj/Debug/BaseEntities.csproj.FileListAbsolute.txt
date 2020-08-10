@@ -1,0 +1,36 @@
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\BaseEntities\bin\Debug\BaseEntities.dll
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\BaseEntities\bin\Debug\BaseEntities.pdb
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\BaseEntities\obj\Debug\BaseEntities.dll
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\BaseEntities\obj\Debug\BaseEntities.pdb
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\BaseEntities\bin\Debug\BaseEntities.dll
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\BaseEntities\bin\Debug\BaseEntities.pdb
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\BaseEntities\obj\Debug\BaseEntities.dll
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\BaseEntities\obj\Debug\BaseEntities.pdb
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\BaseEntities\bin\Debug\BaseEntities.dll
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\BaseEntities\bin\Debug\BaseEntities.pdb
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\BaseEntities\obj\Debug\BaseEntities.dll
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\BaseEntities\obj\Debug\BaseEntities.pdb
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\BaseEntities\obj\Debug\BaseEntities.csprojAssemblyReference.cache
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\BaseEntities\bin\Debug\BaseEntities.dll
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\BaseEntities\bin\Debug\BaseEntities.pdb
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\BaseEntities\obj\Debug\BaseEntities.csprojAssemblyReference.cache
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\BaseEntities\obj\Debug\BaseEntities.dll
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\BaseEntities\obj\Debug\BaseEntities.pdb
+D:\Programs\Gegham\DotNetFramework\Nemesis\BaseEntities\bin\Debug\BaseEntities.dll
+D:\Programs\Gegham\DotNetFramework\Nemesis\BaseEntities\bin\Debug\BaseEntities.pdb
+D:\Programs\Gegham\DotNetFramework\Nemesis\BaseEntities\obj\Debug\BaseEntities.dll
+D:\Programs\Gegham\DotNetFramework\Nemesis\BaseEntities\obj\Debug\BaseEntities.pdb
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\BaseEntities\bin\Debug\BaseEntities.dll
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\BaseEntities\bin\Debug\BaseEntities.pdb
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\BaseEntities\obj\Debug\BaseEntities.csprojAssemblyReference.cache
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\BaseEntities\obj\Debug\BaseEntities.dll
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\BaseEntities\obj\Debug\BaseEntities.pdb
+D:\Programs\Gegham\Nemesis Desktop\BaseEntities\bin\Debug\BaseEntities.dll
+D:\Programs\Gegham\Nemesis Desktop\BaseEntities\bin\Debug\BaseEntities.pdb
+D:\Programs\Gegham\Nemesis Desktop\BaseEntities\obj\Debug\BaseEntities.dll
+D:\Programs\Gegham\Nemesis Desktop\BaseEntities\obj\Debug\BaseEntities.pdb
+C:\Users\gegha\Desktop\Nemesis Desktop\BaseEntities\bin\Debug\BaseEntities.dll
+C:\Users\gegha\Desktop\Nemesis Desktop\BaseEntities\bin\Debug\BaseEntities.pdb
+C:\Users\gegha\Desktop\Nemesis Desktop\BaseEntities\obj\Debug\BaseEntities.csproj.CoreCompileInputs.cache
+C:\Users\gegha\Desktop\Nemesis Desktop\BaseEntities\obj\Debug\BaseEntities.dll
+C:\Users\gegha\Desktop\Nemesis Desktop\BaseEntities\obj\Debug\BaseEntities.pdb

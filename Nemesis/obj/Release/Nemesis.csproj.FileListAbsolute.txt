@@ -1,0 +1,96 @@
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\bin\Release\Nemesis.exe.config
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\bin\Release\Nemesis.exe
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\bin\Release\BaseEntities.dll
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\bin\Release\BaseService.dll
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\bin\Release\DataAccessLayer.dll
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\bin\Release\BaseEntities.pdb
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\bin\Release\BaseService.pdb
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\bin\Release\DataAccessLayer.pdb
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Release\Nemesis.csprojAssemblyReference.cache
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Release\DialogWindows\SobDialog.g.cs
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Release\Layouts\Footer.g.cs
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Release\Layouts\SmallFooter.g.cs
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Release\MainWindow.g.cs
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Release\SertificateValidation.g.cs
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Release\DialogWindows\InitializeTargets.g.cs
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Release\Windows\Martakarg.g.cs
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Release\Windows\Partials\Alphas.g.cs
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Release\Windows\PrintWindows\Hranot.g.cs
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Release\Windows\PrintWindows\Sob.g.cs
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Release\Windows\Targets.g.cs
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Release\Windows\Task.g.cs
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Release\App.g.cs
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Release\GeneratedInternalTypeHelper.g.cs
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Release\Nemesis_MarkupCompile.cache
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Release\Nemesis_MarkupCompile.lref
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Release\App.baml
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Release\DialogWindows\SobDialog.baml
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Release\Layouts\Footer.baml
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Release\Layouts\SmallFooter.baml
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Release\MainWindow.baml
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Release\SertificateValidation.baml
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Release\Themes\Generic.baml
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Release\DialogWindows\InitializeTargets.baml
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Release\Windows\Martakarg.baml
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Release\Windows\Partials\Alphas.baml
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Release\Windows\PrintWindows\Hranot.baml
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Release\Windows\PrintWindows\Sob.baml
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Release\Windows\Targets.baml
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Release\Windows\Task.baml
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Release\Nemesis.g.resources
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Release\Nemesis.Properties.Resources.resources
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Release\Nemesis.csproj.GenerateResource.cache
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Release\Nemesis.csproj.CopyComplete
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Release\Nemesis.exe
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\bin\Release\Nemesis.exe.config
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\bin\Release\Nemesis.exe
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\bin\Release\BaseEntities.dll
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\bin\Release\BaseService.dll
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\bin\Release\DataAccessLayer.dll
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\bin\Release\BaseEntities.pdb
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\bin\Release\BaseService.pdb
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\bin\Release\DataAccessLayer.pdb
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Release\Nemesis.csprojAssemblyReference.cache
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Release\DialogWindows\SobDialog.g.cs
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Release\Layouts\Footer.g.cs
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Release\Layouts\SmallFooter.g.cs
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Release\MainWindow.g.cs
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Release\SertificateValidation.g.cs
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Release\DialogWindows\InitializeTargets.g.cs
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Release\DialogWindows\Cameras.g.cs
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Release\DialogWindows\Ditarkum.g.cs
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Release\Windows\Tools.g.cs
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Release\Windows\Martakarg.g.cs
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Release\DialogWindows\Alphas.g.cs
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Release\Windows\PrintWindows\Hranot.g.cs
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Release\Windows\PrintWindows\Sob.g.cs
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Release\Windows\Targets.g.cs
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Release\Windows\Task.g.cs
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Release\App.g.cs
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Release\GeneratedInternalTypeHelper.g.cs
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Release\Nemesis_MarkupCompile.cache
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Release\Nemesis_MarkupCompile.lref
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Release\App.baml
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Release\DialogWindows\SobDialog.baml
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Release\Layouts\Footer.baml
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Release\Layouts\SmallFooter.baml
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Release\MainWindow.baml
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Release\SertificateValidation.baml
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Release\Themes\LightSkin.baml
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Release\Themes\DarkSkin.baml
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Release\Themes\Generic.baml
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Release\DialogWindows\InitializeTargets.baml
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Release\DialogWindows\Cameras.baml
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Release\DialogWindows\Ditarkum.baml
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Release\Windows\Tools.baml
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Release\Windows\Martakarg.baml
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Release\DialogWindows\Alphas.baml
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Release\Windows\PrintWindows\Hranot.baml
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Release\Windows\PrintWindows\Sob.baml
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Release\Windows\Targets.baml
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Release\Windows\Task.baml
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Release\Nemesis.g.resources
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Release\Nemesis.Properties.Resources.resources
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Release\Nemesis.csproj.GenerateResource.cache
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Release\Nemesis.csproj.CopyComplete
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Release\Nemesis.exe

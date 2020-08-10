@@ -1,0 +1,144 @@
+﻿<Window x:Class="Nemesis.Windows.Partials.Cameras"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Nemesis.Windows.Partials"
+        mc:Ignorable="d"
+        Title="ՏԵՍԱԽՑԻԿՆԵՐ"
+        Height="295" MinHeight="295" MaxHeight="295"
+        Width="795" MinWidth="795" MaxWidth="795"
+        >
+    <Grid Style="{DynamicResource Window-main-grid}">
+        <StackPanel Margin="5" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel Orientation="Horizontal">
+                <Border Style="{DynamicResource Border}"  Margin="5,8" Padding="0,0,0,5" >
+                    <StackPanel>
+                        <Label Style="{DynamicResource Label_Style_Tools}" HorizontalContentAlignment="Center">ՏԵՍԱԽՑԻԿ 1</Label>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <StackPanel Margin="6,2">
+                                <Label Style="{DynamicResource Label_Style_Tools}" HorizontalContentAlignment="Center">X</Label>
+                                <TextBox x:Name="Camera1_X" FontWeight="ExtraBold" HorizontalContentAlignment="Center" Style="{DynamicResource TextBox_Style_Tools}" TextChanged="TrySaveAlphas" Margin="0" VerticalAlignment="Top" Width="80">
+                                </TextBox>
+                            </StackPanel>
+                            <StackPanel Margin="6,2">
+                                <Label Style="{DynamicResource Label_Style_Tools}" HorizontalContentAlignment="Center">Y</Label>
+                                <TextBox x:Name="Camera1_Y" FontWeight="ExtraBold" HorizontalContentAlignment="Center" Style="{DynamicResource TextBox_Style_Tools}" TextChanged="TrySaveAlphas" Margin="0" VerticalAlignment="Top" Width="80">
+                                </TextBox>
+                            </StackPanel>
+                            <StackPanel Margin="6,2">
+                                <Label Style="{DynamicResource Label_Style_Tools}" HorizontalContentAlignment="Center">H</Label>
+                                <TextBox x:Name="Camera1_H" FontWeight="ExtraBold" HorizontalContentAlignment="Center" Style="{DynamicResource TextBox_Style_Tools}" TextChanged="TrySaveAlphas" Margin="0" VerticalAlignment="Top" Width="80">
+                                </TextBox>
+                            </StackPanel>
+                            <StackPanel Margin="6,2">
+                                <Label Style="{DynamicResource Label_Style_Tools}" HorizontalContentAlignment="Center">ΔP</Label>
+                                <TextBox x:Name="Camera1_P" FontWeight="ExtraBold" HorizontalContentAlignment="Center" Style="{DynamicResource TextBox_Style_Tools}" TextChanged="TrySaveAlphas" Margin="0" VerticalAlignment="Top" Width="80">
+                                </TextBox>
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <RadioButton Style="{DynamicResource RadioButton_Style}" x:Name="Camera1_isplus" Margin="0,3,15,2" Checked="CheckChanged">Դեպի աջ աճում է</RadioButton>
+                            <RadioButton Style="{DynamicResource RadioButton_Style}" x:Name="Camera1_isminus" Margin="15,3,0,2" Checked="CheckChanged">Դեպի աջ նվազում է</RadioButton>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+                <Border Style="{DynamicResource Border}" Margin="5,8" Padding="0,0,0,5" >
+                    <StackPanel>
+                        <Label Style="{DynamicResource Label_Style_Tools}" HorizontalContentAlignment="Center">ՏԵՍԱԽՑԻԿ 2</Label>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <StackPanel Margin="6,2">
+                                <Label Style="{DynamicResource Label_Style_Tools}" HorizontalContentAlignment="Center">X</Label>
+                                <TextBox x:Name="Camera2_X" FontWeight="ExtraBold" HorizontalContentAlignment="Center" Style="{DynamicResource TextBox_Style_Tools}" TextChanged="TrySaveAlphas" Margin="0" VerticalAlignment="Top" Width="80">
+                                </TextBox>
+                            </StackPanel>
+                            <StackPanel Margin="6,2">
+                                <Label Style="{DynamicResource Label_Style_Tools}" HorizontalContentAlignment="Center">Y</Label>
+                                <TextBox x:Name="Camera2_Y" FontWeight="ExtraBold" HorizontalContentAlignment="Center" Style="{DynamicResource TextBox_Style_Tools}" TextChanged="TrySaveAlphas" Margin="0" VerticalAlignment="Top" Width="80">
+                                </TextBox>
+                            </StackPanel>
+                            <StackPanel Margin="6,2">
+                                <Label Style="{DynamicResource Label_Style_Tools}" HorizontalContentAlignment="Center">H</Label>
+                                <TextBox x:Name="Camera2_H" FontWeight="ExtraBold" HorizontalContentAlignment="Center" Style="{DynamicResource TextBox_Style_Tools}" TextChanged="TrySaveAlphas" Margin="0" VerticalAlignment="Top" Width="80">
+                                </TextBox>
+                            </StackPanel>
+                            <StackPanel Margin="6,2">
+                                <Label Style="{DynamicResource Label_Style_Tools}" HorizontalContentAlignment="Center">ΔP</Label>
+                                <TextBox x:Name="Camera2_P" FontWeight="ExtraBold" HorizontalContentAlignment="Center" Style="{DynamicResource TextBox_Style_Tools}" TextChanged="TrySaveAlphas" Margin="0" VerticalAlignment="Top" Width="80">
+                                </TextBox>
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <RadioButton Style="{DynamicResource RadioButton_Style}" x:Name="Camera2_isplus" Margin="0,3,15,2" Checked="CheckChanged">Դեպի աջ աճում է</RadioButton>
+                            <RadioButton Style="{DynamicResource RadioButton_Style}" x:Name="Camera2_isminus" Margin="15,3,0,2" Checked="CheckChanged">Դեպի աջ նվազում է</RadioButton>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Border Style="{DynamicResource Border}"  Margin="5,8" Padding="0,0,0,5" >
+                    <StackPanel>
+                        <Label Style="{DynamicResource Label_Style_Tools}" HorizontalContentAlignment="Center">ՏԵՍԱԽՑԻԿ 3</Label>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <StackPanel Margin="6,2">
+                                <Label Style="{DynamicResource Label_Style_Tools}" HorizontalContentAlignment="Center">X</Label>
+                                <TextBox x:Name="Camera3_X" FontWeight="ExtraBold" HorizontalContentAlignment="Center" Style="{DynamicResource TextBox_Style_Tools}" TextChanged="TrySaveAlphas" Margin="0" VerticalAlignment="Top" Width="80">
+                                </TextBox>
+                            </StackPanel>
+                            <StackPanel Margin="6,2">
+                                <Label Style="{DynamicResource Label_Style_Tools}" HorizontalContentAlignment="Center">Y</Label>
+                                <TextBox x:Name="Camera3_Y" FontWeight="ExtraBold" HorizontalContentAlignment="Center" Style="{DynamicResource TextBox_Style_Tools}" TextChanged="TrySaveAlphas" Margin="0" VerticalAlignment="Top" Width="80">
+                                </TextBox>
+                            </StackPanel>
+                            <StackPanel Margin="6,2">
+                                <Label Style="{DynamicResource Label_Style_Tools}" HorizontalContentAlignment="Center">H</Label>
+                                <TextBox x:Name="Camera3_H" FontWeight="ExtraBold" HorizontalContentAlignment="Center" Style="{DynamicResource TextBox_Style_Tools}" TextChanged="TrySaveAlphas" Margin="0" VerticalAlignment="Top" Width="80">
+                                </TextBox>
+                            </StackPanel>
+                            <StackPanel Margin="6,2">
+                                <Label Style="{DynamicResource Label_Style_Tools}" HorizontalContentAlignment="Center">ΔP</Label>
+                                <TextBox x:Name="Camera3_P" FontWeight="ExtraBold" HorizontalContentAlignment="Center" Style="{DynamicResource TextBox_Style_Tools}" TextChanged="TrySaveAlphas" Margin="0" VerticalAlignment="Top" Width="80">
+                                </TextBox>
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <RadioButton Style="{DynamicResource RadioButton_Style}" x:Name="Camera3_isplus" Margin="0,3,15,2" Checked="CheckChanged">Դեպի աջ աճում է</RadioButton>
+                            <RadioButton Style="{DynamicResource RadioButton_Style}" x:Name="Camera3_isminus" Margin="15,3,0,2" Checked="CheckChanged">Դեպի աջ նվազում է</RadioButton>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+                <Border Style="{DynamicResource Border}"  Margin="5,8" Padding="0,0,0,5" >
+                    <StackPanel>
+                        <Label Style="{DynamicResource Label_Style_Tools}" HorizontalContentAlignment="Center">ՏԵՍԱԽՑԻԿ 4</Label>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <StackPanel Margin="6,2">
+                                <Label Style="{DynamicResource Label_Style_Tools}" HorizontalContentAlignment="Center">X</Label>
+                                <TextBox x:Name="Camera4_X" FontWeight="ExtraBold" HorizontalContentAlignment="Center" Style="{DynamicResource TextBox_Style_Tools}" TextChanged="TrySaveAlphas" Margin="0" VerticalAlignment="Top" Width="80">
+                                </TextBox>
+                            </StackPanel>
+                            <StackPanel Margin="6,2">
+                                <Label Style="{DynamicResource Label_Style_Tools}" HorizontalContentAlignment="Center">Y</Label>
+                                <TextBox x:Name="Camera4_Y" FontWeight="ExtraBold" HorizontalContentAlignment="Center" Style="{DynamicResource TextBox_Style_Tools}" TextChanged="TrySaveAlphas" Margin="0" VerticalAlignment="Top" Width="80">
+                                </TextBox>
+                            </StackPanel>
+                            <StackPanel Margin="6,2">
+                                <Label Style="{DynamicResource Label_Style_Tools}" HorizontalContentAlignment="Center">H</Label>
+                                <TextBox x:Name="Camera4_H" FontWeight="ExtraBold" HorizontalContentAlignment="Center" Style="{DynamicResource TextBox_Style_Tools}" TextChanged="TrySaveAlphas" Margin="0" VerticalAlignment="Top" Width="80">
+                                </TextBox>
+                            </StackPanel>
+                            <StackPanel Margin="6,2">
+                                <Label Style="{DynamicResource Label_Style_Tools}" HorizontalContentAlignment="Center">ΔP</Label>
+                                <TextBox x:Name="Camera4_P" FontWeight="ExtraBold" HorizontalContentAlignment="Center" Style="{DynamicResource TextBox_Style_Tools}" TextChanged="TrySaveAlphas" Margin="0" VerticalAlignment="Top" Width="80">
+                                </TextBox>
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <RadioButton Style="{DynamicResource RadioButton_Style}" x:Name="Camera4_isplus" Margin="0,3,15,2" Checked="CheckChanged">Դեպի աջ աճում է</RadioButton>
+                            <RadioButton Style="{DynamicResource RadioButton_Style}" x:Name="Camera4_isminus" Margin="15,3,0,2" Checked="CheckChanged">Դեպի աջ նվազում է</RadioButton>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

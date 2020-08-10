@@ -1,0 +1,30 @@
+﻿<Window x:Class="Nemesis.SobDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Nemesis"
+        mc:Ignorable="d"
+        BorderBrush="#AAAAAA"
+        BorderThickness="2"
+        Title="SobDialog" Height="178" Width="362">
+    <StackPanel>
+        <DockPanel Margin="20,10" >
+            <StackPanel>
+                <Label HorizontalAlignment="Left" Margin="0,0,8,13" Padding="0" FontSize="12" FontFamily="GHEA Grapalat">Դիտակետը</Label>
+                <Label HorizontalAlignment="Left" Margin="0,0,8,13" Padding="0" FontSize="12" FontFamily="GHEA Grapalat">Կրակային Դիրքը</Label>
+                <Label HorizontalAlignment="Left" Margin="0,0,8,5" Padding="0" FontSize="12" FontFamily="GHEA Grapalat">Սկզբնական նշանակետը</Label>
+            </StackPanel>
+            <StackPanel>
+                <ComboBox HorizontalAlignment="Center"  Margin="0,0,0,5" x:Name="Ditaketer" Width="150" FontSize="13"></ComboBox>
+                <ComboBox HorizontalAlignment="Center" Margin="0,0,0,5" x:Name="Dirqer" Width="150" FontSize="13"></ComboBox>
+                <TextBox HorizontalAlignment="Center" Margin="0,0,0,5" x:Name="TargetID" Width="150" FontSize="16"></TextBox>
+            </StackPanel>
+        </DockPanel>
+        <Button Background="White" Width="80" HorizontalAlignment="Right" Margin="0,0,27,0" Click="Button_Click" Content="OK">
+            <Button.Effect>
+                <DropShadowEffect Color="#FFA5BBC3" Direction="319" RenderingBias="Quality" Opacity="0.7" ShadowDepth="6"/>
+            </Button.Effect>
+        </Button>
+    </StackPanel>
+</Window>

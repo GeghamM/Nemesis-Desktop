@@ -1,0 +1,81 @@
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\BaseService\bin\Debug\BaseService.dll
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\BaseService\bin\Debug\BaseService.pdb
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\BaseService\bin\Debug\BaseEntities.dll
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\BaseService\bin\Debug\DataAccessLayer.dll
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\BaseService\bin\Debug\BaseEntities.pdb
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\BaseService\bin\Debug\DataAccessLayer.pdb
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\BaseService\obj\Debug\BaseService.csprojAssemblyReference.cache
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\BaseService\obj\Debug\BaseService.csproj.CopyComplete
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\BaseService\obj\Debug\BaseService.dll
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\BaseService\obj\Debug\BaseService.pdb
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\BaseService\bin\Debug\BaseService.dll
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\BaseService\bin\Debug\BaseService.pdb
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\BaseService\bin\Debug\BaseEntities.dll
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\BaseService\bin\Debug\DataAccessLayer.dll
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\BaseService\bin\Debug\BaseEntities.pdb
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\BaseService\bin\Debug\DataAccessLayer.pdb
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\BaseService\obj\Debug\BaseService.csprojAssemblyReference.cache
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\BaseService\obj\Debug\BaseService.csproj.CopyComplete
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\BaseService\obj\Debug\BaseService.dll
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\BaseService\obj\Debug\BaseService.pdb
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\BaseService\bin\Debug\BaseService.dll
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\BaseService\bin\Debug\BaseService.pdb
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\BaseService\bin\Debug\BaseEntities.dll
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\BaseService\bin\Debug\DataAccessLayer.dll
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\BaseService\bin\Debug\BaseEntities.pdb
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\BaseService\bin\Debug\DataAccessLayer.pdb
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\BaseService\obj\Debug\BaseService.csprojAssemblyReference.cache
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\BaseService\obj\Debug\BaseService.csproj.CopyComplete
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\BaseService\obj\Debug\BaseService.dll
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\BaseService\obj\Debug\BaseService.pdb
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\BaseService\bin\Debug\BaseService.dll
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\BaseService\bin\Debug\BaseService.pdb
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\BaseService\bin\Debug\BaseEntities.dll
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\BaseService\bin\Debug\DataAccessLayer.dll
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\BaseService\bin\Debug\BaseEntities.pdb
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\BaseService\bin\Debug\DataAccessLayer.pdb
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\BaseService\obj\Debug\BaseService.csprojAssemblyReference.cache
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\BaseService\obj\Debug\BaseService.csproj.CopyComplete
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\BaseService\obj\Debug\BaseService.dll
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\BaseService\obj\Debug\BaseService.pdb
+D:\Programs\Gegham\DotNetFramework\Nemesis\BaseService\bin\Debug\BaseService.dll
+D:\Programs\Gegham\DotNetFramework\Nemesis\BaseService\bin\Debug\BaseService.pdb
+D:\Programs\Gegham\DotNetFramework\Nemesis\BaseService\bin\Debug\BaseEntities.dll
+D:\Programs\Gegham\DotNetFramework\Nemesis\BaseService\bin\Debug\DataAccessLayer.dll
+D:\Programs\Gegham\DotNetFramework\Nemesis\BaseService\bin\Debug\BaseEntities.pdb
+D:\Programs\Gegham\DotNetFramework\Nemesis\BaseService\bin\Debug\DataAccessLayer.pdb
+D:\Programs\Gegham\DotNetFramework\Nemesis\BaseService\obj\Debug\BaseService.csprojAssemblyReference.cache
+D:\Programs\Gegham\DotNetFramework\Nemesis\BaseService\obj\Debug\BaseService.csproj.CopyComplete
+D:\Programs\Gegham\DotNetFramework\Nemesis\BaseService\obj\Debug\BaseService.dll
+D:\Programs\Gegham\DotNetFramework\Nemesis\BaseService\obj\Debug\BaseService.pdb
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\BaseService\bin\Debug\BaseService.dll
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\BaseService\bin\Debug\BaseService.pdb
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\BaseService\bin\Debug\BaseEntities.dll
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\BaseService\bin\Debug\DataAccessLayer.dll
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\BaseService\bin\Debug\BaseEntities.pdb
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\BaseService\bin\Debug\DataAccessLayer.pdb
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\BaseService\obj\Debug\BaseService.csprojAssemblyReference.cache
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\BaseService\obj\Debug\BaseService.csproj.CopyComplete
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\BaseService\obj\Debug\BaseService.dll
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\BaseService\obj\Debug\BaseService.pdb
+D:\Programs\Gegham\Nemesis Desktop\BaseService\obj\Debug\BaseService.csprojAssemblyReference.cache
+D:\Programs\Gegham\Nemesis Desktop\BaseService\bin\Debug\BaseService.dll
+D:\Programs\Gegham\Nemesis Desktop\BaseService\bin\Debug\BaseService.pdb
+D:\Programs\Gegham\Nemesis Desktop\BaseService\bin\Debug\BaseEntities.dll
+D:\Programs\Gegham\Nemesis Desktop\BaseService\bin\Debug\DataAccessLayer.dll
+D:\Programs\Gegham\Nemesis Desktop\BaseService\bin\Debug\BaseEntities.pdb
+D:\Programs\Gegham\Nemesis Desktop\BaseService\bin\Debug\DataAccessLayer.pdb
+D:\Programs\Gegham\Nemesis Desktop\BaseService\obj\Debug\BaseService.csproj.CopyComplete
+D:\Programs\Gegham\Nemesis Desktop\BaseService\obj\Debug\BaseService.dll
+D:\Programs\Gegham\Nemesis Desktop\BaseService\obj\Debug\BaseService.pdb
+C:\Users\gegha\Desktop\Nemesis Desktop\BaseService\bin\Debug\BaseService.dll
+C:\Users\gegha\Desktop\Nemesis Desktop\BaseService\bin\Debug\BaseService.pdb
+C:\Users\gegha\Desktop\Nemesis Desktop\BaseService\bin\Debug\BaseEntities.dll
+C:\Users\gegha\Desktop\Nemesis Desktop\BaseService\bin\Debug\DataAccessLayer.dll
+C:\Users\gegha\Desktop\Nemesis Desktop\BaseService\bin\Debug\BaseEntities.pdb
+C:\Users\gegha\Desktop\Nemesis Desktop\BaseService\bin\Debug\DataAccessLayer.pdb
+C:\Users\gegha\Desktop\Nemesis Desktop\BaseService\obj\Debug\BaseService.csprojAssemblyReference.cache
+C:\Users\gegha\Desktop\Nemesis Desktop\BaseService\obj\Debug\BaseService.csproj.CoreCompileInputs.cache
+C:\Users\gegha\Desktop\Nemesis Desktop\BaseService\obj\Debug\BaseService.csproj.CopyComplete
+C:\Users\gegha\Desktop\Nemesis Desktop\BaseService\obj\Debug\BaseService.dll
+C:\Users\gegha\Desktop\Nemesis Desktop\BaseService\obj\Debug\BaseService.pdb

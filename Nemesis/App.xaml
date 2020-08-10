@@ -1,0 +1,362 @@
+﻿<Application
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Nemesis"
+             xmlns:Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero2"
+             x:Class="WpfApplication1.App"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <local:SkinResourceDictionary DarkSource="Themes/DarkSkin.xaml" 
+                                              LightSource="Themes/LightSkin.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+        
+        
+
+            <!--<Style x:Key="Window-main-grid-light" TargetType="{x:Type Grid}">
+                <Setter Property="Background" Value="White"/>
+            </Style>
+            <Style x:Key="Window-main-grid-dark" TargetType="{x:Type Grid}">
+                <Setter Property="Background" Value="#212121"/>
+            </Style>
+
+            <Style x:Key="Label_Style-light" TargetType="{x:Type Label}">
+                <Setter Property="FontFamily" Value="GHEA Grapalat"/>
+                <Setter Property="Foreground" Value="Black"/>
+            </Style>
+
+            <Style x:Key="Label_Style-dark" TargetType="{x:Type Label}">
+                <Setter Property="FontFamily" Value="GHEA Grapalat"/>
+                <Setter Property="Foreground" Value="#BDBDBD"/>
+            </Style>
+
+            <Style x:Key="Label_Style_Tools" TargetType="{x:Type Label}">
+                <Setter Property="FontFamily" Value="GHEA Grapalat"/>
+                <Setter Property="Foreground" Value="Black"/>
+                <Setter Property="FontSize" Value="14"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+            </Style>
+
+            <Style x:Key="TextBox_Style-Light" TargetType="{x:Type TextBox}">
+                <Setter Property="FontFamily" Value="GHEA Grapalat"/>
+                <Setter Property="Background" Value="White"/>
+                <Setter Property="Foreground" Value="Black"/>
+            </Style>
+
+            <Style x:Key="TextBox_Style-Dark" TargetType="{x:Type TextBox}">
+                <Setter Property="FontFamily" Value="GHEA Grapalat"/>
+                <Setter Property="Background" Value="#212121"/>
+                <Setter Property="Foreground" Value="#BDBDBD"/>
+            </Style>
+
+            <Style x:Key="TextBox_Style_Tools" TargetType="{x:Type TextBox}">
+                <Setter Property="FontFamily" Value="GHEA Grapalat"/>
+                <Setter Property="Background" Value="White"/>
+                <Setter Property="Foreground" Value="Black"/>
+                <Setter Property="FontSize" Value="14"/>
+            </Style>
+
+
+            <Style x:Key="DarkBorder" TargetType="Border">
+                <Setter Property="BorderThickness" Value="1"/>
+                <Setter Property="BorderBrush" Value="#BDBDBD"/>
+            </Style>
+
+            <Style x:Key="DarkStackPanel" TargetType="StackPanel">
+                <Setter Property="Background" Value="#212121"/>
+            </Style>
+
+            <Style x:Key="TextBox_Label" TargetType="{x:Type TextBox}">
+                <Setter Property="BorderBrush" Value="Black"/>
+                <Setter Property="BorderThickness" Value="0.6"/>
+                <Setter Property="VerticalContentAlignment" Value="Center"/>
+                <Setter Property="FontSize" Value="7"/>
+                <Setter Property="Height" Value ="11"/>
+                <Setter Property="FontFamily" Value="GHEA Grapalat"/>
+                <Setter Property="Background" Value="White"/>
+                <Setter Property="Foreground" Value="Black"/>
+                <Setter Property="IsEnabled" Value="False"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+                <Setter Property="Margin" Value="1,1,1,1"/>
+                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            </Style>
+
+            <Style x:Key="TextBox_Label_Wide" TargetType="{x:Type TextBox}">
+                <Setter Property="BorderBrush" Value="Black"/>
+                <Setter Property="BorderThickness" Value="0.6"/>
+                <Setter Property="VerticalContentAlignment" Value="Center"/>
+                <Setter Property="FontSize" Value="7"/>
+                <Setter Property="FontFamily" Value="GHEA Grapalat"/>
+                <Setter Property="Background" Value="White"/>
+                <Setter Property="Foreground" Value="Black"/>
+                <Setter Property="IsEnabled" Value="False"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+                <Setter Property="Margin" Value="1,1,1,1"/>
+                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            </Style>
+
+            <Style x:Key="TextBox_Values" TargetType="{x:Type TextBox}">
+                <Setter Property="BorderBrush" Value="Black"/>
+                <Setter Property="TextWrapping" Value="Wrap"/>
+                <Setter Property="BorderThickness" Value="0.6"/>
+                <Setter Property="VerticalContentAlignment" Value="Center"/>
+                <Setter Property="FontSize" Value="7"/>
+                <Setter Property="Width" Value="54"/>
+                <Setter Property="Height" Value ="11"/>
+                <Setter Property="FontFamily" Value="GHEA Grapalat"/>
+                <Setter Property="Background" Value="White"/>
+                <Setter Property="Foreground" Value="Black"/>
+                <Setter Property="IsEnabled" Value="False"/>
+                <Setter Property="FontWeight" Value="Regular"/>
+                <Setter Property="Margin" Value="1,1,1,1"/>
+                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            </Style>
+
+            <Style x:Key="TextBox_Values/2" TargetType="{x:Type TextBox}">
+                <Setter Property="BorderBrush" Value="Black"/>
+                <Setter Property="BorderThickness" Value="0.6"/>
+                <Setter Property="TextWrapping" Value="Wrap"/>
+                <Setter Property="VerticalContentAlignment" Value="Center"/>
+                <Setter Property="FontSize" Value="6"/>
+                <Setter Property="Height" Value ="11"/>
+                <Setter Property="Width" Value="26"/>
+                <Setter Property="FontFamily" Value="GHEA Grapalat"/>
+                <Setter Property="Background" Value="White"/>
+                <Setter Property="Foreground" Value="Black"/>
+                <Setter Property="IsEnabled" Value="False"/>
+                <Setter Property="FontWeight" Value="Regular"/>
+                <Setter Property="Margin" Value="1,1,1,1"/>
+                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            </Style>
+
+
+            <Style x:Key="LableStyle_Hranot" TargetType="{x:Type TextBox}">
+                <Setter Property="BorderBrush" Value="Black"/>
+                <Setter Property="TextWrapping" Value="Wrap"/>
+                <Setter Property="BorderThickness" Value="0.6"/>
+                <Setter Property="VerticalContentAlignment" Value="Top"/>
+                <Setter Property="FontSize" Value="8.5"/>
+                <Setter Property="Width" Value="55"/>
+                <Setter Property="FontFamily" Value="GHEA Grapalat"/>
+                <Setter Property="Background" Value="White"/>
+                <Setter Property="Foreground" Value="Black"/>
+                <Setter Property="IsEnabled" Value="False"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+                <Setter Property="Margin" Value="1,1,1,1"/>
+                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            </Style>
+
+            <Style x:Key="LableStyle_Hranot/3" TargetType="{x:Type TextBox}">
+                <Setter Property="Padding" Value="0"/>
+                <Setter Property="BorderBrush" Value="Black"/>
+                <Setter Property="TextWrapping" Value="Wrap"/>
+                <Setter Property="BorderThickness" Value="0.6"/>
+                <Setter Property="VerticalContentAlignment" Value="Center"/>
+                <Setter Property="FontSize" Value="8.5"/>
+                <Setter Property="Width" Value="55"/>
+                <Setter Property="FontFamily" Value="GHEA Grapalat"/>
+                <Setter Property="Background" Value="White"/>
+                <Setter Property="Foreground" Value="Black"/>
+                <Setter Property="IsEnabled" Value="False"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+                <Setter Property="Margin" Value="1,1,1,1"/>
+                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            </Style>
+
+            <Style x:Key="TextStyle_Hranot" TargetType="{x:Type TextBox}">
+                <Setter Property="BorderBrush" Value="Black"/>
+                <Setter Property="TextWrapping" Value="Wrap"/>
+                <Setter Property="BorderThickness" Value="0.6"/>
+                <Setter Property="VerticalContentAlignment" Value="Top"/>
+                <Setter Property="FontSize" Value="8.5"/>
+                <Setter Property="Width" Value="55"/>
+                <Setter Property="FontFamily" Value="GHEA Grapalat"/>
+                <Setter Property="Background" Value="White"/>
+                <Setter Property="Foreground" Value="Black"/>
+                <Setter Property="IsEnabled" Value="False"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+                <Setter Property="Margin" Value="1,1,1,1"/>
+                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            </Style>
+
+            <Style x:Key="AlphaText" TargetType="{x:Type TextBox}">
+                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                <Setter Property="VerticalAlignment" Value="Center"/>
+                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+            </Style>
+
+            <Style x:Key="ComboBox_Style" TargetType="{x:Type ComboBox}">
+                <Setter Property="FontFamily" Value="GHEA Grapalat"/>
+            </Style>
+            <Style x:Key="DarkComboBox_Style" TargetType="{x:Type ComboBox}">
+                <Setter Property="FontFamily" Value="GHEA Grapalat"/>
+                <Setter Property="Foreground" Value="#ABABAB"/>
+            </Style>
+            <ControlTemplate x:Key="DarkComboBox" TargetType="{x:Type ComboBox}">
+                <Grid x:Name="templateRoot" SnapsToDevicePixels="True">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition MinWidth="{DynamicResource {x:Static SystemParameters.VerticalScrollBarWidthKey}}" Width="0"/>
+                    </Grid.ColumnDefinitions>
+                    <Popup x:Name="PART_Popup" AllowsTransparency="True" Grid.ColumnSpan="2" IsOpen="{Binding IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" Margin="1" PopupAnimation="{DynamicResource {x:Static SystemParameters.ComboBoxPopupAnimationKey}}" Placement="Bottom">
+                        <Themes:SystemDropShadowChrome x:Name="shadow" Color="Transparent" MaxHeight="{TemplateBinding MaxDropDownHeight}" MinWidth="{Binding ActualWidth, ElementName=templateRoot}">
+                            <Border x:Name="DropDownBorder" CornerRadius="5" BorderBrush="#ABABAB" BorderThickness="1" Background="#FFFFFF">
+                                <ScrollViewer  x:Name="DropDownScrollViewer">
+                                    <Grid x:Name="grid" RenderOptions.ClearTypeHint="Enabled">
+                                        <Canvas x:Name="canvas"  HorizontalAlignment="Left" Height="0" VerticalAlignment="Top" Width="0">
+                                            <Rectangle x:Name="OpaqueRect"  Fill="#212121" Height="{Binding ActualHeight, ElementName=DropDownBorder}" Width="{Binding ActualWidth, ElementName=DropDownBorder}"/>
+                                        </Canvas>
+                                        <ItemsPresenter x:Name="ItemsPresenter" KeyboardNavigation.DirectionalNavigation="Contained" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                                    </Grid>
+                                </ScrollViewer>
+                            </Border>
+                        </Themes:SystemDropShadowChrome>
+                    </Popup>
+                    <ToggleButton x:Name="toggleButton" BorderBrush="#ABABAB" BorderThickness="1" Background="#212121" Grid.ColumnSpan="2" IsChecked="{Binding IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}">
+                        <ToggleButton.Style>
+                            <Style TargetType="{x:Type ToggleButton}">
+                                <Setter Property="OverridesDefaultStyle" Value="True"/>
+                                <Setter Property="IsTabStop" Value="False"/>
+                                <Setter Property="Focusable" Value="False"/>
+                                <Setter Property="ClickMode" Value="Press"/>
+                                <Setter Property="Foreground" Value="#BDBDBD"/>
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type ToggleButton}">
+                                            <Border x:Name="templateRoot" CornerRadius="5" Background="#212121" BorderBrush="#ABABAB" BorderThickness="1" SnapsToDevicePixels="True">
+                                                <Border x:Name="splitBorder" BorderBrush="Transparent" BorderThickness="1" HorizontalAlignment="Right" Margin="0" SnapsToDevicePixels="True" Width="{DynamicResource {x:Static SystemParameters.VerticalScrollBarWidthKey}}">
+                                                    <Path x:Name="Arrow" Data="F1M0,0L2.667,2.66665 5.3334,0 5.3334,-1.78168 2.6667,0.88501 0,-1.78168 0,0z" Fill="#ABABAB" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center"/>
+                                                </Border>
+                                            </Border>
+                                            <ControlTemplate.Triggers>
+                                                <MultiDataTrigger>
+                                                    <MultiDataTrigger.Conditions>
+                                                        <Condition Binding="{Binding IsEditable, RelativeSource={RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type ComboBox}}}" Value="true"/>
+                                                        <Condition Binding="{Binding IsMouseOver, RelativeSource={RelativeSource Self}}" Value="false"/>
+                                                        <Condition Binding="{Binding IsPressed, RelativeSource={RelativeSource Self}}" Value="false"/>
+                                                        <Condition Binding="{Binding IsEnabled, RelativeSource={RelativeSource Self}}" Value="true"/>
+                                                    </MultiDataTrigger.Conditions>
+                                                    <Setter Property="Background" TargetName="templateRoot" Value="#212121"/>
+                                                    <Setter Property="BorderBrush" TargetName="templateRoot" Value="#ABABAB"/>
+                                                    <Setter Property="Background" TargetName="splitBorder" Value="Transparent"/>
+                                                    <Setter Property="Foreground" Value="#BDBDBD"/>
+                                                    <Setter Property="BorderBrush" TargetName="splitBorder" Value="Transparent"/>
+                                                </MultiDataTrigger>
+                                                <Trigger Property="IsMouseOver" Value="True">
+                                                    <Setter Property="Fill" TargetName="Arrow" Value="White"/>
+                                                </Trigger>
+                                                <MultiDataTrigger>
+                                                    <MultiDataTrigger.Conditions>
+                                                        <Condition Binding="{Binding IsMouseOver, RelativeSource={RelativeSource Self}}" Value="true"/>
+                                                        <Condition Binding="{Binding IsEditable, RelativeSource={RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type ComboBox}}}" Value="false"/>
+                                                    </MultiDataTrigger.Conditions>
+                                                    <Setter Property="Background" TargetName="templateRoot">
+                                                        <Setter.Value>
+                                                            <SolidColorBrush Color="#191919"></SolidColorBrush>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                    <Setter Property="Fill" Value="White" TargetName="Arrow"/>
+                                                    <Setter Property="BorderBrush" TargetName="templateRoot" Value="#FFFFFF"/>
+                                                    <Setter Property="Foreground" Value="#BDBDBD"/>
+                                                </MultiDataTrigger>
+                                                <MultiDataTrigger>
+                                                    <MultiDataTrigger.Conditions>
+                                                        <Condition Binding="{Binding IsMouseOver, RelativeSource={RelativeSource Self}}" Value="true"/>
+                                                        <Condition Binding="{Binding IsEditable, RelativeSource={RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type ComboBox}}}" Value="true"/>
+                                                    </MultiDataTrigger.Conditions>
+                                                    <Setter Property="Background" TargetName="templateRoot" Value="#212121"/>
+                                                    <Setter Property="BorderBrush" TargetName="templateRoot" Value="White"/>
+                                                    <Setter Property="Foreground" Value="#BDBDBD"/>
+                                                    <Setter Property="Background" TargetName="splitBorder">
+                                                        <Setter.Value>
+                                                            <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                                                                <GradientStop Color="#FFEBF4FC" Offset="0"/>
+                                                                <GradientStop Color="#FFDCECFC" Offset="1"/>
+                                                            </LinearGradientBrush>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                    <Setter Property="BorderBrush" TargetName="splitBorder" Value="#FF7EB4EA"/>
+                                                </MultiDataTrigger>
+                                                <Trigger Property="IsPressed" Value="True">
+                                                    <Setter Property="Fill" TargetName="Arrow" Value="White"/>
+                                                </Trigger>
+                                                <MultiDataTrigger>
+                                                    <MultiDataTrigger.Conditions>
+                                                        <Condition Binding="{Binding IsPressed, RelativeSource={RelativeSource Self}}" Value="true"/>
+                                                        <Condition Binding="{Binding IsEditable, RelativeSource={RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type ComboBox}}}" Value="false"/>
+                                                    </MultiDataTrigger.Conditions>
+                                                    <Setter Property="Background" Value="#212121" TargetName="templateRoot"/>
+                                                    <Setter Property="BorderBrush" TargetName="templateRoot" Value="#FFFFFF"/>
+                                                    <Setter Property="Foreground" Value="#BDBDBD"/>
+                                                </MultiDataTrigger>
+                                                <MultiDataTrigger>
+                                                    <MultiDataTrigger.Conditions>
+                                                        <Condition Binding="{Binding IsPressed, RelativeSource={RelativeSource Self}}" Value="true"/>
+                                                        <Condition Binding="{Binding IsEditable, RelativeSource={RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type ComboBox}}}" Value="true"/>
+                                                    </MultiDataTrigger.Conditions>
+                                                    <Setter Property="Background" TargetName="templateRoot" Value="#212121"/>
+                                                    <Setter Property="BorderBrush" TargetName="templateRoot" Value="#ABABAB"/>
+                                                    <Setter Property="Background" Value="#212121" TargetName="splitBorder"/>
+                                                    <Setter Property="Foreground" Value="#BDBDBD"/>
+                                                    <Setter Property="BorderBrush" TargetName="splitBorder" Value="#ABABAB"/>
+                                                </MultiDataTrigger>
+                                                <Trigger Property="IsEnabled" Value="False">
+                                                    <Setter Property="Fill" TargetName="Arrow" Value="#191919"/>
+                                                </Trigger>
+                                                <MultiDataTrigger>
+                                                    <MultiDataTrigger.Conditions>
+                                                        <Condition Binding="{Binding IsEnabled, RelativeSource={RelativeSource Self}}" Value="false"/>
+                                                        <Condition Binding="{Binding IsEditable, RelativeSource={RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type ComboBox}}}" Value="false"/>
+                                                    </MultiDataTrigger.Conditions>
+                                                    <Setter Property="Background" TargetName="templateRoot" Value="#212121"/>
+                                                    <Setter Property="BorderBrush" TargetName="templateRoot" Value="#ABABAB"/>
+                                                    <Setter Property="Foreground" Value="#BDBDBD"/>
+                                                </MultiDataTrigger>
+                                                <MultiDataTrigger>
+                                                    <MultiDataTrigger.Conditions>
+                                                        <Condition Binding="{Binding IsEnabled, RelativeSource={RelativeSource Self}}" Value="false"/>
+                                                        <Condition Binding="{Binding IsEditable, RelativeSource={RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type ComboBox}}}" Value="true"/>
+                                                    </MultiDataTrigger.Conditions>
+                                                    <Setter Property="Background" TargetName="templateRoot" Value="#ABABAB"/>
+                                                    <Setter Property="BorderBrush" TargetName="templateRoot" Value="#ABABAB"/>
+                                                    <Setter Property="Background" TargetName="splitBorder" Value="Transparent"/>
+                                                    <Setter Property="BorderBrush" TargetName="splitBorder" Value="Transparent"/>
+                                                    <Setter Property="Foreground" Value="#BDBDBD"/>
+                                                </MultiDataTrigger>
+                                            </ControlTemplate.Triggers>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </ToggleButton.Style>
+                    </ToggleButton>
+                    <ContentPresenter x:Name="contentPresenter" ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}" Content="{TemplateBinding SelectionBoxItem}" ContentStringFormat="{TemplateBinding SelectionBoxItemStringFormat}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" IsHitTestVisible="False" Margin="{TemplateBinding Padding}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                </Grid>
+                <ControlTemplate.Triggers>
+                    <Trigger Property="HasDropShadow" SourceName="PART_Popup" Value="True">
+                        <Setter Property="Margin" TargetName="shadow" Value="0,0,5,5"/>
+                        <Setter Property="Color" TargetName="shadow" Value="#212121"/>
+                    </Trigger>
+                    <Trigger Property="HasItems" Value="False">
+                        <Setter Property="Height" TargetName="DropDownBorder" Value="95"/>
+                    </Trigger>
+                    <MultiTrigger>
+                        <MultiTrigger.Conditions>
+                            <Condition Property="IsGrouping" Value="True"/>
+                            <Condition Property="VirtualizingPanel.IsVirtualizingWhenGrouping" Value="False"/>
+                        </MultiTrigger.Conditions>
+                        <Setter Property="ScrollViewer.CanContentScroll" Value="False"/>
+                    </MultiTrigger>
+                    <Trigger Property="CanContentScroll" SourceName="DropDownScrollViewer" Value="False">
+                        <Setter Property="Canvas.Top" TargetName="OpaqueRect" Value="{Binding VerticalOffset, ElementName=DropDownScrollViewer}"/>
+                        <Setter Property="Canvas.Left" TargetName="OpaqueRect" Value="{Binding HorizontalOffset, ElementName=DropDownScrollViewer}"/>
+                    </Trigger>
+                </ControlTemplate.Triggers>
+            </ControlTemplate>-->
+
+    </Application.Resources>
+</Application>

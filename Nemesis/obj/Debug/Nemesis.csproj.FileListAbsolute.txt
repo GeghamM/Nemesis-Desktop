@@ -1,0 +1,435 @@
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\Nemesis\obj\Debug\Nemesis.csprojAssemblyReference.cache
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\Nemesis\obj\Debug\App.baml
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\Nemesis\obj\Debug\Layouts\Footer.g.cs
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\Nemesis\obj\Debug\MainWindow.g.cs
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\Nemesis\obj\Debug\Windows\InitializeTargets.g.cs
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\Nemesis\obj\Debug\Windows\Martakarg.g.cs
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\Nemesis\obj\Debug\Windows\Targets.g.cs
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\Nemesis\obj\Debug\Windows\Task.g.cs
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\Nemesis\obj\Debug\App.g.cs
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\Nemesis\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\Nemesis\obj\Debug\Nemesis_MarkupCompile.cache
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\Nemesis\obj\Debug\Nemesis_MarkupCompile.lref
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\Nemesis\bin\Debug\Nemesis.exe.config
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\Nemesis\bin\Debug\Nemesis.exe
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\Nemesis\bin\Debug\Nemesis.pdb
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\Nemesis\bin\Debug\BaseEntities.dll
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\Nemesis\bin\Debug\BaseService.dll
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\Nemesis\bin\Debug\DataAccessLayer.dll
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\Nemesis\bin\Debug\BaseEntities.pdb
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\Nemesis\bin\Debug\BaseService.pdb
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\Nemesis\bin\Debug\DataAccessLayer.pdb
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\Nemesis\obj\Debug\Layouts\Footer.baml
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\Nemesis\obj\Debug\MainWindow.baml
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\Nemesis\obj\Debug\Themes\Generic.baml
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\Nemesis\obj\Debug\Windows\InitializeTargets.baml
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\Nemesis\obj\Debug\Windows\Martakarg.baml
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\Nemesis\obj\Debug\Windows\Targets.baml
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\Nemesis\obj\Debug\Windows\Task.baml
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\Nemesis\obj\Debug\Nemesis.g.resources
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\Nemesis\obj\Debug\Nemesis.Properties.Resources.resources
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\Nemesis\obj\Debug\Nemesis.csproj.GenerateResource.cache
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\Nemesis\obj\Debug\Nemesis.csproj.CopyComplete
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\Nemesis\obj\Debug\Nemesis.exe
+D:\Programs\Gegham\VS Projects\.Net Framework\Nemesis\Nemesis\obj\Debug\Nemesis.pdb
+D:\Programs\Gegham\VS Projects\DotNetFramework\Nemesis\Nemesis\bin\Debug\Nemesis.exe.config
+D:\Programs\Gegham\VS Projects\DotNetFramework\Nemesis\Nemesis\bin\Debug\Nemesis.exe
+D:\Programs\Gegham\VS Projects\DotNetFramework\Nemesis\Nemesis\bin\Debug\Nemesis.pdb
+D:\Programs\Gegham\VS Projects\DotNetFramework\Nemesis\Nemesis\bin\Debug\BaseEntities.dll
+D:\Programs\Gegham\VS Projects\DotNetFramework\Nemesis\Nemesis\bin\Debug\BaseService.dll
+D:\Programs\Gegham\VS Projects\DotNetFramework\Nemesis\Nemesis\bin\Debug\DataAccessLayer.dll
+D:\Programs\Gegham\VS Projects\DotNetFramework\Nemesis\Nemesis\bin\Debug\BaseEntities.pdb
+D:\Programs\Gegham\VS Projects\DotNetFramework\Nemesis\Nemesis\bin\Debug\BaseService.pdb
+D:\Programs\Gegham\VS Projects\DotNetFramework\Nemesis\Nemesis\bin\Debug\DataAccessLayer.pdb
+D:\Programs\Gegham\VS Projects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis.csprojAssemblyReference.cache
+D:\Programs\Gegham\VS Projects\DotNetFramework\Nemesis\Nemesis\obj\Debug\App.baml
+D:\Programs\Gegham\VS Projects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Layouts\Footer.g.cs
+D:\Programs\Gegham\VS Projects\DotNetFramework\Nemesis\Nemesis\obj\Debug\MainWindow.g.cs
+D:\Programs\Gegham\VS Projects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\InitializeTargets.g.cs
+D:\Programs\Gegham\VS Projects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Martakarg.g.cs
+D:\Programs\Gegham\VS Projects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Targets.g.cs
+D:\Programs\Gegham\VS Projects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Task.g.cs
+D:\Programs\Gegham\VS Projects\DotNetFramework\Nemesis\Nemesis\obj\Debug\App.g.cs
+D:\Programs\Gegham\VS Projects\DotNetFramework\Nemesis\Nemesis\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Programs\Gegham\VS Projects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis_MarkupCompile.cache
+D:\Programs\Gegham\VS Projects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis_MarkupCompile.lref
+D:\Programs\Gegham\VS Projects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Layouts\Footer.baml
+D:\Programs\Gegham\VS Projects\DotNetFramework\Nemesis\Nemesis\obj\Debug\MainWindow.baml
+D:\Programs\Gegham\VS Projects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Themes\Generic.baml
+D:\Programs\Gegham\VS Projects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\InitializeTargets.baml
+D:\Programs\Gegham\VS Projects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Martakarg.baml
+D:\Programs\Gegham\VS Projects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Targets.baml
+D:\Programs\Gegham\VS Projects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Task.baml
+D:\Programs\Gegham\VS Projects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis.g.resources
+D:\Programs\Gegham\VS Projects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis.Properties.Resources.resources
+D:\Programs\Gegham\VS Projects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis.csproj.GenerateResource.cache
+D:\Programs\Gegham\VS Projects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis.csproj.CopyComplete
+D:\Programs\Gegham\VS Projects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis.exe
+D:\Programs\Gegham\VS Projects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis.pdb
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\bin\Debug\Nemesis.exe.config
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\bin\Debug\Nemesis.exe
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\bin\Debug\Nemesis.pdb
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\bin\Debug\BaseEntities.dll
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\bin\Debug\BaseService.dll
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\bin\Debug\DataAccessLayer.dll
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\bin\Debug\BaseEntities.pdb
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\bin\Debug\BaseService.pdb
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\bin\Debug\DataAccessLayer.pdb
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis.csprojAssemblyReference.cache
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\DialogWindows\SobDialog.g.cs
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Layouts\SmallFooter.g.cs
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\MainWindow.g.cs
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\SertificateValidation.g.cs
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\DialogWindows\InitializeTargets.g.cs
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Martakarg.g.cs
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Partials\Alphas.g.cs
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\PrintWindows\Hranot.g.cs
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\PrintWindows\Sob.g.cs
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Targets.g.cs
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Task.g.cs
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\App.g.cs
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis_MarkupCompile.cache
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis_MarkupCompile.lref
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\App.baml
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\DialogWindows\SobDialog.baml
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Layouts\SmallFooter.baml
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\MainWindow.baml
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\SertificateValidation.baml
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Themes\Generic.baml
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\DialogWindows\InitializeTargets.baml
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Martakarg.baml
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Partials\Alphas.baml
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\PrintWindows\Hranot.baml
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\PrintWindows\Sob.baml
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Targets.baml
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Task.baml
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis.g.resources
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis.Properties.Resources.resources
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis.csproj.GenerateResource.cache
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis.csproj.CopyComplete
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis.exe
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis.pdb
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\bin\Debug\Nemesis.exe.config
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\bin\Debug\Nemesis.exe
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\bin\Debug\Nemesis.pdb
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\bin\Debug\BaseEntities.dll
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\bin\Debug\BaseService.dll
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\bin\Debug\DataAccessLayer.dll
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\bin\Debug\BaseEntities.pdb
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\bin\Debug\BaseService.pdb
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\bin\Debug\DataAccessLayer.pdb
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis.csprojAssemblyReference.cache
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\DialogWindows\SobDialog.g.cs
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Layouts\Footer.g.cs
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Layouts\SmallFooter.g.cs
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\MainWindow.g.cs
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\SertificateValidation.g.cs
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\DialogWindows\InitializeTargets.g.cs
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Tools.g.cs
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Martakarg.g.cs
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Partials\Alphas.g.cs
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\PrintWindows\Hranot.g.cs
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\PrintWindows\Sob.g.cs
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Targets.g.cs
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Task.g.cs
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\App.g.cs
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis_MarkupCompile.cache
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis_MarkupCompile.lref
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\App.baml
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\DialogWindows\SobDialog.baml
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Layouts\Footer.baml
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Layouts\SmallFooter.baml
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\MainWindow.baml
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\SertificateValidation.baml
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Themes\Generic.baml
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\DialogWindows\InitializeTargets.baml
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Tools.baml
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Martakarg.baml
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Partials\Alphas.baml
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\PrintWindows\Hranot.baml
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\PrintWindows\Sob.baml
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Targets.baml
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Task.baml
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis.g.resources
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis.Properties.Resources.resources
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis.csproj.GenerateResource.cache
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis.csproj.CopyComplete
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis.exe
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis.pdb
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Partials\Cameras.g.cs
+D:\Programs\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Partials\Cameras.baml
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\bin\Debug\Nemesis.exe.config
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\bin\Debug\Nemesis.exe
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\bin\Debug\Nemesis.pdb
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\bin\Debug\BaseEntities.dll
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\bin\Debug\BaseService.dll
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\bin\Debug\DataAccessLayer.dll
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\bin\Debug\BaseEntities.pdb
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\bin\Debug\BaseService.pdb
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\bin\Debug\DataAccessLayer.pdb
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis.csprojAssemblyReference.cache
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\DialogWindows\SobDialog.g.cs
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Layouts\Footer.g.cs
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Layouts\SmallFooter.g.cs
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\MainWindow.g.cs
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\SertificateValidation.g.cs
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\DialogWindows\InitializeTargets.g.cs
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Partials\Cameras.g.cs
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Tools.g.cs
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Martakarg.g.cs
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Partials\Alphas.g.cs
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\PrintWindows\Hranot.g.cs
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\PrintWindows\Sob.g.cs
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Targets.g.cs
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Task.g.cs
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\App.g.cs
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis_MarkupCompile.cache
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis_MarkupCompile.lref
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\App.baml
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\DialogWindows\SobDialog.baml
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Layouts\Footer.baml
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Layouts\SmallFooter.baml
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\MainWindow.baml
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\SertificateValidation.baml
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Themes\Generic.baml
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\DialogWindows\InitializeTargets.baml
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Partials\Cameras.baml
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Tools.baml
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Martakarg.baml
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Partials\Alphas.baml
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\PrintWindows\Hranot.baml
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\PrintWindows\Sob.baml
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Targets.baml
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Task.baml
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis.g.resources
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis.Properties.Resources.resources
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis.csproj.GenerateResource.cache
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis.csproj.CopyComplete
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis.exe
+E:\Gegham\VSProjects\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis.pdb
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Layouts\LightFooter.g.cs
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Layouts\DarkFooter.g.cs
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Partials\Cameras.g.cs
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Tools.g.cs
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Layouts\LightFooter.baml
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Layouts\DarkFooter.baml
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Themes\DarkSkin.baml
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Partials\Cameras.baml
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Tools.baml
+C:\Users\Gegham\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Themes\LightSkin.baml
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\bin\Debug\Nemesis.exe.config
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\bin\Debug\Nemesis.exe
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\bin\Debug\Nemesis.pdb
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\bin\Debug\BaseEntities.dll
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\bin\Debug\BaseService.dll
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\bin\Debug\DataAccessLayer.dll
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\bin\Debug\BaseEntities.pdb
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\bin\Debug\BaseService.pdb
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\bin\Debug\DataAccessLayer.pdb
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis.csprojAssemblyReference.cache
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\obj\Debug\DialogWindows\SobDialog.g.cs
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\obj\Debug\Layouts\SmallFooter.g.cs
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\obj\Debug\MainWindow.g.cs
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\obj\Debug\SertificateValidation.g.cs
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\obj\Debug\DialogWindows\InitializeTargets.g.cs
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Partials\Cameras.g.cs
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Tools.g.cs
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Martakarg.g.cs
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Partials\Alphas.g.cs
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\PrintWindows\Hranot.g.cs
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\PrintWindows\Sob.g.cs
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Targets.g.cs
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Task.g.cs
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\obj\Debug\App.g.cs
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis_MarkupCompile.cache
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis_MarkupCompile.lref
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\obj\Debug\App.baml
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\obj\Debug\DialogWindows\SobDialog.baml
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\obj\Debug\Layouts\SmallFooter.baml
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\obj\Debug\MainWindow.baml
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\obj\Debug\SertificateValidation.baml
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\obj\Debug\Themes\LightSkin.baml
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\obj\Debug\Themes\DarkSkin.baml
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\obj\Debug\Themes\Generic.baml
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\obj\Debug\DialogWindows\InitializeTargets.baml
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Partials\Cameras.baml
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Tools.baml
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Martakarg.baml
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Partials\Alphas.baml
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\PrintWindows\Hranot.baml
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\PrintWindows\Sob.baml
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Targets.baml
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Task.baml
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis.g.resources
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis.Properties.Resources.resources
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis.csproj.GenerateResource.cache
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis.csproj.CopyComplete
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis.exe
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis.pdb
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\obj\Debug\Layouts\Footer.g.cs
+D:\Programs\Gegham\DotNetFramework\Nemesis\Nemesis\obj\Debug\Layouts\Footer.baml
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\bin\Debug\Nemesis.exe.config
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\bin\Debug\Nemesis.exe
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\bin\Debug\Nemesis.pdb
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\bin\Debug\BaseEntities.dll
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\bin\Debug\BaseService.dll
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\bin\Debug\DataAccessLayer.dll
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\bin\Debug\BaseEntities.pdb
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\bin\Debug\BaseService.pdb
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\bin\Debug\DataAccessLayer.pdb
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\DialogWindows\SobDialog.g.cs
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Layouts\Footer.g.cs
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Layouts\SmallFooter.g.cs
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\MainWindow.g.cs
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\SertificateValidation.g.cs
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\DialogWindows\InitializeTargets.g.cs
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Partials\Cameras.g.cs
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Tools.g.cs
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Martakarg.g.cs
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Partials\Alphas.g.cs
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\PrintWindows\Hranot.g.cs
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\PrintWindows\Sob.g.cs
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Targets.g.cs
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Task.g.cs
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\App.g.cs
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis_MarkupCompile.cache
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis_MarkupCompile.lref
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\App.baml
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\DialogWindows\SobDialog.baml
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Layouts\Footer.baml
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Layouts\SmallFooter.baml
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\MainWindow.baml
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\SertificateValidation.baml
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Themes\LightSkin.baml
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Themes\DarkSkin.baml
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Themes\Generic.baml
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\DialogWindows\InitializeTargets.baml
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Partials\Cameras.baml
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Tools.baml
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Martakarg.baml
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Partials\Alphas.baml
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\PrintWindows\Hranot.baml
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\PrintWindows\Sob.baml
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Targets.baml
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Windows\Task.baml
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis.g.resources
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis.Properties.Resources.resources
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis.csproj.GenerateResource.cache
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis.csproj.CopyComplete
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis.exe
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis.pdb
+C:\Users\2 Д-30 ДИВИЗИОН\Desktop\DotNetFramework\Nemesis\Nemesis\obj\Debug\Nemesis.csprojAssemblyReference.cache
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\Nemesis.csprojAssemblyReference.cache
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\Windows\DialogWindows\SobDialog.g.cs
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\Layouts\Footer.g.cs
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\Layouts\SmallFooter.g.cs
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\MainWindow.g.cs
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\SertificateValidation.g.cs
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\Windows\DialogWindows\InitializeTargets.g.cs
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\Windows\DialogWindows\Cameras.g.cs
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\Windows\DialogWindows\Ditarkum.g.cs
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\Windows\Tools.g.cs
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\Windows\Martakarg.g.cs
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\Windows\DialogWindows\Alphas.g.cs
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\Windows\PrintWindows\Hranot.g.cs
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\Windows\PrintWindows\Sob.g.cs
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\Windows\Targets.g.cs
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\Windows\Task.g.cs
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\App.g.cs
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\Nemesis_MarkupCompile.cache
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\Nemesis_MarkupCompile.lref
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\bin\Debug\Nemesis.exe.config
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\bin\Debug\Nemesis.exe
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\bin\Debug\Nemesis.pdb
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\bin\Debug\BaseEntities.dll
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\bin\Debug\BaseService.dll
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\bin\Debug\DataAccessLayer.dll
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\bin\Debug\BaseEntities.pdb
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\bin\Debug\BaseService.pdb
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\bin\Debug\DataAccessLayer.pdb
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\App.baml
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\Windows\DialogWindows\SobDialog.baml
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\Layouts\Footer.baml
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\Layouts\SmallFooter.baml
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\MainWindow.baml
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\SertificateValidation.baml
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\Themes\LightSkin.baml
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\Themes\DarkSkin.baml
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\Themes\Generic.baml
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\Windows\DialogWindows\InitializeTargets.baml
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\Windows\DialogWindows\Cameras.baml
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\Windows\DialogWindows\Ditarkum.baml
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\Windows\Tools.baml
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\Windows\Martakarg.baml
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\Windows\DialogWindows\Alphas.baml
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\Windows\PrintWindows\Hranot.baml
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\Windows\PrintWindows\Sob.baml
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\Windows\Targets.baml
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\Windows\Task.baml
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\Nemesis.g.resources
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\Nemesis.Properties.Resources.resources
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\Nemesis.csproj.GenerateResource.cache
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\Nemesis.csproj.CopyComplete
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\Nemesis.exe
+D:\Programs\Gegham\Nemesis Desktop\Nemesis\obj\Debug\Nemesis.pdb
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\bin\Debug\Nemesis.exe.config
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\bin\Debug\Nemesis.exe
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\bin\Debug\Nemesis.pdb
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\bin\Debug\BaseEntities.dll
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\bin\Debug\BaseService.dll
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\bin\Debug\DataAccessLayer.dll
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\bin\Debug\BaseEntities.pdb
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\bin\Debug\BaseService.pdb
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\bin\Debug\DataAccessLayer.pdb
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\Nemesis.csprojAssemblyReference.cache
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\Windows\DialogWindows\SobDialog.g.cs
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\Layouts\Footer.g.cs
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\Layouts\SmallFooter.g.cs
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\MainWindow.g.cs
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\SertificateValidation.g.cs
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\Windows\DialogWindows\InitializeTargets.g.cs
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\Windows\DialogWindows\Cameras.g.cs
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\Windows\DialogWindows\Ditarkum.g.cs
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\Windows\Tools.g.cs
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\Windows\Martakarg.g.cs
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\Windows\DialogWindows\Alphas.g.cs
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\Windows\PrintWindows\Hranot.g.cs
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\Windows\PrintWindows\Sob.g.cs
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\Windows\Targets.g.cs
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\Windows\Task.g.cs
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\App.g.cs
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\Nemesis_MarkupCompile.cache
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\Nemesis_MarkupCompile.lref
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\App.baml
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\Windows\DialogWindows\SobDialog.baml
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\Layouts\Footer.baml
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\Layouts\SmallFooter.baml
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\MainWindow.baml
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\SertificateValidation.baml
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\Themes\LightSkin.baml
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\Themes\DarkSkin.baml
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\Themes\Generic.baml
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\Windows\DialogWindows\InitializeTargets.baml
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\Windows\DialogWindows\Cameras.baml
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\Windows\DialogWindows\Ditarkum.baml
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\Windows\Tools.baml
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\Windows\Martakarg.baml
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\Windows\DialogWindows\Alphas.baml
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\Windows\PrintWindows\Hranot.baml
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\Windows\PrintWindows\Sob.baml
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\Windows\Targets.baml
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\Windows\Task.baml
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\Nemesis.g.resources
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\Nemesis.Properties.Resources.resources
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\Nemesis.csproj.GenerateResource.cache
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\Nemesis.csproj.CoreCompileInputs.cache
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\Nemesis.csproj.CopyComplete
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\Nemesis.exe
+C:\Users\gegha\Desktop\Nemesis Desktop\Nemesis\obj\Debug\Nemesis.pdb

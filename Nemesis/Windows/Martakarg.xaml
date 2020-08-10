@@ -1,0 +1,295 @@
+﻿<Window x:Class="Nemesis.Martakarg"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Nemesis"
+        mc:Ignorable="d"
+        WindowState="Maximized"
+        
+        Title="ՄԱՐՏԱԿԱՐԳ" MinHeight="350"  MinWidth="600">
+    <Grid Style="{DynamicResource Window-main-grid}">
+        <StackPanel Panel.ZIndex="10" HorizontalAlignment="Right" Margin="0,10,120,0" Cursor="Hand" MouseDown="Cameras_Click" VerticalAlignment="Top" Height="40" Width="40">
+            <StackPanel.RenderTransform>
+                <ScaleTransform x:Name="ScaleTransform1" ScaleX="1" ScaleY="1" CenterX="20" CenterY="20"/>
+            </StackPanel.RenderTransform>
+            <StackPanel.Triggers>
+                <EventTrigger RoutedEvent="MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetName="ScaleTransform1" Storyboard.TargetProperty="ScaleX"
+                                                         From="1" To="1.22" Duration="0:0:0.2" AutoReverse="False"/>
+                            <DoubleAnimation Storyboard.TargetName="ScaleTransform1" Storyboard.TargetProperty="ScaleY"
+                                                         From="1" To="1.22" Duration="0:0:0.2" AutoReverse="False"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetName="ScaleTransform1" Storyboard.TargetProperty="ScaleX"
+                                                         From="1.22" To="1" Duration="0:0:0.3" AutoReverse="False"/>
+                            <DoubleAnimation Storyboard.TargetName="ScaleTransform1" Storyboard.TargetProperty="ScaleY"
+                                                         From="1.22" To="1" Duration="0:0:0.3" AutoReverse="False"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </StackPanel.Triggers>
+            <Image x:Name="Cameras"/>
+        </StackPanel>
+        <StackPanel Panel.ZIndex="10" HorizontalAlignment="Right" Margin="0,10,70,0" Cursor="Hand" MouseDown="Alphas_Click" VerticalAlignment="Top" Height="40" Width="40">
+            <StackPanel.RenderTransform>
+                <ScaleTransform x:Name="ScaleTransform2" ScaleX="1" ScaleY="1" CenterX="20" CenterY="20"/>
+            </StackPanel.RenderTransform>
+            <StackPanel.Triggers>
+                <EventTrigger RoutedEvent="MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetName="ScaleTransform2" Storyboard.TargetProperty="ScaleX"
+                                                         From="1" To="1.22" Duration="0:0:0.2" AutoReverse="False"/>
+                            <DoubleAnimation Storyboard.TargetName="ScaleTransform2" Storyboard.TargetProperty="ScaleY"
+                                                         From="1" To="1.22" Duration="0:0:0.2" AutoReverse="False"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetName="ScaleTransform2" Storyboard.TargetProperty="ScaleX"
+                                                         From="1.22" To="1" Duration="0:0:0.3" AutoReverse="False"/>
+                            <DoubleAnimation Storyboard.TargetName="ScaleTransform2" Storyboard.TargetProperty="ScaleY"
+                                                         From="1.22" To="1" Duration="0:0:0.3" AutoReverse="False"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </StackPanel.Triggers>
+            <Image x:Name="Alphas"/>
+        </StackPanel>
+        <StackPanel Panel.ZIndex="10" HorizontalAlignment="Right" Margin="0,13,27,0" Cursor="Hand" MouseDown="Save_Click" VerticalAlignment="Top" Height="40" Width="40" >
+            <StackPanel.RenderTransform>
+                <ScaleTransform x:Name="ScaleTransform3" ScaleX="1" ScaleY="1" CenterX="20" CenterY="20"/>
+            </StackPanel.RenderTransform>
+            <StackPanel.Triggers>
+                <EventTrigger RoutedEvent="MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetName="ScaleTransform3" Storyboard.TargetProperty="ScaleX"
+                                                         From="1" To="1.22" Duration="0:0:0.2" AutoReverse="False"/>
+                            <DoubleAnimation Storyboard.TargetName="ScaleTransform3" Storyboard.TargetProperty="ScaleY"
+                                                         From="1" To="1.22" Duration="0:0:0.2" AutoReverse="False"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetName="ScaleTransform3" Storyboard.TargetProperty="ScaleX"
+                                                         From="1.22" To="1" Duration="0:0:0.3" AutoReverse="False"/>
+                            <DoubleAnimation Storyboard.TargetName="ScaleTransform3" Storyboard.TargetProperty="ScaleY"
+                                                         From="1.22" To="1" Duration="0:0:0.3" AutoReverse="False"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </StackPanel.Triggers>
+            <Image x:Name="Save" />
+        </StackPanel>
+        <ScrollViewer>
+            <Grid>
+                <StackPanel HorizontalAlignment="Center">
+                    <Label Style="{DynamicResource Label_Style}" FontFamily="Adver Unicode" Margin="0,10" HorizontalContentAlignment="Center" FontSize="24" Content="ԴԻՏԱԿԵՏԵՐ"/>
+                    <WrapPanel HorizontalAlignment="Center">
+                        <StackPanel>
+                            <Label Style="{DynamicResource Label_Style}"  FontFamily="Adver Unicode" HorizontalContentAlignment="Center" FontSize="20" Content="ՀԻՄՆԱԿԱՆ"/>
+                            <StackPanel  Margin="5,-3" Orientation="Horizontal" HorizontalAlignment="Right">
+                                <Label Style="{DynamicResource Label_Style}" Margin="5,0" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  MinWidth="80" Content="X"/>
+                                <Label Style="{DynamicResource Label_Style}" Margin="5,0" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  MinWidth="80" Content="Y"/>
+                                <Label Style="{DynamicResource Label_Style}" Margin="5,0" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  MinWidth="60" Content="H"/>
+                            </StackPanel>
+                            <StackPanel  Margin="5" Orientation="Horizontal">
+                                <Label Style="{DynamicResource Label_Style}" FontSize="18" HorizontalContentAlignment="Right" MinWidth="70" FontWeight="ExtraBold" x:Name="HDN" Content="ՀԴՆ"/>
+                                <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,0" MaxLength="6" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="HDN_x" MinWidth="80"/>
+                                <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,0" MaxLength="6" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="HDN_y" MinWidth="80"/>
+                                <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,0" MaxLength="4" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="HDN_h" MinWidth="60"/>
+                            </StackPanel>
+                            <StackPanel  Margin="5" Orientation="Horizontal">
+                                <Label Style="{DynamicResource Label_Style}" FontSize="18" HorizontalContentAlignment="Right" MinWidth="70" FontWeight="ExtraBold" x:Name="HRM1" Content="1 ՀրՄ"/>
+                                <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,0" MaxLength="6" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="HRM1_x" MinWidth="80"/>
+                                <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,0" MaxLength="6" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="HRM1_y" MinWidth="80"/>
+                                <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,0" MaxLength="4" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="HRM1_h" MinWidth="60"/>
+                            </StackPanel>
+                            <StackPanel  Margin="5" Orientation="Horizontal">
+                                <Label Style="{DynamicResource Label_Style}" FontSize="18" HorizontalContentAlignment="Right" MinWidth="70" FontWeight="ExtraBold" x:Name="HRM2" Content="2 ՀրՄ"/>
+                                <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,0" MaxLength="6" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="HRM2_x" MinWidth="80"/>
+                                <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,0" MaxLength="6" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="HRM2_y" MinWidth="80"/>
+                                <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,0" MaxLength="4" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="HRM2_h" MinWidth="60"/>
+                            </StackPanel>
+                            <StackPanel  Margin="5" Orientation="Horizontal">
+                                <Label Style="{DynamicResource Label_Style}" FontSize="18" HorizontalContentAlignment="Right" MinWidth="70" FontWeight="ExtraBold" x:Name="HRM3" Content="3 ՀրՄ"/>
+                                <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,0" MaxLength="6" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="HRM3_x" MinWidth="80"/>
+                                <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,0" MaxLength="6" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="HRM3_y" MinWidth="80"/>
+                                <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,0" MaxLength="4" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="HRM3_h" MinWidth="60"/>
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel >
+                            <Label Style="{DynamicResource Label_Style}" FontFamily="Adver Unicode" HorizontalContentAlignment="Center" FontSize="20" Content="ՊԱՀԵՍՏԱՅԻՆ"/>
+                            <StackPanel  Margin="5,-3" Orientation="Horizontal" HorizontalAlignment="Right">
+                                <Label Style="{DynamicResource Label_Style}" Margin="5,0" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  MinWidth="80" Content="X"/>
+                                <Label Style="{DynamicResource Label_Style}" Margin="5,0" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  MinWidth="80" Content="Y"/>
+                                <Label Style="{DynamicResource Label_Style}" Margin="5,0" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  MinWidth="60" Content="H"/>
+                            </StackPanel>
+                            <StackPanel  Margin="5" Orientation="Horizontal">
+                                <Label Style="{DynamicResource Label_Style}" FontSize="18" HorizontalContentAlignment="Right" MinWidth="70" FontWeight="ExtraBold" x:Name="P_HDN" Content="ՀԴՆ"/>
+                                <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,0" MaxLength="6" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="P_HDN_x" MinWidth="80"/>
+                                <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,0" MaxLength="6" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="P_HDN_y" MinWidth="80"/>
+                                <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,0" MaxLength="4" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="P_HDN_h" MinWidth="60"/>
+                            </StackPanel>
+                            <StackPanel  Margin="5" Orientation="Horizontal">
+                                <Label Style="{DynamicResource Label_Style}" FontSize="18" HorizontalContentAlignment="Right" MinWidth="70" FontWeight="ExtraBold" x:Name="P_HRM1" Content="1 ՀրՄ"/>
+                                <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,0" MaxLength="6" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="P_HRM1_x" MinWidth="80"/>
+                                <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,0" MaxLength="6" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="P_HRM1_y" MinWidth="80"/>
+                                <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,0" MaxLength="4" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="P_HRM1_h" MinWidth="60"/>
+                            </StackPanel>
+                            <StackPanel  Margin="5" Orientation="Horizontal">
+                                <Label Style="{DynamicResource Label_Style}" FontSize="18" HorizontalContentAlignment="Right" MinWidth="70" FontWeight="ExtraBold" x:Name="P_HRM2" Content="2 ՀրՄ"/>
+                                <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,0" MaxLength="6" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="P_HRM2_x" MinWidth="80"/>
+                                <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,0" MaxLength="6" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="P_HRM2_y" MinWidth="80"/>
+                                <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,0" MaxLength="4" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="P_HRM2_h" MinWidth="60"/>
+                            </StackPanel>
+                            <StackPanel  Margin="5" Orientation="Horizontal">
+                                <Label Style="{DynamicResource Label_Style}" FontSize="18" HorizontalContentAlignment="Right" MinWidth="70" FontWeight="ExtraBold" x:Name="P_HRM3" Content="3 ՀրՄ"/>
+                                <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,0" MaxLength="6" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="P_HRM3_x" MinWidth="80"/>
+                                <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,0" MaxLength="6" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="P_HRM3_y" MinWidth="80"/>
+                                <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,0" MaxLength="4" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="P_HRM3_h" MinWidth="60"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </WrapPanel>
+                    <Label Style="{DynamicResource Label_Style}" FontFamily="Adver Unicode" Margin="0,10" HorizontalContentAlignment="Center" FontSize="24" Content="ԿՐԱԿԱՅԻՆ ԴԻՐՔԵՐ"/>
+                    <WrapPanel HorizontalAlignment="Center">
+                        <StackPanel HorizontalAlignment="Center" Margin="0,0,15,0">
+                            <Label Style="{DynamicResource Label_Style}" FontFamily="Adver Unicode" HorizontalContentAlignment="Center" FontSize="20" Content="ԸՍՏ ԴԱՍԱԿՆԵՐԻ"/>
+                            <StackPanel Height="35" Margin="-2,-1" HorizontalAlignment="Right" Orientation="Horizontal">
+
+                                <Label Style="{DynamicResource Label_Style}" Margin="5,0" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  MinWidth="80" Content="X"/>
+                                <Label Style="{DynamicResource Label_Style}" Margin="5,0" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  MinWidth="80" Content="Y"/>
+                                <Label Style="{DynamicResource Label_Style}" Margin="5,0" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  MinWidth="80" Content="H"/>
+                                <Label Style="{DynamicResource Label_Style}" Margin="5,0" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  MinWidth="60" Content="ՀՈՒ"/>
+                                <Label Style="{DynamicResource Label_Style}" Margin="5,0" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  MinWidth="60" Content="Միջ"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="0,7">
+                                <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" FontSize="18" HorizontalContentAlignment="Right" MinWidth="70" FontWeight="ExtraBold" Content="1 ՀրՄ"/>
+                                <StackPanel>
+                                    <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" FontSize="18" HorizontalContentAlignment="Right" MinWidth="70" FontWeight="ExtraBold" Content="1 ՀԴ"/>
+                                    <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" FontSize="18" HorizontalContentAlignment="Right" MinWidth="70" FontWeight="ExtraBold" Content="2 ՀԴ"/>
+                                </StackPanel>
+                                <StackPanel>
+                                    <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,5" MaxLength="6" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="HM1HD1_x" MinWidth="80"/>
+                                    <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,0" MaxLength="6" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="HM1HD2_x" MinWidth="80"/>
+                                </StackPanel>
+                                <StackPanel>
+                                    <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,5" MaxLength="6" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="HM1HD1_y" MinWidth="80"/>
+                                    <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,0" MaxLength="6" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="HM1HD2_y" MinWidth="80"/>
+                                </StackPanel>
+                                <StackPanel>
+                                    <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,5" MaxLength="4" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="HM1HD1_h" MinWidth="80"/>
+                                    <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,0" MaxLength="4" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="HM1HD2_h" MinWidth="80"/>
+                                </StackPanel>
+                                <StackPanel>
+                                    <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,5" MaxLength="2" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="HM1HD1_hu" MinWidth="60"/>
+                                    <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,0" MaxLength="2" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="HM1HD2_hu" MinWidth="60"/>
+                                </StackPanel>
+                                <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,0" MaxLength="3" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="HM1_dis" MinWidth="60" Height="25"/>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal" Margin="0,7">
+                                <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" FontSize="18" HorizontalContentAlignment="Right" MinWidth="70" FontWeight="ExtraBold" Content="2 ՀրՄ"/>
+                                <StackPanel>
+                                    <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" FontSize="18" HorizontalContentAlignment="Right" MinWidth="70" FontWeight="ExtraBold" Content="1 ՀԴ"/>
+                                    <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" FontSize="18" HorizontalContentAlignment="Right" MinWidth="70" FontWeight="ExtraBold" Content="2 ՀԴ"/>
+                                </StackPanel>
+                                <StackPanel>
+                                    <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,5" MaxLength="6" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="HM2HD1_x" MinWidth="80"/>
+                                    <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,0" MaxLength="6" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="HM2HD2_x" MinWidth="80"/>
+                                </StackPanel>
+                                <StackPanel>
+                                    <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,5" MaxLength="6" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="HM2HD1_y" MinWidth="80"/>
+                                    <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,0" MaxLength="6" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="HM2HD2_y" MinWidth="80"/>
+                                </StackPanel>
+                                <StackPanel>
+                                    <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,5" MaxLength="4" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="HM2HD1_h" MinWidth="80"/>
+                                    <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,0" MaxLength="4" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="HM2HD2_h" MinWidth="80"/>
+                                </StackPanel>
+                                <StackPanel>
+                                    <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,5" MaxLength="2" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="HM2HD1_hu" MinWidth="60"/>
+                                    <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,0" MaxLength="2" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="HM2HD2_hu" MinWidth="60"/>
+                                </StackPanel>
+                                <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,0" MaxLength="3" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="HM2_dis" MinWidth="60" Height="25"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="0,7">
+                                <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" FontSize="18" HorizontalContentAlignment="Right" MinWidth="70" FontWeight="ExtraBold" Content="3 ՀրՄ"/>
+                                <StackPanel>
+                                    <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" FontSize="18" HorizontalContentAlignment="Right" MinWidth="70" FontWeight="ExtraBold" Content="1 ՀԴ"/>
+                                    <Label Style="{DynamicResource Label_Style}" VerticalContentAlignment="Center" FontSize="18" HorizontalContentAlignment="Right" MinWidth="70" FontWeight="ExtraBold" Content="2 ՀԴ"/>
+                                </StackPanel>
+                                <StackPanel>
+                                    <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,5" MaxLength="6" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="HM3HD1_x" MinWidth="80"/>
+                                    <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,0" MaxLength="6" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="HM3HD2_x" MinWidth="80"/>
+                                </StackPanel>
+                                <StackPanel>
+                                    <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,5" MaxLength="6" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="HM3HD1_y" MinWidth="80"/>
+                                    <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,0" MaxLength="6" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="HM3HD2_y" MinWidth="80"/>
+                                </StackPanel>
+                                <StackPanel>
+                                    <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,5" MaxLength="4" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="HM3HD1_h" MinWidth="80"/>
+                                    <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,0" MaxLength="4" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="HM3HD2_h" MinWidth="80"/>
+                                </StackPanel>
+                                <StackPanel>
+                                    <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,5" MaxLength="2" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="HM3HD1_hu" MinWidth="60"/>
+                                    <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,0" MaxLength="2" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="HM3HD2_hu" MinWidth="60"/>
+                                </StackPanel>
+                                <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,0" MaxLength="3" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="HM3_dis" MinWidth="60" Height="25"/>
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel HorizontalAlignment="Center">
+                            <Label Style="{DynamicResource Label_Style}" FontFamily="Adver Unicode" HorizontalContentAlignment="Center" FontSize="20" Content="ՄԱՐՏԿՈՑԻ ԿԱԶՄՈՎ"/>
+                            <StackPanel Height="35" Margin="2,-1" HorizontalAlignment="Right" Orientation="Horizontal">
+
+                                <Label Style="{DynamicResource Label_Style}" Margin="5,0" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  MinWidth="80" Content="X"/>
+                                <Label Style="{DynamicResource Label_Style}" Margin="5,0" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  MinWidth="80" Content="Y"/>
+                                <Label Style="{DynamicResource Label_Style}" Margin="5,0" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  MinWidth="80" Content="H"/>
+                                <Label Style="{DynamicResource Label_Style}" Margin="5,0" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  MinWidth="60" Content="ՀՈՒ"/>
+                                <Label Style="{DynamicResource Label_Style}" Margin="5,0" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  MinWidth="60" Content="Ճակ."/>
+                            </StackPanel>
+                            <StackPanel Height="70" Margin="5" Orientation="Horizontal">
+                                <Label Style="{DynamicResource Label_Style}" FontSize="18" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" MinWidth="70" FontWeight="ExtraBold" Content="1 ՀրՄ"/>
+                                <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,5" MaxLength="6" Height="25" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="PHM1_x" MinWidth="80"/>
+                                <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,5" MaxLength="6" Height="25" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="PHM1_y" MinWidth="80"/>
+                                <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,5" MaxLength="4" Height="25" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="PHM1_h" MinWidth="80"/>
+                                <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,5" MaxLength="2" Height="25" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="PHM1_hu" MinWidth="60"/>
+                                <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,5" MaxLength="3" Height="25" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="PHM1_dis" MinWidth="60"/>
+                            </StackPanel>
+                            <StackPanel Height="70" Margin="5" Orientation="Horizontal">
+                                <Label Style="{DynamicResource Label_Style}" FontSize="18" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" MinWidth="70" FontWeight="ExtraBold" Content="2 ՀրՄ"/>
+                                <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,5" MaxLength="6" Height="25" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="PHM2_x" MinWidth="80"/>
+                                <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,5" MaxLength="6" Height="25" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="PHM2_y" MinWidth="80"/>
+                                <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,5" MaxLength="4" Height="25" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="PHM2_h" MinWidth="80"/>
+                                <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,5" MaxLength="2" Height="25" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="PHM2_hu" MinWidth="60"/>
+                                <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,5" MaxLength="3" Height="25" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="PHM2_dis" MinWidth="60"/>
+                            </StackPanel>
+                            <StackPanel Height="70" Margin="5" Orientation="Horizontal">
+                                <Label Style="{DynamicResource Label_Style}" FontSize="18" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" MinWidth="70" FontWeight="ExtraBold" Content="3 ՀրՄ"/>
+                                <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,5" MaxLength="6" Height="25" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="PHM3_x" MinWidth="80"/>
+                                <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,5" MaxLength="6" Height="25" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="PHM3_y" MinWidth="80"/>
+                                <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,5" MaxLength="4" Height="25" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="PHM3_h" MinWidth="80"/>
+                                <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,5" MaxLength="2" Height="25" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="PHM3_hu" MinWidth="60"/>
+                                <TextBox Style="{DynamicResource TextBox_Style}" Margin="5,5" MaxLength="3" Height="25" FontSize="18"  FontWeight="ExtraBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" x:Name="PHM3_dis" MinWidth="60"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </WrapPanel>
+                    <Grid Height="35"></Grid>
+                </StackPanel>
+            </Grid>
+
+        </ScrollViewer>
+        <local:Footer x:Name="Footer" Panel.ZIndex="1" Visibility="Visible"></local:Footer>
+    </Grid>
+</Window>
