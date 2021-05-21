@@ -214,7 +214,7 @@ namespace Nemesis.Windows.PrintWindows
                 var target9 = TargetManager.GetNextAXKTarget(target8.ID);
                 var target10 = TargetManager.GetNextAXKTarget(target9.ID);
 
-                AXKReturn bat1 = Service.HandleAXKData(dk.Name, dk.Name, Info, new AXKTarget(new Uxankyun()
+                AXKReturn bat1 = Service.HandleAXKData(dk.Name, dk.Name, Info, Info, Info, new AXKTarget(new Uxankyun()
                 {
                     X1 = target1.Right.X.ToString(),
                     Y1 = target1.Right.Y.ToString(),
@@ -223,7 +223,7 @@ namespace Nemesis.Windows.PrintWindows
                     Y2 = target1.Left.Y.ToString(),
                     H2 = target1.Left.H.ToString(),
                 })),
-                bat2 = Service.HandleAXKData(dk.Name, dk.Name, Info, new AXKTarget(new Uxankyun()
+                bat2 = Service.HandleAXKData(dk.Name, dk.Name, Info, Info, Info, new AXKTarget(new Uxankyun()
                 {
                     X1 = target2.Right.X.ToString(),
                     Y1 = target2.Right.Y.ToString(),
@@ -232,7 +232,7 @@ namespace Nemesis.Windows.PrintWindows
                     Y2 = target2.Left.Y.ToString(),
                     H2 = target2.Left.H.ToString(),
                 })),
-                bat3 = Service.HandleAXKData(dk.Name, dk.Name, Info, new AXKTarget(new Uxankyun()
+                bat3 = Service.HandleAXKData(dk.Name, dk.Name, Info, Info, Info, new AXKTarget(new Uxankyun()
                 {
                     X1 = target3.Right.X.ToString(),
                     Y1 = target3.Right.Y.ToString(),
@@ -241,7 +241,7 @@ namespace Nemesis.Windows.PrintWindows
                     Y2 = target3.Left.Y.ToString(),
                     H2 = target3.Left.H.ToString(),
                 })),
-                bat4 = Service.HandleAXKData(dk.Name, dk.Name, Info, new AXKTarget(new Uxankyun()
+                bat4 = Service.HandleAXKData(dk.Name, dk.Name, Info, Info, Info, new AXKTarget(new Uxankyun()
                 {
                     X1 = target4.Right.X.ToString(),
                     Y1 = target4.Right.Y.ToString(),
@@ -250,7 +250,7 @@ namespace Nemesis.Windows.PrintWindows
                     Y2 = target4.Left.Y.ToString(),
                     H2 = target4.Left.H.ToString(),
                 })),
-                bat5 = Service.HandleAXKData(dk.Name, dk.Name, Info, new AXKTarget(new Uxankyun()
+                bat5 = Service.HandleAXKData(dk.Name, dk.Name, Info, Info, Info, new AXKTarget(new Uxankyun()
                 {
                     X1 = target5.Right.X.ToString(),
                     Y1 = target5.Right.Y.ToString(),
@@ -259,7 +259,7 @@ namespace Nemesis.Windows.PrintWindows
                     Y2 = target5.Left.Y.ToString(),
                     H2 = target5.Left.H.ToString(),
                 })),
-                bat6 = Service.HandleAXKData(dk.Name, dk.Name, Info, new AXKTarget(new Uxankyun()
+                bat6 = Service.HandleAXKData(dk.Name, dk.Name, Info, Info, Info, new AXKTarget(new Uxankyun()
                 {
                     X1 = target6.Right.X.ToString(),
                     Y1 = target6.Right.Y.ToString(),
@@ -268,7 +268,7 @@ namespace Nemesis.Windows.PrintWindows
                     Y2 = target6.Left.Y.ToString(),
                     H2 = target6.Left.H.ToString(),
                 })),
-                bat7 = Service.HandleAXKData(dk.Name, dk.Name, Info, new AXKTarget(new Uxankyun()
+                bat7 = Service.HandleAXKData(dk.Name, dk.Name, Info, Info, Info, new AXKTarget(new Uxankyun()
                 {
                     X1 = target7.Right.X.ToString(),
                     Y1 = target7.Right.Y.ToString(),
@@ -277,7 +277,7 @@ namespace Nemesis.Windows.PrintWindows
                     Y2 = target7.Left.Y.ToString(),
                     H2 = target7.Left.H.ToString(),
                 })),
-                bat8 = Service.HandleAXKData(dk.Name, dk.Name, Info, new AXKTarget(new Uxankyun()
+                bat8 = Service.HandleAXKData(dk.Name, dk.Name, Info, Info, Info, new AXKTarget(new Uxankyun()
                 {
                     X1 = target8.Right.X.ToString(),
                     Y1 = target8.Right.Y.ToString(),
@@ -286,7 +286,7 @@ namespace Nemesis.Windows.PrintWindows
                     Y2 = target8.Left.Y.ToString(),
                     H2 = target8.Left.H.ToString(),
                 })),
-                bat9 = Service.HandleAXKData(dk.Name, dk.Name, Info, new AXKTarget(new Uxankyun()
+                bat9 = Service.HandleAXKData(dk.Name, dk.Name, Info, Info, Info, new AXKTarget(new Uxankyun()
                 {
                     X1 = target9.Right.X.ToString(),
                     Y1 = target9.Right.Y.ToString(),
@@ -295,7 +295,7 @@ namespace Nemesis.Windows.PrintWindows
                     Y2 = target9.Left.Y.ToString(),
                     H2 = target9.Left.H.ToString(),
                 })),
-                bat10 = Service.HandleAXKData(dk.Name, dk.Name, Info, new AXKTarget(new Uxankyun()
+                bat10 = Service.HandleAXKData(dk.Name, dk.Name, Info, Info, Info, new AXKTarget(new Uxankyun()
                 {
                     X1 = target10.Right.X.ToString(),
                     Y1 = target10.Right.Y.ToString(),

@@ -284,90 +284,152 @@ namespace Nemesis
                     break;
             }
         }
-        public void HandlePaytucichTypes(string type)
+        public void HandlePaytucichTypes(string type,int battarey)
         {
             switch(type)
             {
                 case "РГМ-2 (ОФ-462)":
-                    Poxrak1.Visibility = Visibility.Collapsed;
-                    Poxrak2.Visibility = Visibility.Collapsed;
-                    Poxrak3.Visibility = Visibility.Collapsed;
-                    Nhaz1.Visibility = Visibility.Collapsed;
-                    Nhaz2.Visibility = Visibility.Collapsed;
-                    Nhaz3.Visibility = Visibility.Collapsed;
-                    catk1.Visibility = Visibility.Visible;
-                    catk2.Visibility = Visibility.Visible;
-                    catk3.Visibility = Visibility.Visible;
+                    switch(battarey)
+                    {
+                        case 1:
+                            Poxrak1.Visibility = Visibility.Collapsed;
+                            Nhaz1.Visibility = Visibility.Collapsed;
+                            catk1.Visibility = Visibility.Visible;
+                            break;
+                        case 2:
+                            Poxrak2.Visibility = Visibility.Collapsed;
+                            Nhaz2.Visibility = Visibility.Collapsed;
+                            catk2.Visibility = Visibility.Visible;
+                            break;
+                        case 3:
+                            Poxrak3.Visibility = Visibility.Collapsed;
+                            Nhaz3.Visibility = Visibility.Collapsed;
+                            catk3.Visibility = Visibility.Visible;
+                            break;
+                        default:
+                            Poxrak1.Visibility = Visibility.Collapsed;
+                            Poxrak2.Visibility = Visibility.Collapsed;
+                            Poxrak3.Visibility = Visibility.Collapsed;
+                            Nhaz1.Visibility = Visibility.Collapsed;
+                            Nhaz2.Visibility = Visibility.Collapsed;
+                            Nhaz3.Visibility = Visibility.Collapsed;
+                            catk1.Visibility = Visibility.Visible;
+                            catk2.Visibility = Visibility.Visible;
+                            catk3.Visibility = Visibility.Visible;
+                            break; 
+                    }
                     break;
                 case "В-90 (ОФ-462)":
-                    Poxrak1.Visibility = Visibility.Visible;
-                    Poxrak2.Visibility = Visibility.Visible;
-                    Poxrak3.Visibility = Visibility.Visible;
-                    PoxrakLabel1.Content = "ՊԱՅԹՈՒՑԻՉ";
-                    PoxrakLabel2.Content = "ՊԱՅԹՈՒՑԻՉ";
-                    PoxrakLabel3.Content = "ՊԱՅԹՈՒՑԻՉ";
-                    Nhaz1.Visibility = Visibility.Visible;
-                    Nhaz2.Visibility = Visibility.Visible;
-                    Nhaz3.Visibility = Visibility.Visible;
-                    catk1.Visibility = Visibility.Collapsed;
-                    catk2.Visibility = Visibility.Collapsed;
-                    catk3.Visibility = Visibility.Collapsed;
+                    switch (battarey)
+                    {
+                        case 1:
+                            Poxrak1.Visibility = Visibility.Visible;
+                            PoxrakLabel1.Content = "ՊԱՅԹՈՒՑԻՉ";
+                            Nhaz1.Visibility = Visibility.Visible;
+                            catk1.Visibility = Visibility.Collapsed;
+                            break;
+                        case 2:
+                            Poxrak2.Visibility = Visibility.Visible;
+                            PoxrakLabel2.Content = "ՊԱՅԹՈՒՑԻՉ";
+                            Nhaz2.Visibility = Visibility.Visible;
+                            catk2.Visibility = Visibility.Collapsed;
+                            break;
+                        case 3:
+                            Poxrak3.Visibility = Visibility.Visible;
+                            PoxrakLabel3.Content = "ՊԱՅԹՈՒՑԻՉ";
+                            Nhaz3.Visibility = Visibility.Visible;
+                            catk3.Visibility = Visibility.Collapsed;
+                            break;
+                        default:
+                            Poxrak1.Visibility = Visibility.Visible;
+                            Poxrak2.Visibility = Visibility.Visible;
+                            Poxrak3.Visibility = Visibility.Visible;
+                            PoxrakLabel1.Content = "ՊԱՅԹՈՒՑԻՉ";
+                            PoxrakLabel2.Content = "ՊԱՅԹՈՒՑԻՉ";
+                            PoxrakLabel3.Content = "ՊԱՅԹՈՒՑԻՉ";
+                            Nhaz1.Visibility = Visibility.Visible;
+                            Nhaz2.Visibility = Visibility.Visible;
+                            Nhaz3.Visibility = Visibility.Visible;
+                            catk1.Visibility = Visibility.Collapsed;
+                            catk2.Visibility = Visibility.Collapsed;
+                            catk3.Visibility = Visibility.Collapsed;
+                            break;
+                    }
                     break;
                 case "Т-90 (3С4)":
-                    Poxrak1.Visibility = Visibility.Visible;
-                    Poxrak2.Visibility = Visibility.Visible;
-                    Poxrak3.Visibility = Visibility.Visible;
-                    PoxrakLabel1.Content = "ՓՈՂՐԱԿ";
-                    PoxrakLabel2.Content = "ՓՈՂՐԱԿ";
-                    PoxrakLabel3.Content = "ՓՈՂՐԱԿ";
-                    Nhaz1.Visibility = Visibility.Visible;
-                    Nhaz2.Visibility = Visibility.Visible;
-                    Nhaz3.Visibility = Visibility.Visible;
-                    catk1.Visibility = Visibility.Collapsed;
-                    catk2.Visibility = Visibility.Collapsed;
-                    catk3.Visibility = Visibility.Collapsed;
+                    switch (battarey)
+                    {
+                        case 1:
+                            Poxrak1.Visibility = Visibility.Visible;
+                            PoxrakLabel1.Content = "ՓՈՂՐԱԿ";
+                            Nhaz1.Visibility = Visibility.Visible;
+                            catk1.Visibility = Visibility.Collapsed;
+                            break;
+                        case 2:
+                            Poxrak2.Visibility = Visibility.Visible;
+                            PoxrakLabel2.Content = "ՓՈՂՐԱԿ";
+                            Nhaz2.Visibility = Visibility.Visible;
+                            catk2.Visibility = Visibility.Collapsed;
+                            break;
+                        case 3:
+                            Poxrak3.Visibility = Visibility.Visible;
+                            PoxrakLabel3.Content = "ՓՈՂՐԱԿ";
+                            Nhaz3.Visibility = Visibility.Visible;
+                            catk3.Visibility = Visibility.Collapsed;
+                            break;
+                        default:
+                            Poxrak1.Visibility = Visibility.Visible;
+                            Poxrak2.Visibility = Visibility.Visible;
+                            Poxrak3.Visibility = Visibility.Visible;
+                            PoxrakLabel1.Content = "ՓՈՂՐԱԿ";
+                            PoxrakLabel2.Content = "ՓՈՂՐԱԿ";
+                            PoxrakLabel3.Content = "ՓՈՂՐԱԿ";
+                            Nhaz1.Visibility = Visibility.Visible;
+                            Nhaz2.Visibility = Visibility.Visible;
+                            Nhaz3.Visibility = Visibility.Visible;
+                            catk1.Visibility = Visibility.Collapsed;
+                            catk2.Visibility = Visibility.Collapsed;
+                            catk3.Visibility = Visibility.Collapsed;
+                            break;
+                    }
                     break;
                 case "Т-7 (С-463)":
-                    Poxrak1.Visibility = Visibility.Visible;
-                    Poxrak2.Visibility = Visibility.Visible;
-                    Poxrak3.Visibility = Visibility.Visible;
-                    PoxrakLabel1.Content = "ՓՈՂՐԱԿ";
-                    PoxrakLabel2.Content = "ՓՈՂՐԱԿ";
-                    PoxrakLabel3.Content = "ՓՈՂՐԱԿ";
-                    Nhaz1.Visibility = Visibility.Visible;
-                    Nhaz2.Visibility = Visibility.Visible;
-                    Nhaz3.Visibility = Visibility.Visible;
-                    catk1.Visibility = Visibility.Collapsed;
-                    catk2.Visibility = Visibility.Collapsed;
-                    catk3.Visibility = Visibility.Collapsed;
+                    switch (battarey)
+                    {
+                        case 1:
+                            Poxrak1.Visibility = Visibility.Visible;
+                            PoxrakLabel1.Content = "ՓՈՂՐԱԿ";
+                            Nhaz1.Visibility = Visibility.Visible;
+                            catk1.Visibility = Visibility.Collapsed;
+                            break;
+                        case 2:
+                            Poxrak2.Visibility = Visibility.Visible;
+                            PoxrakLabel2.Content = "ՓՈՂՐԱԿ";
+                            Nhaz2.Visibility = Visibility.Visible;
+                            catk2.Visibility = Visibility.Collapsed;
+                            break;
+                        case 3:
+                            Poxrak3.Visibility = Visibility.Visible;
+                            PoxrakLabel3.Content = "ՓՈՂՐԱԿ";
+                            Nhaz3.Visibility = Visibility.Visible;
+                            catk3.Visibility = Visibility.Collapsed;
+                            break;
+                        default:
+                            Poxrak1.Visibility = Visibility.Visible;
+                            Poxrak2.Visibility = Visibility.Visible;
+                            Poxrak3.Visibility = Visibility.Visible;
+                            PoxrakLabel1.Content = "ՓՈՂՐԱԿ";
+                            PoxrakLabel2.Content = "ՓՈՂՐԱԿ";
+                            PoxrakLabel3.Content = "ՓՈՂՐԱԿ";
+                            Nhaz1.Visibility = Visibility.Visible;
+                            Nhaz2.Visibility = Visibility.Visible;
+                            Nhaz3.Visibility = Visibility.Visible;
+                            catk1.Visibility = Visibility.Collapsed;
+                            catk2.Visibility = Visibility.Collapsed;
+                            catk3.Visibility = Visibility.Collapsed;
+                            break;
+                    }
                     break;
-
-                //case "ДТМ-75":
-                //    Poxrak1.Visibility = Visibility.Visible;
-                //    Poxrak2.Visibility = Visibility.Visible;
-                //    Poxrak3.Visibility = Visibility.Visible;
-                //    PoxrakLabel1.Content = "ՓՈՂՐԱԿ";
-                //    PoxrakLabel2.Content = "ՓՈՂՐԱԿ";
-                //    PoxrakLabel3.Content = "ՓՈՂՐԱԿ";
-                //    Nhaz1.Visibility = Visibility.Visible;
-                //    Nhaz2.Visibility = Visibility.Visible;
-                //    Nhaz3.Visibility = Visibility.Visible;
-                //    catk1.Visibility = Visibility.Collapsed;
-                //    catk2.Visibility = Visibility.Collapsed;
-                //    catk3.Visibility = Visibility.Collapsed;
-                //    break;
-
-                //case "АР-30":
-                //    Poxrak1.Visibility = Visibility.Collapsed;
-                //    Poxrak2.Visibility = Visibility.Collapsed;
-                //    Poxrak3.Visibility = Visibility.Collapsed;
-                //    Nhaz1.Visibility = Visibility.Collapsed;
-                //    Nhaz2.Visibility = Visibility.Collapsed;
-                //    Nhaz3.Visibility = Visibility.Collapsed;
-                //    catk1.Visibility = Visibility.Visible;
-                //    catk2.Visibility = Visibility.Visible;
-                //    catk3.Visibility = Visibility.Visible;
-                //    break;
             }
         }
 

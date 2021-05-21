@@ -79,3 +79,14 @@ C:\Users\gegha\Desktop\Nemesis Desktop\BaseService\obj\Debug\BaseService.csproj.
 C:\Users\gegha\Desktop\Nemesis Desktop\BaseService\obj\Debug\BaseService.csproj.CopyComplete
 C:\Users\gegha\Desktop\Nemesis Desktop\BaseService\obj\Debug\BaseService.dll
 C:\Users\gegha\Desktop\Nemesis Desktop\BaseService\obj\Debug\BaseService.pdb
+C:\Users\gegham.mkrtchyan\Desktop\Nemesis-Desktop\BaseService\bin\Debug\BaseService.dll
+C:\Users\gegham.mkrtchyan\Desktop\Nemesis-Desktop\BaseService\bin\Debug\BaseService.pdb
+C:\Users\gegham.mkrtchyan\Desktop\Nemesis-Desktop\BaseService\bin\Debug\BaseEntities.dll
+C:\Users\gegham.mkrtchyan\Desktop\Nemesis-Desktop\BaseService\bin\Debug\DataAccessLayer.dll
+C:\Users\gegham.mkrtchyan\Desktop\Nemesis-Desktop\BaseService\bin\Debug\BaseEntities.pdb
+C:\Users\gegham.mkrtchyan\Desktop\Nemesis-Desktop\BaseService\bin\Debug\DataAccessLayer.pdb
+C:\Users\gegham.mkrtchyan\Desktop\Nemesis-Desktop\BaseService\obj\Debug\BaseService.csprojAssemblyReference.cache
+C:\Users\gegham.mkrtchyan\Desktop\Nemesis-Desktop\BaseService\obj\Debug\BaseService.csproj.CoreCompileInputs.cache
+C:\Users\gegham.mkrtchyan\Desktop\Nemesis-Desktop\BaseService\obj\Debug\BaseService.csproj.CopyComplete
+C:\Users\gegham.mkrtchyan\Desktop\Nemesis-Desktop\BaseService\obj\Debug\BaseService.dll
+C:\Users\gegham.mkrtchyan\Desktop\Nemesis-Desktop\BaseService\obj\Debug\BaseService.pdb

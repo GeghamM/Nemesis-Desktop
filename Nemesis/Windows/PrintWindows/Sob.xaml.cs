@@ -157,7 +157,7 @@ namespace Nemesis.Windows.PrintWindows
                     /////////////////////////////////////////////////////////////////////////////////////
                     AXKReturn bat1 = new AXKReturn(), bat2 = new AXKReturn(), bat3 = new AXKReturn(), bat4 = new AXKReturn(), bat5 = new AXKReturn();
                     /////////////////////////////////////////////////////////////////////////////////////
-                    bat1 = Service.HandleAXKData(dk.Name, dk.Name, SobInfo, new AXKTarget(new Uxankyun()
+                    bat1 = Service.HandleAXKData(dk.Name, dk.Name, SobInfo, SobInfo, SobInfo, new AXKTarget(new Uxankyun()
                     {
                         X1 = target1.Right.X.ToString(),
                         Y1 = target1.Right.Y.ToString(),
@@ -167,7 +167,7 @@ namespace Nemesis.Windows.PrintWindows
                         H2 = target1.Left.H.ToString(),
                     }));
                     /////////////////////////////////////////////////////////////////////////////////////
-                    bat2 = Service.HandleAXKData(dk.Name, dk.Name, SobInfo, new AXKTarget(new Uxankyun()
+                    bat2 = Service.HandleAXKData(dk.Name, dk.Name, SobInfo, SobInfo, SobInfo, new AXKTarget(new Uxankyun()
                     {
                         X1 = target2.Right.X.ToString(),
                         Y1 = target2.Right.Y.ToString(),
@@ -177,7 +177,7 @@ namespace Nemesis.Windows.PrintWindows
                         H2 = target2.Left.H.ToString(),
                     }));
                     /////////////////////////////////////////////////////////////////////////////////////
-                    bat3 = Service.HandleAXKData(dk.Name, dk.Name, SobInfo, new AXKTarget(new Uxankyun()
+                    bat3 = Service.HandleAXKData(dk.Name, dk.Name, SobInfo, SobInfo, SobInfo, new AXKTarget(new Uxankyun()
                     {
                         X1 = target3.Right.X.ToString(),
                         Y1 = target3.Right.Y.ToString(),
@@ -187,7 +187,7 @@ namespace Nemesis.Windows.PrintWindows
                         H2 = target3.Left.H.ToString(),
                     }));
                     /////////////////////////////////////////////////////////////////////////////////////
-                    bat4 = Service.HandleAXKData(dk.Name, dk.Name, SobInfo, new AXKTarget(new Uxankyun()
+                    bat4 = Service.HandleAXKData(dk.Name, dk.Name, SobInfo, SobInfo, SobInfo, new AXKTarget(new Uxankyun()
                     {
                         X1 = target4.Right.X.ToString(),
                         Y1 = target4.Right.Y.ToString(),
@@ -197,7 +197,7 @@ namespace Nemesis.Windows.PrintWindows
                         H2 = target4.Left.H.ToString(),
                     }));
                     /////////////////////////////////////////////////////////////////////////////////////
-                    bat5 = Service.HandleAXKData(dk.Name, dk.Name, SobInfo, new AXKTarget(new Uxankyun()
+                    bat5 = Service.HandleAXKData(dk.Name, dk.Name, SobInfo, SobInfo, SobInfo, new AXKTarget(new Uxankyun()
                     {
                         X1 = target5.Right.X.ToString(),
                         Y1 = target5.Right.Y.ToString(),

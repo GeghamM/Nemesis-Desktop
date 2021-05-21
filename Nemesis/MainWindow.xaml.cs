@@ -41,22 +41,22 @@ namespace Nemesis
         public MainWindow()
         {
             byte[] certificate;
-            if (File.Exists("Certificate"))
-            {
-                using (Stream fStream = File.OpenRead("Certificate"))
-                {
-                    certificate = (byte[])new BinaryFormatter().Deserialize(fStream);
-                }
+            //if (File.Exists("Certificate"))
+            //{
+            //    using (Stream fStream = File.OpenRead("Certificate"))
+            //    {
+            //        certificate = (byte[])new BinaryFormatter().Deserialize(fStream);
+            //    }
 
-                if (!(new SertificateValidation().CheckSertificate(certificate)))
-                {
-                    new SertificateValidation().ShowDialog();
-                }
-            }
-            else
-            {
-                new SertificateValidation().ShowDialog();
-            }
+            //    if (!(new SertificateValidation().CheckSertificate(certificate)))
+            //    {
+            //        new SertificateValidation().ShowDialog();
+            //    }
+            //}
+            //else
+            //{
+            //    new SertificateValidation().ShowDialog();
+            //}
 
             Initializers.InitializeCoreRanges();
             Initializers.InitiazieCores();

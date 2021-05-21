@@ -39,7 +39,7 @@ namespace Nemesis
             return true;
         }
 
-        public bool ResetBattares()
+        public bool ResetDks()
         {
             Alpha_Hram1.Text = "";
             D_Hram1.Text = "";
@@ -47,6 +47,11 @@ namespace Nemesis
             Alpha_Hram2.Text = "";
             D_Hram2.Text = "";
             M_NSH2.Text = "";
+
+            return true;
+        }
+        public bool ResetBattares()
+        {
 
             M1_Core.Text = "";
             M1_D1_Pricel.Text = "";

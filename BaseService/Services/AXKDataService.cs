@@ -10,11 +10,11 @@ namespace ActionsLayer
 {
     public static partial class Service
     {
-        public static AXKReturn HandleAXKData(string Ditaket1, string Ditaket2, TaskInfo tInfo, AXKTarget target, Kayficents kfs = null)
+        public static AXKReturn HandleAXKData(string Ditaket1, string Ditaket2, TaskInfo tInfo1, TaskInfo tInfo2, TaskInfo tInfo3, AXKTarget target, Kayficents kfs = null)
         {
             var retval = new AXKReturn();
-            string type = tInfo.AXKType;
-            string texamas = tInfo.Texamas;
+            string type = tInfo1.AXKType;
+            string texamas = tInfo1.Texamas;
 
             BaseEntities.Point DK1 = Owin.Martakarg.GetDitaket(Ditaket1);
             BaseEntities.Point DK2 = Owin.Martakarg.GetDitaket(Ditaket2);
@@ -60,7 +60,7 @@ namespace ActionsLayer
             };
 
             int k1 = 50, k2 = 150, k3 = 250, kd = 300;
-            if (tInfo.TaskType == "ԱԱԿ") { k1 = 100; k2 = 300; k3 = 500; kd = 600; }
+            if (tInfo1.TaskType == "ԱԱԿ") { k1 = 100; k2 = 300; k3 = 500; kd = 600; }
             if (texamas == "Եկրորդ")
             {
                 k1 += kd;
@@ -89,7 +89,7 @@ namespace ActionsLayer
 
             double Dist2 = Math.Round(Math.Sqrt(Math.Pow((Tp2.X - DK1.X), 2) + Math.Pow((Tp2.Y - DK1.Y), 2)));
             Battarey Bat1, Bat2, Bat3;
-            if (tInfo.Positions == "Դասակի Կազմով")
+            if (tInfo1.Positions == "Դասակի Կազմով")
             {
 
                 Bat1 = GetBattareyData(
@@ -97,7 +97,7 @@ namespace ActionsLayer
                     Owin.Martakarg.GetKD(1, 2),
                     Owin.Martakarg.GetDitaket(Ditaket2),
                     new Target(Tp1),
-                    tInfo
+                    tInfo1
                     );
 
                 Bat2 = GetBattareyData(
@@ -105,7 +105,7 @@ namespace ActionsLayer
                        Owin.Martakarg.GetKD(2, 2),
                        Owin.Martakarg.GetDitaket(Ditaket2),
                        new Target(Tp2),
-                       tInfo
+                       tInfo2
                        );
 
                 Bat3 = GetBattareyData(
@@ -113,7 +113,7 @@ namespace ActionsLayer
                        Owin.Martakarg.GetKD(3, 2),
                        Owin.Martakarg.GetDitaket(Ditaket2),
                        new Target(Tp3),
-                       tInfo
+                       tInfo3
                        );
             }
             else
@@ -123,7 +123,7 @@ namespace ActionsLayer
                    Owin.Martakarg.GetKD(1, 0),
                    Owin.Martakarg.GetDitaket(Ditaket2),
                    new Target(Tp1),
-                   tInfo
+                   tInfo1
                    );
 
                 Bat2 = GetBattareyData(
@@ -131,7 +131,7 @@ namespace ActionsLayer
                        Owin.Martakarg.GetKD(2, 0),
                        Owin.Martakarg.GetDitaket(Ditaket2),
                        new Target(Tp2),
-                       tInfo
+                       tInfo2
                        );
 
                 Bat3 = GetBattareyData(
@@ -139,20 +139,20 @@ namespace ActionsLayer
                        Owin.Martakarg.GetKD(3, 0),
                        Owin.Martakarg.GetDitaket(Ditaket2),
                        new Target(Tp3),
-                       tInfo
+                       tInfo3
                        );
             }
-            if (tInfo.Positions == "Դասակի Կազմով")
+            if (tInfo1.Positions == "Դասակի Կազմով")
             {
-                HandleAXKAngle(Tp1, Owin.Martakarg.GetKD(1, 1), tInfo, ref Bat1);
-                HandleAXKAngle(Tp2, Owin.Martakarg.GetKD(2, 1), tInfo, ref Bat2);
-                HandleAXKAngle(Tp3, Owin.Martakarg.GetKD(3, 1), tInfo, ref Bat3);
+                HandleAXKAngle(Tp1, Owin.Martakarg.GetKD(1, 1), tInfo1, ref Bat1);
+                HandleAXKAngle(Tp2, Owin.Martakarg.GetKD(2, 1), tInfo2, ref Bat2);
+                HandleAXKAngle(Tp3, Owin.Martakarg.GetKD(3, 1), tInfo3, ref Bat3);
             }
             else
             {
-                HandleAXKAngle(Tp1, Owin.Martakarg.GetKD(1, 0), tInfo, ref Bat1);
-                HandleAXKAngle(Tp2, Owin.Martakarg.GetKD(2, 0), tInfo, ref Bat2);
-                HandleAXKAngle(Tp3, Owin.Martakarg.GetKD(3, 0), tInfo, ref Bat3);
+                HandleAXKAngle(Tp1, Owin.Martakarg.GetKD(1, 0), tInfo1, ref Bat1);
+                HandleAXKAngle(Tp2, Owin.Martakarg.GetKD(2, 0), tInfo2, ref Bat2);
+                HandleAXKAngle(Tp3, Owin.Martakarg.GetKD(3, 0), tInfo3, ref Bat3);
             }
 
             retval.Bat1 = Bat1;

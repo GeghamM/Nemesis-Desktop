@@ -11,6 +11,7 @@ using System.IO;
 using Nemesis.Windows.PrintWindows;
 using BaseService;
 using Nemesis.Windows.Partials;
+using System.Collections.Generic;
 
 namespace Nemesis
 {
@@ -29,7 +30,7 @@ namespace Nemesis
             HasReference = true;
             InitializeComponent();
             InitializeComboBoxes();
-            HandlePaytucichTypes(Paytucich.Text);
+            HandlePaytucichTypes(Paytucich.Text, 0);
             InatializeImageSources();
             AXKName.Items.Clear();
             AXKName.Items.Add(new ComboBoxItem() { Content = "Ոչ Պլանային" });
@@ -86,7 +87,10 @@ namespace Nemesis
 
         public void InitializeComboBoxes()
         {
-            Initializer.InitializeSystems(ref Systems);
+            Initializer.InitializeSystems(ref Systems, true);
+            Initializer.InitializeSystems(ref Systems1, false);
+            Initializer.InitializeSystems(ref Systems2, false);
+            Initializer.InitializeSystems(ref Systems3, false);
             Initializer.InitializeTaskTypes(ref TaskType);
             Initializer.InitializeShootingMethod(ref ShootingMethod, false);
             Initializer.InitializeShootingCore(ref ShootingCore, "");
@@ -94,6 +98,12 @@ namespace Nemesis
             Initializer.InitializeDitakets(ref Ditaket1);
             Initializer.InitializeDitakets(ref Ditaket2);
             Initializer.InitializePaytucich(ref Paytucich, Systems.Text);
+            Initializer.InitializePaytucich(ref Paytucich1, Systems1.Text);
+            Initializer.InitializePaytucich(ref Paytucich2, Systems2.Text);
+            Initializer.InitializePaytucich(ref Paytucich3, Systems3.Text);
+            Initializer.InitializeShootingCore(ref ShootingCore1, Paytucich1.Text);
+            Initializer.InitializeShootingCore(ref ShootingCore2, Paytucich2.Text);
+            Initializer.InitializeShootingCore(ref ShootingCore3, Paytucich3.Text);
             Initializer.InitializeAXKType(ref AXKType);
             Initializer.InitializeTexamas(ref Texamas);
         }
@@ -144,7 +154,7 @@ namespace Nemesis
                         Owin.Martakarg.GetKD(1, 2),
                         Owin.Martakarg.GetDitaket(Ditaket2.Text),
                         GetTarget(),
-                        GetTaskInfo(),
+                        GetTaskInfo(1),
                         IsWithKayficent() || IsWithHavelyal() ? GetKayficentsFromView() : null,
                         Hramanatarakan
                         )); ;
@@ -154,7 +164,7 @@ namespace Nemesis
                         Owin.Martakarg.GetKD(2, 2),
                         Owin.Martakarg.GetDitaket(Ditaket2.Text),
                         GetTarget(),
-                        GetTaskInfo(),
+                        GetTaskInfo(2),
                         IsWithKayficent() || IsWithHavelyal() ? GetKayficentsFromView() : null,
                         Hramanatarakan
                         )); ;
@@ -164,7 +174,7 @@ namespace Nemesis
                         Owin.Martakarg.GetKD(3, 2),
                         Owin.Martakarg.GetDitaket(Ditaket2.Text),
                         GetTarget(),
-                        GetTaskInfo(),
+                        GetTaskInfo(3),
                         IsWithKayficent() || IsWithHavelyal() ? GetKayficentsFromView() : null,
                         Hramanatarakan
                         )); ;
@@ -178,7 +188,7 @@ namespace Nemesis
                         Owin.Martakarg.GetKD(1, 0),
                         Owin.Martakarg.GetDitaket(Ditaket2.Text),
                         GetTarget(),
-                        GetTaskInfo(),
+                        GetTaskInfo(1),
                         IsWithKayficent() || IsWithHavelyal() ? GetKayficentsFromView() : null,
                         Hramanatarakan
                         )); ;
@@ -188,7 +198,7 @@ namespace Nemesis
                         Owin.Martakarg.GetKD(2, 0),
                         Owin.Martakarg.GetDitaket(Ditaket2.Text),
                         GetTarget(),
-                        GetTaskInfo(),
+                        GetTaskInfo(2),
                         IsWithKayficent() || IsWithHavelyal() ? GetKayficentsFromView() : null,
                         Hramanatarakan
                         )); ;
@@ -198,7 +208,7 @@ namespace Nemesis
                         Owin.Martakarg.GetKD(3, 0),
                         Owin.Martakarg.GetDitaket(Ditaket2.Text),
                         GetTarget(),
-                        GetTaskInfo(),
+                        GetTaskInfo(3),
                         IsWithKayficent() || IsWithHavelyal() ? GetKayficentsFromView() : null,
                         Hramanatarakan
                         )); ;
@@ -226,6 +236,7 @@ namespace Nemesis
                 else
                 {
                     ReSetTarget();
+                    ResetDks();
                     ResetBattares();
                 }
 
@@ -246,7 +257,7 @@ namespace Nemesis
                     double.TryParse(AXK_dzax_Y.Text, out _) &&
                     double.TryParse(AXK_dzax_H.Text, out _))
                 {
-                    var Retval = Service.HandleAXKData(Ditaket1.Text, Ditaket2.Text, GetTaskInfo(), GetAXKTarget(), IsWithKayficent() || IsWithHavelyal() ? GetKayficentsFromView() : null);
+                    var Retval = Service.HandleAXKData(Ditaket1.Text, Ditaket2.Text, GetTaskInfo(1), GetTaskInfo(2), GetTaskInfo(3), GetAXKTarget(), IsWithKayficent() || IsWithHavelyal() ? GetKayficentsFromView() : null);
                     if (Retval.P2 != null) SetAXKpointLeft(Retval.P2);
                     if (Retval.P1 != null) SetAXKpointRight(Retval.P1);
                     if (Retval.Tex1 != null) SetTexagrakanaj(Retval.Tex1);
@@ -337,7 +348,7 @@ namespace Nemesis
                         double.TryParse(Helper.RepresentStrings(Alpha_Hram1.Text), out _) &&
                         double.TryParse(D_Hram1.Text, out _) && double.TryParse(M_NSH1.Text, out _))
                     {
-                        var Retval = Service.HandleAXKData(Ditaket1.Text, Ditaket2.Text, GetTaskInfo(), GetAXKTarget(), IsWithKayficent() || IsWithHavelyal() ? GetKayficentsFromView() : null);
+                        var Retval = Service.HandleAXKData(Ditaket1.Text, Ditaket2.Text, GetTaskInfo(1), GetTaskInfo(2), GetTaskInfo(3), GetAXKTarget(), IsWithKayficent() || IsWithHavelyal() ? GetKayficentsFromView() : null);
                         if (Retval.P2 != null) SetAXKpointLeft(Retval.P2);
                         if (Retval.P1 != null) SetAXKpointRight(Retval.P1);
                         if (Retval.Tex1 != null) SetTexagrakanaj(Retval.Tex1);
@@ -381,7 +392,7 @@ namespace Nemesis
                             double.TryParse(AXK_dzax_Y.Text, out _) &&
                             double.TryParse(AXK_dzax_H.Text, out _))
                         {
-                            var Retval = Service.HandleAXKData(Ditaket1.Text, Ditaket2.Text, GetTaskInfo(), GetAXKTarget(), IsWithKayficent() || IsWithHavelyal() ? GetKayficentsFromView() : null);
+                            var Retval = Service.HandleAXKData(Ditaket1.Text, Ditaket2.Text, GetTaskInfo(1), GetTaskInfo(2), GetTaskInfo(3), GetAXKTarget(), IsWithKayficent() || IsWithHavelyal() ? GetKayficentsFromView() : null);
                             if (Retval.P2 != null) SetAXKpointLeft(Retval.P2);
                             if (Retval.P1 != null) SetAXKpointRight(Retval.P1);
                             if (Retval.Tex1 != null) SetTexagrakanaj(Retval.Tex1);
@@ -429,7 +440,7 @@ namespace Nemesis
                     double.TryParse(AXK_dzax_Y.Text, out _) &&
                     double.TryParse(AXK_dzax_H.Text, out _))
                 {
-                    var Retval = Service.HandleAXKData(Ditaket1.Text, Ditaket2.Text, GetTaskInfo(), GetAXKTarget(), IsWithKayficent() || IsWithHavelyal() ? GetKayficentsFromView() : null);
+                    var Retval = Service.HandleAXKData(Ditaket1.Text, Ditaket2.Text, GetTaskInfo(1), GetTaskInfo(2), GetTaskInfo(3), GetAXKTarget(), IsWithKayficent() || IsWithHavelyal() ? GetKayficentsFromView() : null);
                     if (Retval.P2 != null) SetAXKpointLeft(Retval.P2);
                     if (Retval.P1 != null) SetAXKpointRight(Retval.P1);
                     if (Retval.Tex1 != null) SetTexagrakanaj(Retval.Tex1);
@@ -463,6 +474,7 @@ namespace Nemesis
         private void ResetClick(object sender, MouseButtonEventArgs e)
         {
             ReSetTarget();
+            ResetDks();
             ResetBattares();
             ToolBoxExpander.IsExpanded = false;
         }
@@ -476,7 +488,7 @@ namespace Nemesis
                 double.TryParse(AXK_dzax_Y.Text, out _) &&
                 double.TryParse(AXK_dzax_H.Text, out _))
             {
-                var Retval = Service.HandleAXKData(Ditaket1.Text, Ditaket2.Text, GetTaskInfo(), GetAXKTarget(), IsWithKayficent() || IsWithHavelyal() ? GetKayficentsFromView() : null);
+                var Retval = Service.HandleAXKData(Ditaket1.Text, Ditaket2.Text, GetTaskInfo(1), GetTaskInfo(2), GetTaskInfo(3), GetAXKTarget(), IsWithKayficent() || IsWithHavelyal() ? GetKayficentsFromView() : null);
                 if (Retval.P2 != null) SetAXKpointLeft(Retval.P2);
                 if (Retval.P1 != null) SetAXKpointRight(Retval.P1);
                 if (Retval.Tex1 != null) SetTexagrakanaj(Retval.Tex1);
@@ -494,7 +506,28 @@ namespace Nemesis
             {
                 ShootingCore.SelectedItem = ShootingCore.Items[0];
             }
-            HandlePaytucichTypes(Paytucich.Text);
+            HandlePaytucichTypes(Paytucich.Text, 0);
+            HandleShootingType();
+            Count(sender, e);
+        }
+
+        private void CustomPaytucichClosed(object sender, EventArgs e)
+        {
+            if (Paytucich1.Text == "В-90 (ОФ-462)")
+            {
+                ShootingCore1.SelectedItem = ShootingCore1.Items[0];
+            }
+            if (Paytucich2.Text == "В-90 (ОФ-462)")
+            {
+                ShootingCore2.SelectedItem = ShootingCore2.Items[0];
+            }
+            if (Paytucich3.Text == "В-90 (ОФ-462)")
+            {
+                ShootingCore3.SelectedItem = ShootingCore3.Items[0];
+            }
+            HandlePaytucichTypes(Paytucich1.Text, 1);
+            HandlePaytucichTypes(Paytucich2.Text, 2);
+            HandlePaytucichTypes(Paytucich3.Text, 3);
             HandleShootingType();
             Count(sender, e);
         }
@@ -508,8 +541,32 @@ namespace Nemesis
         private void SystemChanged(object sender, EventArgs e)
         {
             ResetBattares();
-            Initializer.InitializePaytucich(ref Paytucich, Systems.Text);
-            Initializer.InitializeShootingCore(ref ShootingCore, Paytucich.Text);
+            if (Systems.Text == "Առանձին")
+            {
+                CoreSystem1.Visibility = Visibility.Visible;
+                CoreSystem2.Visibility = Visibility.Visible;
+                CoreSystem3.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                CoreSystem1.Visibility = Visibility.Collapsed;
+                CoreSystem2.Visibility = Visibility.Collapsed;
+                CoreSystem3.Visibility = Visibility.Collapsed;
+            }
+                Initializer.InitializePaytucich(ref Paytucich, Systems.Text);
+                Initializer.InitializeShootingCore(ref ShootingCore, Paytucich.Text);
+                HandleShootingType();
+                Count(sender, new EventArgs());
+        }
+
+        private void CustomSystemChanged(object sender, EventArgs e)
+        {
+            Initializer.InitializePaytucich(ref Paytucich1, Systems1.Text);
+            Initializer.InitializePaytucich(ref Paytucich2, Systems2.Text);
+            Initializer.InitializePaytucich(ref Paytucich3, Systems3.Text);
+            Initializer.InitializeShootingCore(ref ShootingCore1, Paytucich1.Text);
+            Initializer.InitializeShootingCore(ref ShootingCore2, Paytucich2.Text);
+            Initializer.InitializeShootingCore(ref ShootingCore3, Paytucich3.Text);
             HandleShootingType();
             Count(sender, new EventArgs());
         }
@@ -632,6 +689,7 @@ namespace Nemesis
             else
             {
                 ReSetTarget();
+                ResetDks();
                 ResetBattares();
             }
         }
@@ -814,11 +872,12 @@ namespace Nemesis
                 {
                     throw new InvalidOperationException();
                 }
-                var TaskInformation = GetTaskInfo();
+
+                List<TaskInfo> TaskInfos = new List<TaskInfo>() { GetTaskInfo(1), GetTaskInfo(2), GetTaskInfo(3) };
                 DitarkumDataModel DDM = new DitarkumDataModel()
                 {
                     Ditaket = Owin.Martakarg.GetDitaket(Ditaket2.Text),
-                    ParallelDitaket = TaskInformation.TaskType == "Զուգորդված դիտարկում" ? Owin.Martakarg.GetDitaket(Ditaket1.Text) : null,
+                    ParallelDitaket = GetTaskInfo(1).TaskType == "Զուգորդված դիտարկում" ? Owin.Martakarg.GetDitaket(Ditaket1.Text) : null,
                     Hramanatarakan = new Texagrakan()
                     {
                         Alpha = Helper.GetAngleFromString(Alpha_Hram2.Text),
@@ -826,7 +885,7 @@ namespace Nemesis
                         M = double.Parse(M_NSH2.Text)
                     },
 
-                    ParallelHramanatarakan = TaskInformation.TaskType == "Զուգորդված դիտարկում" ? new Texagrakan()
+                    ParallelHramanatarakan = GetTaskInfo(1).TaskType == "Զուգորդված դիտարկում" ? new Texagrakan()
                     {
                         Alpha = Helper.GetAngleFromString(Alpha_Hram1.Text),
                         Distance = double.Parse(D_Hram1.Text),
@@ -835,17 +894,17 @@ namespace Nemesis
 
                     Target = GetTarget(),
 
-                    TaskInfo = TaskInformation,
+                    TaskInfo = GetTaskInfo(1),
 
                     Battary1Texakayum = IsBat1 ? new PaytyunTexakayum
                     {
                         Core = M1_Core.Text,
                         Davarot1 = Helper.GetAngleFromString(M1_D1_DHU.Text),
                         Pricel1 = double.Parse(M1_D1_Pricel.Text),
-                        Poxrak1 = TaskInformation.Paytucich != "РГМ-2 (ОФ-462)" ? double.Parse(M1_D1_Poxrak.Text) : -1,
-                        Davarot2 = TaskInformation.Positions == "Դասակի Կազմով" ? Helper.GetAngleFromString(M1_D2_DHU.Text) : 0,
-                        Pricel2 = TaskInformation.Positions == "Դասակի Կազմով" ? double.Parse(M1_D2_Pricel.Text) : 0,
-                        Poxrak2 = TaskInformation.Paytucich != "РГМ-2 (ОФ-462)" && TaskInformation.Positions == "Դասակի Կազմով" ? double.Parse(M1_D2_Poxrak.Text) : -1,
+                        Poxrak1 = TaskInfos[0].Paytucich != "РГМ-2 (ОФ-462)" ? double.Parse(M1_D1_Poxrak.Text) : -1,
+                        Davarot2 = TaskInfos[0].Positions == "Դասակի Կազմով" ? Helper.GetAngleFromString(M1_D2_DHU.Text) : 0,
+                        Pricel2 = TaskInfos[0].Positions == "Դասակի Կազմով" ? double.Parse(M1_D2_Pricel.Text) : 0,
+                        Poxrak2 = TaskInfos[0].Paytucich != "РГМ-2 (ОФ-462)" && TaskInfos[0].Positions == "Դասակի Կազմով" ? double.Parse(M1_D2_Poxrak.Text) : -1,
                         Ku = double.TryParse(M1_KU.Text, out _) ? double.Parse(M1_KU.Text) : -1
                     } : null,
 
@@ -854,10 +913,10 @@ namespace Nemesis
                         Core = M2_Core.Text,
                         Davarot1 = Helper.GetAngleFromString(M2_D1_DHU.Text),
                         Pricel1 = double.Parse(M2_D1_Pricel.Text),
-                        Poxrak1 = TaskInformation.Paytucich != "РГМ-2 (ОФ-462)" ? double.Parse(M2_D1_Poxrak.Text) : -1,
-                        Davarot2 = TaskInformation.Positions == "Դասակի Կազմով" ? Helper.GetAngleFromString(M2_D2_DHU.Text) : 0,
-                        Pricel2 = TaskInformation.Positions == "Դասակի Կազմով" ? double.Parse(M2_D2_Pricel.Text) : 0,
-                        Poxrak2 = TaskInformation.Paytucich != "РГМ-2 (ОФ-462)" && TaskInformation.Positions == "Դասակի Կազմով" ? double.Parse(M2_D2_Poxrak.Text) : -1,
+                        Poxrak1 = TaskInfos[1].Paytucich != "РГМ-2 (ОФ-462)" ? double.Parse(M2_D1_Poxrak.Text) : -1,
+                        Davarot2 = TaskInfos[1].Positions == "Դասակի Կազմով" ? Helper.GetAngleFromString(M2_D2_DHU.Text) : 0,
+                        Pricel2 = TaskInfos[1].Positions == "Դասակի Կազմով" ? double.Parse(M2_D2_Pricel.Text) : 0,
+                        Poxrak2 = TaskInfos[1].Paytucich != "РГМ-2 (ОФ-462)" && TaskInfos[1].Positions == "Դասակի Կազմով" ? double.Parse(M2_D2_Poxrak.Text) : -1,
                         Ku = double.TryParse(M2_KU.Text, out _) ? double.Parse(M2_KU.Text) : -1
                     } : null,
 
@@ -866,10 +925,10 @@ namespace Nemesis
                         Core = M3_Core.Text,
                         Davarot1 = Helper.GetAngleFromString(M3_D1_DHU.Text),
                         Pricel1 = double.Parse(M3_D1_Pricel.Text),
-                        Poxrak1 = TaskInformation.Paytucich != "РГМ-2 (ОФ-462)" ? double.Parse(M3_D1_Poxrak.Text) : -1,
-                        Davarot2 = TaskInformation.Positions == "Դասակի Կազմով" ? Helper.GetAngleFromString(M3_D2_DHU.Text) : 0,
-                        Pricel2 = TaskInformation.Positions == "Դասակի Կազմով" ? double.Parse(M3_D2_Pricel.Text) : 0,
-                        Poxrak2 = TaskInformation.Paytucich != "РГМ-2 (ОФ-462)" && TaskInformation.Positions == "Դասակի Կազմով" ? double.Parse(M3_D2_Poxrak.Text) : -1,
+                        Poxrak1 = TaskInfos[2].Paytucich != "РГМ-2 (ОФ-462)" ? double.Parse(M3_D1_Poxrak.Text) : -1,
+                        Davarot2 = TaskInfos[2].Positions == "Դասակի Կազմով" ? Helper.GetAngleFromString(M3_D2_DHU.Text) : 0,
+                        Pricel2 = TaskInfos[2].Positions == "Դասակի Կազմով" ? double.Parse(M3_D2_Pricel.Text) : 0,
+                        Poxrak2 = TaskInfos[2].Paytucich != "РГМ-2 (ОФ-462)" && TaskInfos[2].Positions == "Դասակի Կազմով" ? double.Parse(M3_D2_Poxrak.Text) : -1,
                         Ku = double.TryParse(M3_KU.Text, out _) ? double.Parse(M3_KU.Text) : -1
                     } : null
                 };

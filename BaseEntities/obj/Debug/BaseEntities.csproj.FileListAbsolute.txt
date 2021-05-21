@@ -34,3 +34,9 @@ C:\Users\gegha\Desktop\Nemesis Desktop\BaseEntities\bin\Debug\BaseEntities.pdb
 C:\Users\gegha\Desktop\Nemesis Desktop\BaseEntities\obj\Debug\BaseEntities.csproj.CoreCompileInputs.cache
 C:\Users\gegha\Desktop\Nemesis Desktop\BaseEntities\obj\Debug\BaseEntities.dll
 C:\Users\gegha\Desktop\Nemesis Desktop\BaseEntities\obj\Debug\BaseEntities.pdb
+C:\Users\gegham.mkrtchyan\Desktop\Nemesis-Desktop\BaseEntities\bin\Debug\BaseEntities.dll
+C:\Users\gegham.mkrtchyan\Desktop\Nemesis-Desktop\BaseEntities\bin\Debug\BaseEntities.pdb
+C:\Users\gegham.mkrtchyan\Desktop\Nemesis-Desktop\BaseEntities\obj\Debug\BaseEntities.csprojAssemblyReference.cache
+C:\Users\gegham.mkrtchyan\Desktop\Nemesis-Desktop\BaseEntities\obj\Debug\BaseEntities.csproj.CoreCompileInputs.cache
+C:\Users\gegham.mkrtchyan\Desktop\Nemesis-Desktop\BaseEntities\obj\Debug\BaseEntities.dll
+C:\Users\gegham.mkrtchyan\Desktop\Nemesis-Desktop\BaseEntities\obj\Debug\BaseEntities.pdb

@@ -23,9 +23,9 @@ namespace Nemesis
             return target;
         }
 
-        protected TaskInfo GetTaskInfo() //private
+        protected TaskInfo GetTaskInfo(int Battarey) //private
         {
-            return new TaskInfo()
+            var info = new TaskInfo()
             {
                 System = Systems.Text,
                 AXKType = AXKType.Text,
@@ -37,6 +37,30 @@ namespace Nemesis
                 Texamas = Texamas.Text,
                 Kayficents = IsKayficent.Text
             };
+            if (info.System == "Առանձին")
+            {
+                switch (Battarey)
+                {
+                    case 1:
+                        info.System = Systems1.Text;
+                        info.Paytucich = Paytucich1.Text;
+                        info.SelectedCore = ShootingCore1.Text;
+                        break;
+
+                    case 2:
+                        info.System = Systems2.Text;
+                        info.Paytucich = Paytucich2.Text;
+                        info.SelectedCore = ShootingCore2.Text;
+                        break;
+
+                    case 3:
+                        info.System = Systems3.Text;
+                        info.Paytucich = Paytucich3.Text;
+                        info.SelectedCore = ShootingCore3.Text;
+                        break;
+                }
+            }
+            return info;
         }
 
         public Kayficents GetKayficentsFromView()

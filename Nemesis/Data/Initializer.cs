@@ -20,11 +20,15 @@ namespace Nemesis
 
         }
 
-        public static void InitializeSystems(ref ComboBox comboBox)
+        public static void InitializeSystems(ref ComboBox comboBox, bool IsMain)
         {
             comboBox.Items.Add(new ComboBoxItem { Content = "122մմ Դ - 30" });
             comboBox.Items.Add(new ComboBoxItem { Content = "152մմ Դ - 20" });
             comboBox.Items.Add(new ComboBoxItem { Content = "152մմ Դ - 1" });
+            if (IsMain)
+            {
+                comboBox.Items.Add(new ComboBoxItem { Content = "Առանձին" });
+            }
             comboBox.SelectedItem = comboBox.Items[0];
         }
         public static void InitializeShootingMethod(ref ComboBox comboBox, bool isOnlyDirect)
@@ -56,19 +60,26 @@ namespace Nemesis
         public static void InitializeShootingCore(ref ComboBox comboBox, string paytucich)
         {
             comboBox.Items.Clear();
-            comboBox.Items.Add(new ComboBoxItem { Content = "Ավտոմատ լիցք" });
-            comboBox.Items.Add(new ComboBoxItem { Content = "Լիցք լրիվ" });
-            if (paytucich != "РГМ-2 (ОФ-540)") comboBox.Items.Add(new ComboBoxItem { Content = "Լիցք քչացված" });
-            comboBox.Items.Add(new ComboBoxItem { Content = "Լիցք 1" });
-            comboBox.Items.Add(new ComboBoxItem { Content = "Լիցք 2" });
-            comboBox.Items.Add(new ComboBoxItem { Content = "Լիցք 3" });
-            if (paytucich != "Т-7 (С-463)")
+            if (paytucich == "Առանձին")
             {
-                comboBox.Items.Add(new ComboBoxItem { Content = "Լիցք 4" });
-                if (paytucich == "РГМ-2 (ОФ-540)")
+                comboBox.Items.Add(new ComboBoxItem { Content = "Առանձին" });
+            }
+            else
+            {
+                comboBox.Items.Add(new ComboBoxItem { Content = "Ավտոմատ լիցք" });
+                comboBox.Items.Add(new ComboBoxItem { Content = "Լիցք լրիվ" });
+                if (paytucich != "РГМ-2 (ОФ-540)") comboBox.Items.Add(new ComboBoxItem { Content = "Լիցք քչացված" });
+                comboBox.Items.Add(new ComboBoxItem { Content = "Լիցք 1" });
+                comboBox.Items.Add(new ComboBoxItem { Content = "Լիցք 2" });
+                comboBox.Items.Add(new ComboBoxItem { Content = "Լիցք 3" });
+                if (paytucich != "Т-7 (С-463)")
                 {
-                    comboBox.Items.Add(new ComboBoxItem { Content = "Լիցք 5" });
-                    comboBox.Items.Add(new ComboBoxItem { Content = "Լիցք 6" });
+                    comboBox.Items.Add(new ComboBoxItem { Content = "Լիցք 4" });
+                    if (paytucich == "РГМ-2 (ОФ-540)")
+                    {
+                        comboBox.Items.Add(new ComboBoxItem { Content = "Լիցք 5" });
+                        comboBox.Items.Add(new ComboBoxItem { Content = "Լիցք 6" });
+                    }
                 }
             }
             comboBox.SelectedItem = comboBox.Items[0];
@@ -104,23 +115,31 @@ namespace Nemesis
         public static void InitializePaytucich(ref ComboBox comboBox, string system)
         {
             comboBox.Items.Clear();
-            if (system == "122մմ Դ - 30")
+            if (system != "Առանձին")
             {
-                comboBox.Items.Add(new ComboBoxItem { Content = "РГМ-2 (ОФ-462)" });
-                comboBox.Items.Add(new ComboBoxItem { Content = "В-90 (ОФ-462)" });
-                comboBox.Items.Add(new ComboBoxItem { Content = "Т-90 (3С4)" });
-                comboBox.Items.Add(new ComboBoxItem { Content = "Т-7 (С-463)" });
-            }
-            else if (system == "152մմ Դ - 20")
-            {
-                comboBox.Items.Add(new ComboBoxItem { Content = "РГМ-2 (ОФ-540)" });
-            }
-            else if (system == "152մմ Դ - 1")
-            {
-                comboBox.Items.Add(new ComboBoxItem { Content = "РГМ-2 (Д-1)" });
-            }
+                if (system == "122մմ Դ - 30")
+                {
+                    comboBox.Items.Add(new ComboBoxItem { Content = "РГМ-2 (ОФ-462)" });
+                    comboBox.Items.Add(new ComboBoxItem { Content = "В-90 (ОФ-462)" });
+                    comboBox.Items.Add(new ComboBoxItem { Content = "Т-90 (3С4)" });
+                    comboBox.Items.Add(new ComboBoxItem { Content = "Т-7 (С-463)" });
+                }
+                else if (system == "152մմ Դ - 20")
+                {
+                    comboBox.Items.Add(new ComboBoxItem { Content = "РГМ-2 (ОФ-540)" });
+                }
+                else if (system == "152մմ Դ - 1")
+                {
+                    comboBox.Items.Add(new ComboBoxItem { Content = "РГМ-2 (Д-1)" });
+                }
 
-                comboBox.SelectedItem = comboBox.Items[0];
+                
+            }
+            else
+            {
+                comboBox.Items.Add(new ComboBoxItem { Content = "Առանձին" });
+            }
+            comboBox.SelectedItem = comboBox.Items[0];
         }
 
     }

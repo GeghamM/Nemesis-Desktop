@@ -400,7 +400,11 @@
                     <StackPanel Orientation="Horizontal">
                         <!--1-in Martkoc-->
                         <StackPanel Margin="22,0" HorizontalAlignment="Center">
-
+                            <StackPanel x:Name="CoreSystem1" Visibility="Collapsed" Orientation="Horizontal" HorizontalAlignment="Right">
+                                <ComboBox Template="{DynamicResource ComboBox}" Style="{DynamicResource ComboBox_Style}" HorizontalAlignment="Center" x:Name="Systems1"  Margin="3" DropDownClosed="CustomSystemChanged" FontSize="11.5" FontWeight="ExtraBold" Width="100"/>
+                                <ComboBox Template="{DynamicResource ComboBox}" Style="{DynamicResource ComboBox_Style}" HorizontalAlignment="Center" x:Name="Paytucich1"  Margin="3" DropDownClosed="CustomPaytucichClosed" FontSize="11.5" FontWeight="ExtraBold" Width="120"/>
+                                <ComboBox Template="{DynamicResource ComboBox}" Style="{DynamicResource ComboBox_Style}" HorizontalAlignment="Center" x:Name="ShootingCore1" Margin="3" DropDownClosed="Count" FontSize="11.5" FontWeight="ExtraBold" Width="120"/>
+                            </StackPanel>
                             <StackPanel HorizontalAlignment="Center">
                                 <StackPanel Orientation="Horizontal">
                                     <StackPanel>
@@ -499,6 +503,11 @@
 
                         <!--2-rd Martkoc-->
                         <StackPanel Margin="22,0" HorizontalAlignment="Center">
+                            <StackPanel x:Name="CoreSystem2" Visibility="Collapsed" Orientation="Horizontal" HorizontalAlignment="Right">
+                                <ComboBox Template="{DynamicResource ComboBox}" Style="{DynamicResource ComboBox_Style}" HorizontalAlignment="Center" x:Name="Systems2"  Margin="3" DropDownClosed="CustomSystemChanged" FontSize="11.5" FontWeight="ExtraBold" Width="100"/>
+                                <ComboBox Template="{DynamicResource ComboBox}" Style="{DynamicResource ComboBox_Style}" HorizontalAlignment="Center" x:Name="Paytucich2"  Margin="3" DropDownClosed="CustomPaytucichClosed" FontSize="11.5" FontWeight="ExtraBold" Width="120"/>
+                                <ComboBox Template="{DynamicResource ComboBox}" Style="{DynamicResource ComboBox_Style}" HorizontalAlignment="Center" x:Name="ShootingCore2" Margin="3" DropDownClosed="Count" FontSize="11.5" FontWeight="ExtraBold" Width="120"/>
+                            </StackPanel>
                             <StackPanel HorizontalAlignment="Center">
                                 <StackPanel Orientation="Horizontal">
                                     <StackPanel>
@@ -597,6 +606,11 @@
 
                         <!--3-rd Martkoc-->
                         <StackPanel Margin="22,0" HorizontalAlignment="Center">
+                            <StackPanel x:Name="CoreSystem3" Visibility="Collapsed" Orientation="Horizontal" HorizontalAlignment="Right">
+                                <ComboBox Template="{DynamicResource ComboBox}" Style="{DynamicResource ComboBox_Style}" HorizontalAlignment="Center" x:Name="Systems3"  Margin="3" DropDownClosed="CustomSystemChanged" FontSize="11.5" FontWeight="ExtraBold" Width="100"/>
+                                <ComboBox Template="{DynamicResource ComboBox}" Style="{DynamicResource ComboBox_Style}" HorizontalAlignment="Center" x:Name="Paytucich3"  Margin="3" DropDownClosed="CustomPaytucichClosed" FontSize="11.5" FontWeight="ExtraBold" Width="120"/>
+                                <ComboBox Template="{DynamicResource ComboBox}" Style="{DynamicResource ComboBox_Style}" HorizontalAlignment="Center" x:Name="ShootingCore3" Margin="3" DropDownClosed="Count" FontSize="11.5" FontWeight="ExtraBold" Width="120"/>
+                            </StackPanel>
                             <StackPanel HorizontalAlignment="Center">
                                 <StackPanel Orientation="Horizontal">
                                     <StackPanel>
